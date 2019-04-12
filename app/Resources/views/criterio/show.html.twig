@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Criterio</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Titulopt</th>
+                <td>{{ criterio.tituloPt }}</td>
+            </tr>
+            <tr>
+                <th>Tituloen</th>
+                <td>{{ criterio.tituloEn }}</td>
+            </tr>
+            <tr>
+                <th>Descricaopt</th>
+                <td>{{ criterio.descricaoPt }}</td>
+            </tr>
+            <tr>
+                <th>Descricaoen</th>
+                <td>{{ criterio.descricaoEn }}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ criterio.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_criterio_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_criterio_edit', { 'id': criterio.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

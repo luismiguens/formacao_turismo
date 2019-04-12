@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- form controls -->
+    <section id="default" class="component">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h4>Critérios editar</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="component-1">
+            <div class="tab-pane show active" id="component-1-1" role="tabpanel" aria-labelledby="component-1-1">
+                <div class="component-example">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{ form_start(edit_form) }}
+
+
+                                {% for flashMessage in app.session.flashbag.get('notice') %}
+                                    <div class="alert alert-success">
+                                        {{ flashMessage }}
+                                    </div>
+                                {% endfor %}
+
+                                <div class="form-group">
+                                    {{ form_label(edit_form.tituloPt) }}
+                                    {{ form_errors(edit_form.tituloPt) }}
+                                    {{ form_widget(edit_form.tituloPt, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(edit_form.tituloEn) }}
+                                    {{ form_errors(edit_form.tituloEn) }}
+                                    {{ form_widget(edit_form.tituloEn, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+
+                                <div class="form-group">
+                                    {{ form_label(edit_form.descricaoPt) }}
+                                    {{ form_errors(edit_form.descricaoPt) }}
+                                    {{ form_widget(edit_form.descricaoPt, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(edit_form.descricaoEn) }}
+                                    {{ form_errors(edit_form.descricaoEn) }}
+                                    {{ form_widget(edit_form.descricaoEn, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+
+                                <div class="form-group">
+                                    {{ form_label(edit_form.categoria) }}
+                                    {{ form_errors(edit_form.categoria) }}
+                                    {{ form_widget(edit_form.categoria, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+
+
+                                <hr/>
+
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                                {{ form_end(edit_form) }}
+
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('admin_criterio_index') }}">Voltar a lista</a>
+                                    </li>
+
+                                    <li>
+                                        {{ form_start(delete_form) }}
+                                        <input type="submit" value="Delete">
+                                        {{ form_end(delete_form) }}
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+{% endblock %}

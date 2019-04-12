@@ -1,0 +1,200 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * Categoria
+ */
+class Categoria
+{
+    /**
+     * @var string
+     */
+    private $tituloPt;
+
+    /**
+     * @var string
+     */
+    private $tituloEn;
+
+    /**
+     * @var string
+     */
+    private $descricaoPt;
+
+    /**
+     * @var string
+     */
+    private $descricaoEn;
+
+    /**
+     * @var string
+     */
+    private $imagem;
+
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Candidatura
+     */
+    private $candidaturaVencedora;
+
+
+    /**
+     * Set tituloPt
+     *
+     * @param string $tituloPt
+     *
+     * @return Categoria
+     */
+    public function setTituloPt($tituloPt)
+    {
+        $this->tituloPt = $tituloPt;
+
+        return $this;
+    }
+
+    /**
+     * Get tituloPt
+     *
+     * @return string
+     */
+    public function getTituloPt()
+    {
+        return $this->tituloPt;
+    }
+
+    /**
+     * Set tituloEn
+     *
+     * @param string $tituloEn
+     *
+     * @return Categoria
+     */
+    public function setTituloEn($tituloEn)
+    {
+        $this->tituloEn = $tituloEn;
+
+        return $this;
+    }
+
+    /**
+     * Get tituloEn
+     *
+     * @return string
+     */
+    public function getTituloEn()
+    {
+        return $this->tituloEn;
+    }
+
+    /**
+     * Set descricaoPt
+     *
+     * @param string $descricaoPt
+     *
+     * @return Categoria
+     */
+    public function setDescricaoPt($descricaoPt)
+    {
+        $this->descricaoPt = $descricaoPt;
+
+        return $this;
+    }
+
+    /**
+     * Get descricaoPt
+     *
+     * @return string
+     */
+    public function getDescricaoPt()
+    {
+        return $this->descricaoPt;
+    }
+
+    /**
+     * Set descricaoEn
+     *
+     * @param string $descricaoEn
+     *
+     * @return Categoria
+     */
+    public function setDescricaoEn($descricaoEn)
+    {
+        $this->descricaoEn = $descricaoEn;
+
+        return $this;
+    }
+
+    /**
+     * Get descricaoEn
+     *
+     * @return string
+     */
+    public function getDescricaoEn()
+    {
+        return $this->descricaoEn;
+    }
+
+    /**
+     * Set imagem
+     *
+     * @param string $imagem
+     *
+     * @return Categoria
+     */
+    public function setImagem($imagem)
+    {
+        $this->imagem = $imagem;
+
+        return $this;
+    }
+
+    /**
+     * Get imagem
+     *
+     * @return string
+     */
+    public function getImagem()
+    {
+        return $this->imagem;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set candidaturaVencedora
+     *
+     * @param \AppBundle\Entity\Candidatura $candidaturaVencedora
+     *
+     * @return Categoria
+     */
+    public function setCandidaturaVencedora(\AppBundle\Entity\Candidatura $candidaturaVencedora = null)
+    {
+        $this->candidaturaVencedora = $candidaturaVencedora;
+
+        return $this;
+    }
+
+    /**
+     * Get candidaturaVencedora
+     *
+     * @return \AppBundle\Entity\Candidatura
+     */
+    public function getCandidaturaVencedora()
+    {
+        return $this->candidaturaVencedora;
+    }
+}
+

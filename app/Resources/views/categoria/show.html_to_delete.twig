@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Categoria</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Titulopt</th>
+                <td>{{ categoria.tituloPt }}</td>
+            </tr>
+            <tr>
+                <th>Tituloen</th>
+                <td>{{ categoria.tituloEn }}</td>
+            </tr>
+            <tr>
+                <th>Descricaopt</th>
+                <td>{{ categoria.descricaoPt }}</td>
+            </tr>
+            <tr>
+                <th>Descricaoen</th>
+                <td>{{ categoria.descricaoEn }}</td>
+            </tr>
+            <tr>
+                <th>Imagem</th>
+                <td>{{ categoria.imagem }}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ categoria.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_categoria_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,44 @@
+{# empty Twig template #}
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+
+    {% include 'default/cover.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/text.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/categories.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/cta.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/schedule.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/partners.html.twig'   with {'selected_menu': 'homepage', 'parceiros': parceiros} %}
+    {% include 'default/gallery.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/testimonials.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/blog.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/map.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/footer.html.twig'   with {'selected_menu': 'homepage'} %}
+
+    <!-- header --><!-- / header -->
+    <!-- cover --><!-- / cover -->
+    <!-- text --><!-- / text -->
+    <!-- partners --><!-- / partners -->
+    <!-- user carousel --><!-- / user carousel -->
+    <!-- schedule --><!-- / schedule -->
+    <!-- presentation --><!-- / presentation -->
+    <!-- faq --><!-- / faq -->
+    <!-- pricing --><!-- / pricing -->
+    <!-- blog --><!-- / blog -->
+    <!-- map --><!-- / map -->
+    <!-- footer --><!-- / footer -->
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+

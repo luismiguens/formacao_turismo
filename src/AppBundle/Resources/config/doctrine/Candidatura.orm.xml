@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Candidatura" table="candidatura">
+    <indexes>
+      <index name="fk_candidatura_1_idx" columns="categoria_id"/>
+      <index name="fk_candidatura_2_idx" columns="fos_user_id"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="promotorNome" type="string" column="promotor_nome" length="80" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="promotorProjecto" type="string" column="promotor_projecto" length="256" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="promotorEmail" type="string" column="promotor_email" length="80" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="promotorTelefone" type="string" column="promotor_telefone" length="45" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="promotorDescricaoPt" type="text" column="promotor_descricao_pt" length="65535" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="promotorDescricaoEn" type="text" column="promotor_descricao_en" length="65535" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="documento" type="string" column="documento" length="80" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    
+    
+    
+    
+    <many-to-one field="categoria" target-entity="Categoria" fetch="LAZY">
+      <join-columns>
+        <join-column name="categoria_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="fosUser" target-entity="User" fetch="LAZY" inversed-by="candidaturas">
+      <join-columns>
+        <join-column name="fos_user_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    
+    <one-to-many field="respostas" target-entity="Resposta" mapped-by="candidatura" >
+        
+        
+        <cascade>
+            <cascade-persist />
+        </cascade>
+    
+    </one-to-many>
+    
+        <field name="updatedAt" type="datetime" column="updated_at" nullable="true"/>
+    
+    
+  </entity>
+</doctrine-mapping>

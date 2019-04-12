@@ -1,0 +1,5 @@
+AppBundle\Entity\Categoria:
+    imagemFile:
+        mapping:           categoria_imagem
+        filename_property: imagem
+    

@@ -1,0 +1,86 @@
+{#{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" value="{{ 'resetting.reset.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}#}
+
+
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% form_theme form _self %}
+
+{# form_errors.html.twig #}
+{% block form_errors %}
+    {% spaceless %}
+        {% if errors is defined and errors|length > 0 %}
+            <ul>
+                {% for error in errors %}
+                    <li style="color: red;">{{ error.message }}</li>
+                    {% endfor %}
+            </ul>
+        {% endif %}
+    {% endspaceless %}
+{% endblock form_errors %}
+
+
+
+<div class="preloader-mask">
+    <div class="preloader"></div>
+</div>
+
+<section class="section bg-cover bg1_2019 window-height">
+
+    <div class="container light-text align-center">
+        <h3><span class="highlight">Regista-te</span> Um mundo de oportunidades!</h3>
+        {#<p class="text-alt">and get your tickets emailed to you within <span class="highlight">24 hours</span></p>#}
+        <br/>
+        <br/>
+    </div>
+    <div class="container">
+        {{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'form registration-form align-center fos_user_resetting_reset' } }) }}
+        {#{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'form registration-form align-center fos_user_registration_register'}}) }}#}
+
+        <h5><span class="highlight">Reset Password</span></h5>
+
+{#        <fieldset class="col-sm-12">
+            {{ form_label(form.email) }}
+            {{ form_errors(form.email) }}
+            {{ form_widget(form.email) }}
+        </fieldset>
+
+        <fieldset class="col-sm-12">
+            {{ form_label(form.username) }}
+            {{ form_errors(form.username) }}
+            {{ form_widget(form.username) }}
+        </fieldset>
+
+        <fieldset class="col-sm-12">
+            {{ form_errors(form.plainPassword) }}
+            {{ form_widget(form.plainPassword) }}
+        </fieldset>#}
+
+
+
+        {{ form_widget(form) }}
+
+        <input type="submit" value="{{ 'resetting.reset.submit'|trans }}" class="btn">
+
+        <hr/>
+        <fieldset class="col-sm-12">
+            Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+            <br />
+        </fieldset>
+
+
+        {{ form_end(form) }}
+
+
+
+    </div>
+</section>
+
+

@@ -1,0 +1,156 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{#{% form_theme form _self %}#}
+
+{# form_errors.html.twig #}
+{% block form_errors %}
+    {% spaceless %}
+        {% if errors is defined and errors|length > 0 %}
+            <ul>
+                {% for error in errors %}
+                    <li style="color: red;">{{ error.message }}</li>
+                    {% endfor %}
+            </ul>
+        {% endif %}
+    {% endspaceless %}
+{% endblock form_errors %}
+
+
+
+<div class="preloader-mask">
+    <div class="preloader"></div>
+</div>
+
+<section class="section bg-cover bg1_2019 window-height">
+
+    <div class="container light-text align-center">
+        <h3><span class="highlight">Autentica-te! </span>Bem vindo!</h3>
+        {#<p class="text-alt">and get your tickets emailed to you within <span class="highlight">24 hours</span></p>#}
+        <br/>
+        <br/>
+    </div>
+    <div class="container">
+        {#<form class="form registration-form align-center">#}
+        {#        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'form registration-form align-center fos_user_registration_register'}}) }}#}
+        <form action="{{ path("fos_user_security_check") }}" method="post" class="form registration-form align-center">
+            <h5><span class="highlight">Autenticação no Evento</span></h5>
+
+
+
+
+            {#{{ form_errors(form.age) }}#}      
+
+
+            {% if error %}
+                <div style="color: red;">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+
+            {% if csrf_token %}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            {% endif %}
+
+            <fieldset class="col-sm-12">
+                <label for="username">{{ 'security.login.username'|trans }}</label>
+                <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+            </fieldset>
+
+            <fieldset class="col-sm-12">
+                <label for="password">{{ 'security.login.password'|trans }}</label>
+                <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+            </fieldset>
+
+            <fieldset class="col-sm-12">
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            </fieldset>
+            <hr>
+            <input class="btn" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+
+
+            <hr/>
+            <fieldset class="col-sm-12">
+                Não estás registado? Segue para <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
+
+                <br />
+
+                Não tens password? Segue para <a href="{{ path('fos_user_resetting_request') }}">Recuperar</a>
+            </fieldset>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {#				<fieldset class="col-sm-6">
+                                                <label for="pass1">Ticket type</label>
+                                                <select id="pass1" name="pass1">
+                                                        <option value="" selected disabled>-- Select --</option>
+                                                        <option value="0">Early Bird</option>
+                                                        <option value="1">Silver Pass</option>
+                                                        <option value="2">Gold Pass</option>
+                                                        <option value="3">Ultimate Mega Ultra Legendary Pass</option>
+                                                </select>
+                                        </fieldset>
+        
+                                        <fieldset class="col-sm-6">
+                                                <label for="pass2"># tickets</label>
+                                                <select id="pass2" name="pass2">
+                                                        <option value="a">Variant A</option>
+                                                        <option value="b">Variant B</option>
+                                                        <option value="c">Variant C</option>
+                                                        <option value="d">Variant D</option>
+                                                        <option value="e">Variant E</option>
+                                                        <option value="f" disabled>Variant F</option>
+                                                        <option value="g">Variant G</option>
+                                                        <option value="h">Variant H</option>
+                                                        <option value="i">Variant I</option>
+                                                        <option value="j">Variant J</option>
+                                                        <option value="k">Variant K</option>
+                                                        <option value="l">Variant L</option>
+                                                        <option value="m">Variant M</option>
+                                                </select>
+                                        </fieldset>
+        
+                                        <fieldset class="col-sm-12">
+                                                <input id="privacy" name="privacy" type="checkbox"><label for="privacy">I read & agree with <a href="#">Terms of service</a> </label>
+                                                <br />
+                                                <br />
+                                        </fieldset>#}
+
+
+        {#{{ form_widget(form) }}#}
+
+        {#<input type="submit" value="submit" class="btn">#}
+        {#{{ form_end(form) }}#}
+    </div>
+</section>
+
+
+
+
+{#{{ form_widget(form) }}#}
+{#   <div>
+       <input type="submit" value="{{ 'registration.submit'|trans }}" />
+   </div>#}
+
+
+
+
+
+
+
+
+

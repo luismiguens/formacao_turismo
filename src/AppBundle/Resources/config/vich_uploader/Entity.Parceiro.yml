@@ -1,0 +1,5 @@
+AppBundle\Entity\Parceiro:
+    imagemFile:
+        mapping:           parceiro_imagem
+        filename_property: imagem
+    

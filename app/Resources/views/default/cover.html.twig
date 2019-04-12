@@ -1,0 +1,74 @@
+{# empty Twig template #}
+    <!-- cover -->
+    <section id="cover" class="p-0">
+      <div class="swiper-container"
+        data-top-top="transform: translateY(0px);" 
+        data-top-bottom="transform: translateY(250px);">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide vh-100">
+            <div class="image image-overlay image-zoom" style="background-image:url({{ asset('bundles/app/assets/images/demo/event/capa.png') }})"></div>
+            <div class="caption">
+              <div class="container">
+                <div class="row justify-content-between vh-100">
+                  <div class="col-lg-8 align-self-center text-white text-shadow" data-swiper-parallax="-100%">
+                    <span class="eyebrow text-white mb-1">{% trans %}cover_Design Rethinked{% endtrans %}</span>
+                    <h1 class="display-2">{% trans %}cover_Visual Design Conference{% endtrans %}</h1>
+                    <a href="" class="btn btn-white btn-rounded px-5">{% trans %}cover_Register{% endtrans %}</a>
+                  </div>
+                  <div class="col-lg-4 align-self-end">
+                    <div class="row gutter-1">
+                      <div class="col-6">
+                        <div class="equal">
+                          <div class="boxed">
+                            <div class="equal-header">
+                              <h4>{% trans %}cover_Dec 18, 2018{% endtrans %}</h4>
+                            </div>
+                            <div class="equal-footer">
+                              <span class="text-muted">{% trans %}cover_when{% endtrans %}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 text-white">
+                        <div class="equal">
+                          <div class="bordered">
+                            <div class="equal-header">
+                              <h4>{% trans %}cover_San Francisco{% endtrans %}</h4>
+                            </div>
+                            <div class="equal-footer">
+                              <span class="text-muted">{% trans %}cover_where{% endtrans %}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 text-white">
+                        <div class="equal">
+                          <div class="bordered">
+                            <div class="equal-header">
+                              <h4>{% trans %}cover_120 Speakers{% endtrans %}</h4>
+                            </div>
+                            <div class="equal-footer">
+                              <span class="text-muted">{% trans %}cover_who{% endtrans %}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-footer text-white">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col text-center">
+                  <div class="mouse"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / cover -->

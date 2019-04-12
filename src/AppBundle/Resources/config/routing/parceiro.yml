@@ -1,0 +1,24 @@
+admin_parceiro_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Parceiro:index" }
+    methods:  GET
+
+admin_parceiro_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Parceiro:show" }
+    methods:  GET
+
+admin_parceiro_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Parceiro:new" }
+    methods:  [GET, POST]
+
+admin_parceiro_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Parceiro:edit" }
+    methods:  [GET, POST]
+
+admin_parceiro_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Parceiro:delete" }
+    methods:  DELETE

@@ -1,0 +1,35 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    
+    
+    
+<div class="preloader-mask">
+    <div class="preloader"></div>
+</div>
+
+<section class="section bg-cover bg1 window-height">
+
+    <div class="container light-text align-center">
+        <h3><span class="highlight">Sign up</span> for event now!</h3>
+        <p class="text-alt">and get your tickets emailed to you within <span class="highlight">24 hours</span></p>
+        <br/>
+        <br/>
+    </div>
+    <div class="container">
+    
+    
+    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+    {% if targetUrl %}
+    <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
+    {% endif %}
+    
+    
+    
+        </div>
+</section>
+
+
+{% endblock fos_user_content %}

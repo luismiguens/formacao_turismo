@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+        <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+        <target>__text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
+      </trans-unit>
+      <trans-unit id="Xk1mZur" resname="schedule_Project">
+        <source>schedule_Project</source>
+        <target>__schedule_Project</target>
+      </trans-unit>
+      <trans-unit id="pbCx42h" resname="schedule_Timeline">
+        <source>schedule_Timeline</source>
+        <target>__schedule_Timeline</target>
+      </trans-unit>
+      <trans-unit id="xxVhvHm" resname="schedule_">
+        <source>schedule_</source>
+        <target>__schedule_</target>
+      </trans-unit>
+      <trans-unit id="uHUCNai" resname="schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.">
+        <source>schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</source>
+        <target>__schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</target>
+      </trans-unit>
+      <trans-unit id="xYRTpv." resname="schedule_Launch">
+        <source>schedule_Launch</source>
+        <target>__schedule_Launch</target>
+      </trans-unit>
+      <trans-unit id="VZkc4Pm" resname="schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore">
+        <source>schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</source>
+        <target>__schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</target>
+      </trans-unit>
+      <trans-unit id="6Oc1fF0" resname="schedule_Minimum Viable Product">
+        <source>schedule_Minimum Viable Product</source>
+        <target>__schedule_Minimum Viable Product</target>
+      </trans-unit>
+      <trans-unit id="3gBpjBL" resname="schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
+        <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
+        <target>__schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</target>
+      </trans-unit>
+      <trans-unit id="k114jCj" resname="schedule_Paying Clients">
+        <source>schedule_Paying Clients</source>
+        <target>__schedule_Paying Clients</target>
+      </trans-unit>
+      <trans-unit id="41lEYXi" resname="schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
+        <source>schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
+        <target>__schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</target>
+      </trans-unit>
+      <trans-unit id="ufSGdDB" resname="gallery_Modern interiors">
+        <source>gallery_Modern interiors</source>
+        <target>__gallery_Modern interiors</target>
+      </trans-unit>
+      <trans-unit id="r0gumv8" resname="gallery_for a better experience.">
+        <source>gallery_for a better experience.</source>
+        <target>__gallery_for a better experience.</target>
+      </trans-unit>
+      <trans-unit id="vNSUddH" resname="gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+        <source>gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+        <target>__gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
+      </trans-unit>
+      <trans-unit id="2i86a2D" resname="blog_USA, New York, Broadway">
+        <source>blog_USA, New York, Broadway</source>
+        <target>__blog_USA, New York, Broadway</target>
+      </trans-unit>
+      <trans-unit id="4S74e16" resname="blog_5th Avenue">
+        <source>blog_5th Avenue</source>
+        <target>__blog_5th Avenue</target>
+      </trans-unit>
+      <trans-unit id="dc.3f4H" resname="blog_example@example.com">
+        <source>blog_example@example.com</source>
+        <target>__blog_example@example.com</target>
+      </trans-unit>
+      <trans-unit id="EasLHw4" resname="blog_(123) 456-7890">
+        <source>blog_(123) 456-7890</source>
+        <target>__blog_(123) 456-7890</target>
+      </trans-unit>
+      <trans-unit id="b3sOwWV" resname="blog_View Full Map">
+        <source>blog_View Full Map</source>
+        <target>__blog_View Full Map</target>
+      </trans-unit>
+      <trans-unit id="qKSBR8D" resname="categories_Categories">
+        <source>categories_Categories</source>
+        <target>__categories_Categories</target>
+      </trans-unit>
+      <trans-unit id="hicoFLd" resname="categories_Watch Now">
+        <source>categories_Watch Now</source>
+        <target>__categories_Watch Now</target>
+      </trans-unit>
+      <trans-unit id="Js5J8na" resname="blog_From the">
+        <source>blog_From the</source>
+        <target>__blog_From the</target>
+      </trans-unit>
+      <trans-unit id="GTfzyeL" resname="blog_blog.">
+        <source>blog_blog.</source>
+        <target>__blog_blog.</target>
+      </trans-unit>
+      <trans-unit id="CWRQCnt" resname="cover_Design Rethinked">
+        <source>cover_Design Rethinked</source>
+        <target>__cover_Design Rethinked</target>
+      </trans-unit>
+      <trans-unit id="CX2WEjf" resname="cover_Visual Design Conference">
+        <source>cover_Visual Design Conference</source>
+        <target>__cover_Visual Design Conference</target>
+      </trans-unit>
+      <trans-unit id="qixnMvD" resname="cover_Register">
+        <source>cover_Register</source>
+        <target>__cover_Register</target>
+      </trans-unit>
+      <trans-unit id="RUjxoWJ" resname="cover_Dec 18, 2018">
+        <source>cover_Dec 18, 2018</source>
+        <target>__cover_Dec 18, 2018</target>
+      </trans-unit>
+      <trans-unit id="ASMo3rt" resname="cover_when">
+        <source>cover_when</source>
+        <target>__cover_when</target>
+      </trans-unit>
+      <trans-unit id=".vev4ZQ" resname="cover_San Francisco">
+        <source>cover_San Francisco</source>
+        <target>__cover_San Francisco</target>
+      </trans-unit>
+      <trans-unit id="tO602Z1" resname="cover_where">
+        <source>cover_where</source>
+        <target>__cover_where</target>
+      </trans-unit>
+      <trans-unit id="Sym89SA" resname="cover_120 Speakers">
+        <source>cover_120 Speakers</source>
+        <target>__cover_120 Speakers</target>
+      </trans-unit>
+      <trans-unit id="zFALbI4" resname="cover_who">
+        <source>cover_who</source>
+        <target>__cover_who</target>
+      </trans-unit>
+      <trans-unit id="8U6jsg_" resname="footer_Designing beautifull interfaces since 2010">
+        <source>footer_Designing beautifull interfaces since 2010</source>
+        <target>__footer_Designing beautifull interfaces since 2010</target>
+      </trans-unit>
+      <trans-unit id="XzhYwwt" resname="footer_GO. 2018 All Right Reserved">
+        <source>footer_GO. 2018 All Right Reserved</source>
+        <target>__footer_GO. 2018 All Right Reserved</target>
+      </trans-unit>
+      <trans-unit id="87z2qR5" resname="footer_+372 567 89 89">
+        <source>footer_+372 567 89 89</source>
+        <target>__footer_+372 567 89 89</target>
+      </trans-unit>
+      <trans-unit id="nyhYoE5" resname="testimonials_Kind Words">
+        <source>testimonials_Kind Words</source>
+        <target>__testimonials_Kind Words</target>
+      </trans-unit>
+      <trans-unit id=".OOrH1Z" resname="cta_Get in touch with us.">
+        <source>cta_Get in touch with us.</source>
+        <target>__cta_Get in touch with us.</target>
+      </trans-unit>
+      <trans-unit id="lOZpElA" resname="cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+        <source>cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+        <target>__cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
+      </trans-unit>
+      <trans-unit id="D475TBD" resname="cta_Write Us">
+        <source>cta_Write Us</source>
+        <target>__cta_Write Us</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

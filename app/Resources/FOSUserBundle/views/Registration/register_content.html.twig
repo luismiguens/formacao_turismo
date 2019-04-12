@@ -1,0 +1,83 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% form_theme form _self %}
+
+{# form_errors.html.twig #}
+{% block form_errors %}
+    {% spaceless %}
+        {% if errors is defined and errors|length > 0 %}
+            <ul>
+                {% for error in errors %}
+                    <li style="color: red;">{{ error.message }}</li>
+                    {% endfor %}
+            </ul>
+        {% endif %}
+    {% endspaceless %}
+{% endblock form_errors %}
+
+
+
+
+<div class="viewport">
+    <div class="image image-overlay" style="background-image:url(../../assets/images/demo/image-2.jpg)"></div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6 col-lg-5">
+                <div class="accordion-group accordion-group-portal" data-accordion-group>
+
+                    <div class="accordion open" data-accordion>
+                        <div class="accordion-control" data-control>
+                            <h5>Create Account</h5>
+                        </div>
+                        <div class="accordion-content" data-content>
+                            <div class="accordion-content-wrapper">
+                                {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'form registration-form align-center fos_user_registration_register'}}) }}
+
+                                <div class="form-group">
+                                    {{ form_label(form.email) }}
+                                    {{ form_errors(form.email) }}
+                                    {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                                    {#<input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">#}
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(form.username) }}
+                                    {{ form_errors(form.username) }}
+                                    {{ form_widget(form.username, {'attr': {'class': 'form-control'}} ) }}
+
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(form.plainPassword) }}
+                                    {{ form_errors(form.plainPassword) }}
+                                    {{ form_widget(form.plainPassword) }}
+                                </div>
+                                {{ form_widget(form) }}
+
+                                <input type="submit" class="btn btn-primary btn-block" value="Sign Up">
+
+                                <hr/>
+                                <fieldset class="col-sm-12">
+                                    Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                                    <br />
+                                </fieldset>
+
+
+                                {{ form_end(form) }}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    document.getElementById("fos_user_registration_form_plainPassword_first").classList.add('form-control');
+    document.getElementById("fos_user_registration_form_plainPassword_second").classList.add('form-control');
+</script>
+
+
+

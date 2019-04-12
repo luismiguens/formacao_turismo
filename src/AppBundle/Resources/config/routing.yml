@@ -1,0 +1,28 @@
+app_admin_categoria:
+    resource: "@AppBundle/Resources/config/routing/categoria.yml"
+    prefix:   /admin_categoria
+
+app_admin_criterio:
+    resource: "@AppBundle/Resources/config/routing/criterio.yml"
+    prefix:   /admin_criterio
+
+app_admin_parceiro:
+    resource: "@AppBundle/Resources/config/routing/parceiro.yml"
+    prefix:   /admin_parceiro
+
+app_admin_candidatura:
+    resource: "@AppBundle/Resources/config/routing/candidatura.yml"
+    prefix:   /admin_candidatura
+
+app_admin_votacao:
+    resource: "@AppBundle/Resources/config/routing/votacao.yml"
+    prefix:   /admin_votacao
+
+
+homepage:
+    path:      /{_locale}
+    defaults:  { _controller: AppBundle:Default:index, _locale: pt }
+    requirements:
+        _locale:  en|pt
+
+        

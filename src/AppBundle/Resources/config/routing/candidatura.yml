@@ -1,0 +1,24 @@
+admin_candidatura_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Candidatura:index" }
+    methods:  GET
+
+admin_candidatura_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Candidatura:show" }
+    methods:  GET
+
+admin_candidatura_new:
+    path:     /new/{categoria}
+    defaults: { _controller: "AppBundle:Candidatura:new" }
+    methods:  [GET, POST]
+
+admin_candidatura_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Candidatura:edit" }
+    methods:  [GET, POST]
+
+admin_candidatura_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Candidatura:delete" }
+    methods:  DELETE

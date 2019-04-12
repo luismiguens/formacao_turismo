@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+
+            <link rel="stylesheet" href="{{ asset('bundles/app/assets/css/vendor.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/app/assets/css/style.css') }}" />
+
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+            </style>
+
+
+
+
+
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+
+          {% block fos_user_content %}
+            {% endblock fos_user_content %}
+
+
+
+        {% block javascripts %}
+            <script src="{{ asset('bundles/app/assets/js/vendor.js') }}"></script>
+            <script src="{{ asset('bundles/app/assets/js/app.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

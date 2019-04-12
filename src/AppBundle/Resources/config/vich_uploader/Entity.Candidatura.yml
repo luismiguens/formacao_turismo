@@ -1,0 +1,5 @@
+AppBundle\Entity\Candidatura:
+    documentoFile:
+        mapping:           candidatura_documento
+        filename_property: documento
+

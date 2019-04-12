@@ -1,0 +1,145 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * Candidatura
+ */
+class Candidatura
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Categoria
+     */
+    private $categoria;
+
+    /**
+     * @var \AppBundle\Entity\FosUser
+     */
+    private $fosUser;
+
+     /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     */
+    private $respostas;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->respostas = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    
+    
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set categoria
+     *
+     * @param \AppBundle\Entity\Categoria $categoria
+     *
+     * @return Candidatura
+     */
+    public function setCategoria(\AppBundle\Entity\Categoria $categoria = null)
+    {
+        $this->categoria = $categoria;
+
+        return $this;
+    }
+
+    /**
+     * Get categoria
+     *
+     * @return \AppBundle\Entity\Categoria
+     */
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
+
+    /**
+     * Set fosUser
+     *
+     * @param \AppBundle\Entity\User $fosUser
+     *
+     * @return Candidatura
+     */
+    public function setFosUser(\AppBundle\Entity\User $fosUser = null)
+    {
+        $this->fosUser = $fosUser;
+
+        return $this;
+    }
+
+    /**
+     * Get fosUser
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getFosUser()
+    {
+        return $this->fosUser;
+    }
+   
+
+    /**
+     * Add resposta
+     *
+     * @param \AppBundle\Entity\Resposta $resposta
+     *
+     * @return Candidatura
+     */
+    public function addResposta(\AppBundle\Entity\Resposta $resposta)
+    {
+       
+        
+        $resposta->setCandidatura($this);
+         $this->respostas->add($resposta);
+        
+        //$this->respostas[] = $resposta;
+
+        return $this;
+    }
+
+    /**
+     * Remove resposta
+     *
+     * @param \AppBundle\Entity\Resposta $resposta
+     */
+    public function removeResposta(\AppBundle\Entity\Resposta $resposta)
+    {
+        $this->respostas->removeElement($resposta);
+    }
+
+    /**
+     * Get respostas
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRespostas()
+    {
+        return $this->respostas;
+    }
+    
+    
+    
+    public function __toString() {
+        return (string)$this->getId();
+    }
+    
+}
