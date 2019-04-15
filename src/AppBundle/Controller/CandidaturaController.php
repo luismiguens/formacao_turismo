@@ -28,7 +28,7 @@ class CandidaturaController extends Controller {
     
     
         public function indexAction() {
-               
+               $em = $this->getDoctrine()->getManager();
 //        $user = $this->getUser();
 //        $candidaturas = $user->getCandidaturas();
         
