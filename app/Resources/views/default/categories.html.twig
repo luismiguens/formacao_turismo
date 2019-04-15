@@ -26,7 +26,7 @@
                 <div class="tile-image" style="background-image: url({{ vich_uploader_asset(categoria, 'imagemFile') }})"></div>
                 <div>
                   <div class="tile-header on-hover text-right">
-                    <button class="btn btn-sm btn-outline-white">{% trans %}categories_Watch Now{% endtrans %}</button>
+                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-sm btn-outline-white">{% trans %}categories_Watch Now{% endtrans %}</a>
                   </div>
                   <div class="tile-footer">
                     <span class="eyebrow">{{ categoria.tituloPt }}</span>

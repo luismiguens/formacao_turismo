@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
 
 {% block body %}
+    
+    
+    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    
+    
     <h1>Votacao edit</h1>
 
     {{ form_start(edit_form) }}

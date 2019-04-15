@@ -145,6 +145,62 @@
         <source>footer_+372 567 89 89</source>
         <target>__footer_+372 567 89 89</target>
       </trans-unit>
+      <trans-unit id="3vajMEp" resname="header_Categories">
+        <source>header_Categories</source>
+        <target>__header_Categories</target>
+      </trans-unit>
+      <trans-unit id="84TQvGT" resname="header_Schedule">
+        <source>header_Schedule</source>
+        <target>__header_Schedule</target>
+      </trans-unit>
+      <trans-unit id="imBhMrj" resname="header_Gallery">
+        <source>header_Gallery</source>
+        <target>__header_Gallery</target>
+      </trans-unit>
+      <trans-unit id="ArcTFlF" resname="header_Testimonials">
+        <source>header_Testimonials</source>
+        <target>__header_Testimonials</target>
+      </trans-unit>
+      <trans-unit id="1zCyZUi" resname="header_Blog">
+        <source>header_Blog</source>
+        <target>__header_Blog</target>
+      </trans-unit>
+      <trans-unit id="62Z51X2" resname="header_Contact">
+        <source>header_Contact</source>
+        <target>__header_Contact</target>
+      </trans-unit>
+      <trans-unit id="vWS3EYN" resname="menu_Candidaturas">
+        <source>menu_Candidaturas</source>
+        <target>__menu_Candidaturas</target>
+      </trans-unit>
+      <trans-unit id="KVyWX4." resname="menu_Categorias">
+        <source>menu_Categorias</source>
+        <target>__menu_Categorias</target>
+      </trans-unit>
+      <trans-unit id="9LhNdYd" resname="menu_Critérios">
+        <source>menu_Critérios</source>
+        <target>__menu_Critérios</target>
+      </trans-unit>
+      <trans-unit id="L6BX8xT" resname="menu_Parceiros">
+        <source>menu_Parceiros</source>
+        <target>__menu_Parceiros</target>
+      </trans-unit>
+      <trans-unit id="H57EblN" resname="menu_Votações">
+        <source>menu_Votações</source>
+        <target>__menu_Votações</target>
+      </trans-unit>
+      <trans-unit id="jDREPBU" resname="menu_Logout">
+        <source>menu_Logout</source>
+        <target>__menu_Logout</target>
+      </trans-unit>
+      <trans-unit id="XK4zNTl" resname="menu_Sign Up">
+        <source>menu_Sign Up</source>
+        <target>__menu_Sign Up</target>
+      </trans-unit>
+      <trans-unit id="liWqKuD" resname="menu_Sign in">
+        <source>menu_Sign in</source>
+        <target>__menu_Sign in</target>
+      </trans-unit>
       <trans-unit id="nyhYoE5" resname="testimonials_Kind Words">
         <source>testimonials_Kind Words</source>
         <target>__testimonials_Kind Words</target>
