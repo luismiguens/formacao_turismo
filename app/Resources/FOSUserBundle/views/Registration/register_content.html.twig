@@ -2,7 +2,6 @@
 
 {% form_theme form _self %}
 
-{# form_errors.html.twig #}
 {% block form_errors %}
     {% spaceless %}
         {% if errors is defined and errors|length > 0 %}
@@ -19,7 +18,7 @@
 
 
 <div class="viewport">
-    <div class="image image-overlay" style="background-image:url(../../assets/images/demo/image-2.jpg)"></div>
+    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.jpg') }})"></div>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 col-lg-5">

@@ -6,3 +6,11 @@ backend:
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+fos_user_registration_confirmed:
+    path:      /register/confirmed
+    defaults:  { _controller: AppBundle:User:afterLogin}  
+    
+    
+email:
+    path:      /email
+    defaults:  { _controller: AppBundle:Default:email}  

@@ -15,24 +15,17 @@
                 }
             </style>
 
-
-
-
-
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
 
+       
+        
         {% block body %}
 
-
-
         {% endblock %}
-
-
 
         {% block javascripts %}
             <script src="{{ asset('bundles/app/assets/js/vendor.js') }}"></script>

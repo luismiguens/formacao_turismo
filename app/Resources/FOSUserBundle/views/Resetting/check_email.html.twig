@@ -1,4 +1,4 @@
-{% extends "@FOSUser/layout.html.twig" %}
+{% extends "@FOSUser/base_fos_user.html.twig" %}
 
 {% trans_default_domain 'FOSUserBundle' %}
 
@@ -6,87 +6,76 @@
 
 
 
+    {% block form_errors %}
+        {% spaceless %}
+            {% if errors is defined and errors|length > 0 %}
+                <ul>
+                    {% for error in errors %}
+                        <li style="color: red;">{{ error.message }}</li>
+                        {% endfor %}
+                </ul>
+            {% endif %}
+        {% endspaceless %}
+    {% endblock form_errors %}
 
 
 
 
+    <div class="viewport">
+        <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.jpg') }})"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class="col-md-6 col-lg-5">
+                    <div class="accordion-group accordion-group-portal" data-accordion-group>
 
-{# form_errors.html.twig #}
-{% block form_errors %}
-    {% spaceless %}
-        {% if errors is defined and errors|length > 0 %}
-            <ul>
-                {% for error in errors %}
-                    <li style="color: red;">{{ error.message }}</li>
-                    {% endfor %}
-            </ul>
-        {% endif %}
-    {% endspaceless %}
-{% endblock form_errors %}
+                        <div class="accordion open" data-accordion>
+                            <div class="accordion-control" data-control>
+                                <h5>Recuperar Password</h5>
+                            </div>
+                            <div class="accordion-content" data-content>
+                                <div class="accordion-content-wrapper">
+                                    {#                                <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="form registration-form align-center fos_user_resetting_request">
+                                    #}
 
 
 
-<div class="preloader-mask">
-    <div class="preloader"></div>
-</div>
+                                    <p>
+                                        {{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}
+                                    </p>
 
-<section class="section bg-cover bg1_2019 window-height">
 
-    <div class="container light-text align-center">
-        <h3>{#<span class="highlight">Regista-te</span> Um mundo de oportunidades!#}</h3>
-        {#<p class="text-alt">and get your tickets emailed to you within <span class="highlight">24 hours</span></p>#}
-        <br/>
-        <br/>
+
+                                    <div class="form-group">
+                                        <label for="username">{{ 'resetting.request.username'|trans }}</label>
+                                        <input type="text" id="username" class="form-control" name="username" required="required" />
+                                    </div>
+
+                                    {#<input type="submit" value="{{ 'resetting.request.submit'|trans }}" class="btn">#}
+                                    <input type="submit" class="btn btn-primary btn-block" value="Request">
+
+                                    <hr/>
+                                    <fieldset class="col-sm-12">
+                                        Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                                        <br />
+                                    </fieldset>
+
+                                    {#</form>#}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container">
-<form action="#" method="post" class="form registration-form align-center">
-        <h5><span class="highlight">Reset Password</span></h5>
-
-{#        <fieldset class="col-sm-12">
-            {{ form_label(form.email) }}
-            {{ form_errors(form.email) }}
-            {{ form_widget(form.email) }}
-        </fieldset>
-
-        <fieldset class="col-sm-12">
-            {{ form_label(form.username) }}
-            {{ form_errors(form.username) }}
-            {{ form_widget(form.username) }}
-        </fieldset>
-
-        <fieldset class="col-sm-12">
-            {{ form_errors(form.plainPassword) }}
-            {{ form_widget(form.plainPassword) }}
-        </fieldset>#}
-
-<p>
-{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}
-</p>
-
-
-        <hr/>
-        <fieldset class="col-sm-12">
-            Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-            <br />
-        </fieldset>
-
-
-       </form>
-
-
-
-    </div>
-</section>
-
-
-
-
 
 
 
 
 
 {% endblock %}
+
 
 
 

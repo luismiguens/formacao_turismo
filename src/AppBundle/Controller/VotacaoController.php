@@ -19,10 +19,11 @@ class VotacaoController extends Controller {
     public function indexAction() {
         $em = $this->getDoctrine()->getManager();
 
-        $votacaos = $em->getRepository('AppBundle:Votacao')->findAll();
+        //$votacaos = $em->getRepository('AppBundle:Votacao')->findAll();
+        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
 
         return $this->render('votacao/index.html.twig', array(
-                    'votacaos' => $votacaos,
+                    'candidaturas' => $candidaturas,
         ));
     }
 
