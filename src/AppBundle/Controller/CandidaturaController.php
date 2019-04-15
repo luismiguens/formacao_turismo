@@ -29,10 +29,10 @@ class CandidaturaController extends Controller {
     
         public function indexAction() {
                
-        $user = $this->getUser();
-        $candidaturas = $user->getCandidaturas();
+//        $user = $this->getUser();
+//        $candidaturas = $user->getCandidaturas();
         
-        //$candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
 
         return $this->render('candidatura/index.html.twig', array(
                     'candidaturas' => $candidaturas,
