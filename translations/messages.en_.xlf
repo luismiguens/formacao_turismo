@@ -7,215 +7,215 @@
     <body>
       <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>Hospitality Education Awards - the awards that value the talent in Education and Training in Tourism in Portugal. They contribute to the dignification of the professions in the tourism sector and stimulate the improvement of the formative quality, responding to the needs of national companies.</target>
+        <target>__text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
       </trans-unit>
       <trans-unit id="Xk1mZur" resname="schedule_Project">
         <source>schedule_Project</source>
-        <target>Agenda</target>
+        <target>__schedule_Project</target>
       </trans-unit>
       <trans-unit id="pbCx42h" resname="schedule_Timeline">
         <source>schedule_Timeline</source>
-        <target>2019</target>
+        <target>__schedule_Timeline</target>
       </trans-unit>
       <trans-unit id="xxVhvHm" resname="schedule_">
         <source>schedule_</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__schedule_</target>
       </trans-unit>
       <trans-unit id="uHUCNai" resname="schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.">
         <source>schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</source>
-        <target>Get to know the different steps of your application processing</target>
+        <target>__schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</target>
       </trans-unit>
       <trans-unit id="xYRTpv." resname="schedule_Launch">
         <source>schedule_Launch</source>
-        <target>May 1st</target>
+        <target>__schedule_Launch</target>
       </trans-unit>
       <trans-unit id="VZkc4Pm" resname="schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore">
         <source>schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</source>
-        <target>Opening of Applications</target>
+        <target>__schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</target>
       </trans-unit>
       <trans-unit id="6Oc1fF0" resname="schedule_Minimum Viable Product">
         <source>schedule_Minimum Viable Product</source>
-        <target>May 31st</target>
+        <target>__schedule_Minimum Viable Product</target>
       </trans-unit>
       <trans-unit id="3gBpjBL" resname="schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
         <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
-        <target>Closing of Applications</target>
+        <target>__schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</target>
       </trans-unit>
       <trans-unit id="k114jCj" resname="schedule_Paying Clients">
         <source>schedule_Paying Clients</source>
-        <target>July 2nd</target>
+        <target>__schedule_Paying Clients</target>
       </trans-unit>
       <trans-unit id="41lEYXi" resname="schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
         <source>schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
-        <target>Awards Gala</target>
+        <target>__schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</target>
       </trans-unit>
       <trans-unit id="ufSGdDB" resname="gallery_Modern interiors">
         <source>gallery_Modern interiors</source>
-        <target>Gallery</target>
+        <target>__gallery_Modern interiors</target>
       </trans-unit>
       <trans-unit id="r0gumv8" resname="gallery_for a better experience.">
         <source>gallery_for a better experience.</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__gallery_for a better experience.</target>
       </trans-unit>
       <trans-unit id="vNSUddH" resname="gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>The best moments of 2018</target>
+        <target>__gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
       </trans-unit>
       <trans-unit id="2i86a2D" resname="blog_USA, New York, Broadway">
         <source>blog_USA, New York, Broadway</source>
-        <target>Por definir</target>
+        <target>__blog_USA, New York, Broadway</target>
       </trans-unit>
       <trans-unit id="4S74e16" resname="blog_5th Avenue">
         <source>blog_5th Avenue</source>
-        <target>Por definir</target>
+        <target>__blog_5th Avenue</target>
       </trans-unit>
       <trans-unit id="dc.3f4H" resname="blog_example@example.com">
         <source>blog_example@example.com</source>
-        <target>geral@forumturismo21.org</target>
+        <target>__blog_example@example.com</target>
       </trans-unit>
       <trans-unit id="EasLHw4" resname="blog_(123) 456-7890">
         <source>blog_(123) 456-7890</source>
-        <target>+351 211 229 277</target>
+        <target>__blog_(123) 456-7890</target>
       </trans-unit>
       <trans-unit id="b3sOwWV" resname="blog_View Full Map">
         <source>blog_View Full Map</source>
-        <target>View Full Map</target>
+        <target>__blog_View Full Map</target>
       </trans-unit>
       <trans-unit id="qKSBR8D" resname="categories_Categories">
         <source>categories_Categories</source>
-        <target>Categories</target>
+        <target>__categories_Categories</target>
       </trans-unit>
       <trans-unit id="hicoFLd" resname="categories_Watch Now">
         <source>categories_Watch Now</source>
-        <target>Apply</target>
+        <target>__categories_Watch Now</target>
       </trans-unit>
       <trans-unit id="Js5J8na" resname="blog_From the">
         <source>blog_From the</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__blog_From the</target>
       </trans-unit>
       <trans-unit id="GTfzyeL" resname="blog_blog.">
         <source>blog_blog.</source>
-        <target>Press</target>
+        <target>__blog_blog.</target>
       </trans-unit>
       <trans-unit id="CWRQCnt" resname="cover_Design Rethinked">
         <source>cover_Design Rethinked</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__cover_Design Rethinked</target>
       </trans-unit>
       <trans-unit id="CX2WEjf" resname="cover_Visual Design Conference">
         <source>cover_Visual Design Conference</source>
-        <target>Hospitality Education Awards</target>
+        <target>__cover_Visual Design Conference</target>
       </trans-unit>
       <trans-unit id="qixnMvD" resname="cover_Register">
         <source>cover_Register</source>
-        <target>Apply now</target>
+        <target>__cover_Register</target>
       </trans-unit>
       <trans-unit id="RUjxoWJ" resname="cover_Dec 18, 2018">
         <source>cover_Dec 18, 2018</source>
-        <target>July 2nd, 2019</target>
+        <target>__cover_Dec 18, 2018</target>
       </trans-unit>
       <trans-unit id="ASMo3rt" resname="cover_when">
         <source>cover_when</source>
-        <target>when</target>
+        <target>__cover_when</target>
       </trans-unit>
       <trans-unit id=".vev4ZQ" resname="cover_San Francisco">
         <source>cover_San Francisco</source>
-        <target>Lisbon</target>
+        <target>__cover_San Francisco</target>
       </trans-unit>
       <trans-unit id="tO602Z1" resname="cover_where">
         <source>cover_where</source>
-        <target>where</target>
+        <target>__cover_where</target>
       </trans-unit>
       <trans-unit id="Sym89SA" resname="cover_120 Speakers">
         <source>cover_120 Speakers</source>
-        <target>6 Categories</target>
+        <target>__cover_120 Speakers</target>
       </trans-unit>
       <trans-unit id="zFALbI4" resname="cover_who">
         <source>cover_who</source>
-        <target>what</target>
+        <target>__cover_who</target>
       </trans-unit>
       <trans-unit id="8U6jsg_" resname="footer_Designing beautifull interfaces since 2010">
         <source>footer_Designing beautifull interfaces since 2010</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__footer_Designing beautifull interfaces since 2010</target>
       </trans-unit>
       <trans-unit id="XzhYwwt" resname="footer_GO. 2018 All Right Reserved">
         <source>footer_GO. 2018 All Right Reserved</source>
-        <target>RETIRAR TEXTO</target>
+        <target>__footer_GO. 2018 All Right Reserved</target>
       </trans-unit>
       <trans-unit id="87z2qR5" resname="footer_+372 567 89 89">
         <source>footer_+372 567 89 89</source>
-        <target>+351 211 229 277</target>
+        <target>__footer_+372 567 89 89</target>
       </trans-unit>
       <trans-unit id="3vajMEp" resname="header_Categories">
         <source>header_Categories</source>
-        <target>Categories</target>
+        <target>__header_Categories</target>
       </trans-unit>
       <trans-unit id="84TQvGT" resname="header_Schedule">
         <source>header_Schedule</source>
-        <target>Agenda</target>
+        <target>__header_Schedule</target>
       </trans-unit>
       <trans-unit id="imBhMrj" resname="header_Gallery">
         <source>header_Gallery</source>
-        <target>Gallery</target>
+        <target>__header_Gallery</target>
       </trans-unit>
       <trans-unit id="ArcTFlF" resname="header_Testimonials">
         <source>header_Testimonials</source>
-        <target>Testimonials</target>
+        <target>__header_Testimonials</target>
       </trans-unit>
       <trans-unit id="1zCyZUi" resname="header_Blog">
         <source>header_Blog</source>
-        <target>Press</target>
+        <target>__header_Blog</target>
       </trans-unit>
       <trans-unit id="62Z51X2" resname="header_Contact">
         <source>header_Contact</source>
-        <target>Venue</target>
+        <target>__header_Contact</target>
       </trans-unit>
       <trans-unit id="vWS3EYN" resname="menu_Candidaturas">
         <source>menu_Candidaturas</source>
-        <target>Applications</target>
+        <target>__menu_Candidaturas</target>
       </trans-unit>
       <trans-unit id="KVyWX4." resname="menu_Categorias">
         <source>menu_Categorias</source>
-        <target>Categories</target>
+        <target>__menu_Categorias</target>
       </trans-unit>
       <trans-unit id="9LhNdYd" resname="menu_Critérios">
         <source>menu_Critérios</source>
-        <target>Criteria</target>
+        <target>__menu_Critérios</target>
       </trans-unit>
       <trans-unit id="L6BX8xT" resname="menu_Parceiros">
         <source>menu_Parceiros</source>
-        <target>Partners</target>
+        <target>__menu_Parceiros</target>
       </trans-unit>
       <trans-unit id="H57EblN" resname="menu_Votações">
         <source>menu_Votações</source>
-        <target>Voting</target>
+        <target>__menu_Votações</target>
       </trans-unit>
       <trans-unit id="jDREPBU" resname="menu_Logout">
         <source>menu_Logout</source>
-        <target>Logout</target>
+        <target>__menu_Logout</target>
       </trans-unit>
       <trans-unit id="XK4zNTl" resname="menu_Sign Up">
         <source>menu_Sign Up</source>
-        <target>Sign Up</target>
+        <target>__menu_Sign Up</target>
       </trans-unit>
       <trans-unit id="liWqKuD" resname="menu_Sign in">
         <source>menu_Sign in</source>
-        <target>Sign in</target>
+        <target>__menu_Sign in</target>
       </trans-unit>
       <trans-unit id="nyhYoE5" resname="testimonials_Kind Words">
         <source>testimonials_Kind Words</source>
-        <target>Testimonials</target>
+        <target>__testimonials_Kind Words</target>
       </trans-unit>
       <trans-unit id=".OOrH1Z" resname="cta_Get in touch with us.">
         <source>cta_Get in touch with us.</source>
-        <target>Download the rules to find out how you can apply</target>
+        <target>__cta_Get in touch with us.</target>
       </trans-unit>
       <trans-unit id="lOZpElA" resname="cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>All applications submitted must comply with the regulation presented</target>
+        <target>__cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</target>
       </trans-unit>
       <trans-unit id="D475TBD" resname="cta_Write Us">
         <source>cta_Write Us</source>
-        <target>Download</target>
+        <target>__cta_Write Us</target>
       </trans-unit>
     </body>
   </file>
