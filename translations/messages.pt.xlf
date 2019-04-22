@@ -1,222 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="pt" datatype="plaintext" original="file.ext">
-    <header>
-      <tool tool-id="symfony" tool-name="Symfony"/>
-    </header>
-    <body>
-      <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>Hospitality Education Awards - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no sector e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
-      </trans-unit>
-      <trans-unit id="Xk1mZur" resname="schedule_Project">
-        <source>schedule_Project</source>
-        <target>Agenda</target>
-      </trans-unit>
-      <trans-unit id="pbCx42h" resname="schedule_Timeline">
-        <source>schedule_Timeline</source>
-        <target>2019</target>
-      </trans-unit>
-      <trans-unit id="xxVhvHm" resname="schedule_">
-        <source>schedule_</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="uHUCNai" resname="schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.">
-        <source>schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</source>
-        <target>Conheça os diferentes passos do processamento da sua candidatura</target>
-      </trans-unit>
-      <trans-unit id="xYRTpv." resname="schedule_Launch">
-        <source>schedule_Launch</source>
-        <target>1 Maio</target>
-      </trans-unit>
-      <trans-unit id="VZkc4Pm" resname="schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore">
-        <source>schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</source>
-        <target>Abertura de Candidaturas</target>
-      </trans-unit>
-      <trans-unit id="6Oc1fF0" resname="schedule_Minimum Viable Product">
-        <source>schedule_Minimum Viable Product</source>
-        <target>31 Maio</target>
-      </trans-unit>
-      <trans-unit id="3gBpjBL" resname="schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
-        <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
-        <target>Fecho de Candidaturas</target>
-      </trans-unit>
-      <trans-unit id="k114jCj" resname="schedule_Paying Clients">
-        <source>schedule_Paying Clients</source>
-        <target>2 Julho</target>
-      </trans-unit>
-      <trans-unit id="41lEYXi" resname="schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
-        <source>schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
-        <target>Gala de Entrega de Prémios</target>
-      </trans-unit>
-      <trans-unit id="ufSGdDB" resname="gallery_Modern interiors">
-        <source>gallery_Modern interiors</source>
-        <target>Galeria</target>
-      </trans-unit>
-      <trans-unit id="r0gumv8" resname="gallery_for a better experience.">
-        <source>gallery_for a better experience.</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="vNSUddH" resname="gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        <source>gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>Os melhores momentos de 2018</target>
-      </trans-unit>
-      <trans-unit id="2i86a2D" resname="blog_USA, New York, Broadway">
-        <source>blog_USA, New York, Broadway</source>
-        <target>Por definir</target>
-      </trans-unit>
-      <trans-unit id="4S74e16" resname="blog_5th Avenue">
-        <source>blog_5th Avenue</source>
-        <target>Por definir</target>
-      </trans-unit>
-      <trans-unit id="dc.3f4H" resname="blog_example@example.com">
-        <source>blog_example@example.com</source>
-        <target>geral@forumturismo21.org</target>
-      </trans-unit>
-      <trans-unit id="EasLHw4" resname="blog_(123) 456-7890">
-        <source>blog_(123) 456-7890</source>
-        <target>+351 211 229 277</target>
-      </trans-unit>
-      <trans-unit id="b3sOwWV" resname="blog_View Full Map">
-        <source>blog_View Full Map</source>
-        <target>Ver Mapa</target>
-      </trans-unit>
-      <trans-unit id="qKSBR8D" resname="categories_Categories">
-        <source>categories_Categories</source>
-        <target>Categorias</target>
-      </trans-unit>
-      <trans-unit id="hicoFLd" resname="categories_Watch Now">
-        <source>categories_Watch Now</source>
-        <target>Candidatar</target>
-      </trans-unit>
-      <trans-unit id="Js5J8na" resname="blog_From the">
-        <source>blog_From the</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="GTfzyeL" resname="blog_blog.">
-        <source>blog_blog.</source>
-        <target>Imprensa</target>
-      </trans-unit>
-      <trans-unit id="CWRQCnt" resname="cover_Design Rethinked">
-        <source>cover_Design Rethinked</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="CX2WEjf" resname="cover_Visual Design Conference">
-        <source>cover_Visual Design Conference</source>
-        <target>Hospitality Education Awards</target>
-      </trans-unit>
-      <trans-unit id="qixnMvD" resname="cover_Register">
-        <source>cover_Register</source>
-        <target>Candidate-se Já</target>
-      </trans-unit>
-      <trans-unit id="RUjxoWJ" resname="cover_Dec 18, 2018">
-        <source>cover_Dec 18, 2018</source>
-        <target>2 de Julho, 2019</target>
-      </trans-unit>
-      <trans-unit id="ASMo3rt" resname="cover_when">
-        <source>cover_when</source>
-        <target>quando</target>
-      </trans-unit>
-      <trans-unit id=".vev4ZQ" resname="cover_San Francisco">
-        <source>cover_San Francisco</source>
-        <target>Lisboa</target>
-      </trans-unit>
-      <trans-unit id="tO602Z1" resname="cover_where">
-        <source>cover_where</source>
-        <target>onde</target>
-      </trans-unit>
-      <trans-unit id="Sym89SA" resname="cover_120 Speakers">
-        <source>cover_120 Speakers</source>
-        <target>6 Categorias</target>
-      </trans-unit>
-      <trans-unit id="zFALbI4" resname="cover_who">
-        <source>cover_who</source>
-        <target>o quê</target>
-      </trans-unit>
-      <trans-unit id="8U6jsg_" resname="footer_Designing beautifull interfaces since 2010">
-        <source>footer_Designing beautifull interfaces since 2010</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="XzhYwwt" resname="footer_GO. 2018 All Right Reserved">
-        <source>footer_GO. 2018 All Right Reserved</source>
-        <target>RETIRAR TEXTO</target>
-      </trans-unit>
-      <trans-unit id="87z2qR5" resname="footer_+372 567 89 89">
-        <source>footer_+372 567 89 89</source>
-        <target>+351 211 229 277</target>
-      </trans-unit>
-      <trans-unit id="3vajMEp" resname="header_Categories">
-        <source>header_Categories</source>
-        <target>Categorias</target>
-      </trans-unit>
-      <trans-unit id="84TQvGT" resname="header_Schedule">
-        <source>header_Schedule</source>
-        <target>Agenda</target>
-      </trans-unit>
-      <trans-unit id="imBhMrj" resname="header_Gallery">
-        <source>header_Gallery</source>
-        <target>Galeria</target>
-      </trans-unit>
-      <trans-unit id="ArcTFlF" resname="header_Testimonials">
-        <source>header_Testimonials</source>
-        <target>Testemunhos</target>
-      </trans-unit>
-      <trans-unit id="1zCyZUi" resname="header_Blog">
-        <source>header_Blog</source>
-        <target>Imprensa</target>
-      </trans-unit>
-      <trans-unit id="62Z51X2" resname="header_Contact">
-        <source>header_Contact</source>
-        <target>Venue</target>
-      </trans-unit>
-      <trans-unit id="vWS3EYN" resname="menu_Candidaturas">
-        <source>menu_Candidaturas</source>
-        <target>Candidaturas</target>
-      </trans-unit>
-      <trans-unit id="KVyWX4." resname="menu_Categorias">
-        <source>menu_Categorias</source>
-        <target>Categorias</target>
-      </trans-unit>
-      <trans-unit id="9LhNdYd" resname="menu_CritÃ©rios">
-        <source>menu_CritÃ©rios</source>
-        <target>Critérios</target>
-      </trans-unit>
-      <trans-unit id="L6BX8xT" resname="menu_Parceiros">
-        <source>menu_Parceiros</source>
-        <target>Parceiros</target>
-      </trans-unit>
-      <trans-unit id="H57EblN" resname="menu_VotaÃ§Ãµes">
-        <source>menu_VotaÃ§Ãµes</source>
-        <target>Votações</target>
-      </trans-unit>
-      <trans-unit id="jDREPBU" resname="menu_Logout">
-        <source>menu_Logout</source>
-        <target>Logout</target>
-      </trans-unit>
-      <trans-unit id="XK4zNTl" resname="menu_Sign Up">
-        <source>menu_Sign Up</source>
-        <target>Sign Up</target>
-      </trans-unit>
-      <trans-unit id="liWqKuD" resname="menu_Sign in">
-        <source>menu_Sign in</source>
-        <target>Sign in</target>
-      </trans-unit>
-      <trans-unit id="nyhYoE5" resname="testimonials_Kind Words">
-        <source>testimonials_Kind Words</source>
-        <target>Testemunhos</target>
-      </trans-unit>
-      <trans-unit id=".OOrH1Z" resname="cta_Get in touch with us.">
-        <source>cta_Get in touch with us.</source>
-        <target>Faça o Download do Regulamento</target>
-      </trans-unit>
-      <trans-unit id="lOZpElA" resname="cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-        <source>cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>Todas as candidaturas submetidas devem cumprir o regulamento apresentado.</target>
-      </trans-unit>
-      <trans-unit id="D475TBD" resname="cta_Write Us">
-        <source>cta_Write Us</source>
-        <target>Download</target>
-      </trans-unit>
-    </body>
-  </file>
+    <file source-language="en" target-language="pt" datatype="plaintext" original="file.ext">
+        <header>
+            <tool tool-id="symfony" tool-name="Symfony"/>
+        </header>
+        <body>
+            <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+                <target>Hospitality Education Awards - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no sector e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
+            </trans-unit>
+            <trans-unit id="Xk1mZur" resname="schedule_Project">
+                <source>schedule_Project</source>
+                <target>Agenda</target>
+            </trans-unit>
+            <trans-unit id="pbCx42h" resname="schedule_Timeline">
+                <source>schedule_Timeline</source>
+                <target>2019</target>
+            </trans-unit>
+            <trans-unit id="xxVhvHm" resname="schedule_">
+                <source>schedule_</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="uHUCNai" resname="schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.">
+                <source>schedule_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis eligendi doloremque.</source>
+                <target>Conheça os diferentes passos do processamento da sua candidatura</target>
+            </trans-unit>
+            <trans-unit id="xYRTpv." resname="schedule_Launch">
+                <source>schedule_Launch</source>
+                <target>1 Maio</target>
+            </trans-unit>
+            <trans-unit id="VZkc4Pm" resname="schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore">
+                <source>schedule_Launch Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore</source>
+                <target>Abertura de Candidaturas</target>
+            </trans-unit>
+            <trans-unit id="6Oc1fF0" resname="schedule_Minimum Viable Product">
+                <source>schedule_Minimum Viable Product</source>
+                <target>31 Maio</target>
+            </trans-unit>
+            <trans-unit id="3gBpjBL" resname="schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
+                <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
+                <target>Fecho de Candidaturas</target>
+            </trans-unit>
+            <trans-unit id="k114jCj" resname="schedule_Paying Clients">
+                <source>schedule_Paying Clients</source>
+                <target>2 Julho</target>
+            </trans-unit>
+            <trans-unit id="41lEYXi" resname="schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!">
+                <source>schedule_Paying ClientsLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
+                <target>Gala de Entrega de Prémios</target>
+            </trans-unit>
+            <trans-unit id="ufSGdDB" resname="gallery_Modern interiors">
+                <source>gallery_Modern interiors</source>
+                <target>Galeria</target>
+            </trans-unit>
+            <trans-unit id="r0gumv8" resname="gallery_for a better experience.">
+                <source>gallery_for a better experience.</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="vNSUddH" resname="gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                <source>gallery_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+                <target>Os melhores momentos de 2018</target>
+            </trans-unit>
+            <trans-unit id="2i86a2D" resname="blog_USA, New York, Broadway">
+                <source>blog_USA, New York, Broadway</source>
+                <target>Por definir</target>
+            </trans-unit>
+            <trans-unit id="4S74e16" resname="blog_5th Avenue">
+                <source>blog_5th Avenue</source>
+                <target>Por definir</target>
+            </trans-unit>
+            <trans-unit id="dc.3f4H" resname="blog_example@example.com">
+                <source>blog_example@example.com</source>
+                <target>geral@forumturismo21.org</target>
+            </trans-unit>
+            <trans-unit id="EasLHw4" resname="blog_(123) 456-7890">
+                <source>blog_(123) 456-7890</source>
+                <target>+351 211 229 277</target>
+            </trans-unit>
+            <trans-unit id="b3sOwWV" resname="blog_View Full Map">
+                <source>blog_View Full Map</source>
+                <target>Ver Mapa</target>
+            </trans-unit>
+            <trans-unit id="qKSBR8D" resname="categories_Categories">
+                <source>categories_Categories</source>
+                <target>Categorias</target>
+            </trans-unit>
+            <trans-unit id="hicoFLd" resname="categories_Watch Now">
+                <source>categories_Watch Now</source>
+                <target>Candidatar</target>
+            </trans-unit>
+            <trans-unit id="Js5J8na" resname="blog_From the">
+                <source>blog_From the</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="GTfzyeL" resname="blog_blog.">
+                <source>blog_blog.</source>
+                <target>Imprensa</target>
+            </trans-unit>
+            <trans-unit id="CWRQCnt" resname="cover_Design Rethinked">
+                <source>cover_Design Rethinked</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="CX2WEjf" resname="cover_Visual Design Conference">
+                <source>cover_Visual Design Conference</source>
+                <target>Hospitality Education Awards</target>
+            </trans-unit>
+            <trans-unit id="qixnMvD" resname="cover_Register">
+                <source>cover_Register</source>
+                <target>Candidate-se Já</target>
+            </trans-unit>
+            <trans-unit id="RUjxoWJ" resname="cover_Dec 18, 2018">
+                <source>cover_Dec 18, 2018</source>
+                <target>2 de Julho, 2019</target>
+            </trans-unit>
+            <trans-unit id="ASMo3rt" resname="cover_when">
+                <source>cover_when</source>
+                <target>quando</target>
+            </trans-unit>
+            <trans-unit id=".vev4ZQ" resname="cover_San Francisco">
+                <source>cover_San Francisco</source>
+                <target>Lisboa</target>
+            </trans-unit>
+            <trans-unit id="tO602Z1" resname="cover_where">
+                <source>cover_where</source>
+                <target>onde</target>
+            </trans-unit>
+            <trans-unit id="Sym89SA" resname="cover_120 Speakers">
+                <source>cover_120 Speakers</source>
+                <target>6 Categorias</target>
+            </trans-unit>
+            <trans-unit id="zFALbI4" resname="cover_who">
+                <source>cover_who</source>
+                <target>o quê</target>
+            </trans-unit>
+            <trans-unit id="8U6jsg_" resname="footer_Designing beautifull interfaces since 2010">
+                <source>footer_Designing beautifull interfaces since 2010</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="XzhYwwt" resname="footer_GO. 2018 All Right Reserved">
+                <source>footer_GO. 2018 All Right Reserved</source>
+                <target>RETIRAR TEXTO</target>
+            </trans-unit>
+            <trans-unit id="87z2qR5" resname="footer_+372 567 89 89">
+                <source>footer_+372 567 89 89</source>
+                <target>+351 211 229 277</target>
+            </trans-unit>
+            <trans-unit id="3vajMEp" resname="header_Categories">
+                <source>header_Categories</source>
+                <target>Categorias</target>
+            </trans-unit>
+            <trans-unit id="84TQvGT" resname="header_Schedule">
+                <source>header_Schedule</source>
+                <target>Agenda</target>
+            </trans-unit>
+            <trans-unit id="imBhMrj" resname="header_Gallery">
+                <source>header_Gallery</source>
+                <target>Galeria</target>
+            </trans-unit>
+            <trans-unit id="ArcTFlF" resname="header_Testimonials">
+                <source>header_Testimonials</source>
+                <target>Testemunhos</target>
+            </trans-unit>
+            <trans-unit id="1zCyZUi" resname="header_Blog">
+                <source>header_Blog</source>
+                <target>Imprensa</target>
+            </trans-unit>
+            <trans-unit id="62Z51X2" resname="header_Contact">
+                <source>header_Contact</source>
+                <target>Venue</target>
+            </trans-unit>
+            <trans-unit id="vWS3EYN" resname="menu_Candidaturas">
+                <source>menu_Candidaturas</source>
+                <target>Candidaturas</target>
+            </trans-unit>
+            <trans-unit id="KVyWX4." resname="menu_Categorias">
+                <source>menu_Categorias</source>
+                <target>Categorias</target>
+            </trans-unit>
+            <trans-unit id="9LhNdYd" resname="menu_CritÃ©rios">
+                <source>menu_CritÃ©rios</source>
+                <target>Critérios</target>
+            </trans-unit>
+            <trans-unit id="L6BX8xT" resname="menu_Parceiros">
+                <source>menu_Parceiros</source>
+                <target>Parceiros</target>
+            </trans-unit>
+            <trans-unit id="H57EblN" resname="menu_VotaÃ§Ãµes">
+                <source>menu_VotaÃ§Ãµes</source>
+                <target>Votações</target>
+            </trans-unit>
+            <trans-unit id="jDREPBU" resname="menu_Logout">
+                <source>menu_Logout</source>
+                <target>Logout</target>
+            </trans-unit>
+            <trans-unit id="XK4zNTl" resname="menu_Sign Up">
+                <source>menu_Sign Up</source>
+                <target>Sign Up</target>
+            </trans-unit>
+            <trans-unit id="liWqKuD" resname="menu_Sign in">
+                <source>menu_Sign in</source>
+                <target>Sign in</target>
+            </trans-unit>
+            <trans-unit id="nyhYoE5" resname="testimonials_Kind Words">
+                <source>testimonials_Kind Words</source>
+                <target>Testemunhos</target>
+            </trans-unit>
+            <trans-unit id=".OOrH1Z" resname="cta_Get in touch with us.">
+                <source>cta_Get in touch with us.</source>
+                <target>Faça o Download do Regulamento</target>
+            </trans-unit>
+            <trans-unit id="lOZpElA" resname="cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                <source>cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
+                <target>Todas as candidaturas submetidas devem cumprir o regulamento apresentado.</target>
+            </trans-unit>
+            <trans-unit id="D475TBD" resname="cta_Write Us">
+                <source>cta_Write Us</source>
+                <target>Download</target>
+            </trans-unit>
+      
+      
+            <trans-unit id="testimonials_luis_lavrador" resname="testimonials_luis_lavrador">
+                <source>testimonials_luis_lavrador</source>
+                <target>Premiar é em simultâneo reconhecer valor a quem se supera, é convocar para novos desafios e é apelar para novas responsabilidades. 
+                    O prémio que recebi foi de novo um ponto de partida, para uma nova viagem, cujo destino desconheço, mas que para a realizar com sucesso tive de me reinventar.
+                    Reinvenção precisa para dar resposta às grandes questões que o ensino da gastronomia coloca hoje às sociedades, em que o «deixar de ser» e o «ser» acontecem ao mesmo tempo.
+                </target>
+            </trans-unit>
+      
+      
+            <trans-unit id="testimonials_patricia_vieira" resname="testimonials_patricia_vieira">
+                <source>testimonials_patricia_vieira</source>
+                <target>Após um ano da atribuição do Prémio Inovação e Desenvolvimento, a ESHTE foi convidada pelo Turismo de Portugal a desenvolver a app para a Futurália 2019. 
+                    Deste modo tivemos a oportunidade de demonstrarmos aos estudantes, futuros profissionais da área do Turismo, como a tecnologia serve a aprendizagem e a formação académica e profissional.
+                    Do Sonho à realidade... nasce o Projecto Gamification e Formação Hoteleira, made by Patrícia Vieira
+                </target>
+            </trans-unit>
+      
+            <trans-unit id="testimonials_luis_santos" resname="testimonials_luis_santos">
+                <source>testimonials_luis_santos</source>
+                <target>Ser candidato a um prémio com a chancela de entidades como o Fórum Turismo, o Turismo de Portugal, a ANESPO, a RIPTUR, a Publituris e a Ambitur constitui, por si só, uma grande honra. 
+                    Ser distinguido na categoria “Melhor Carreira de Docente no Ensino Superior” da 1.ª edição dos Hospitality Education Awards envolve sentimentos de gratidão e de enorme satisfação. 
+                    Receber o prémio significou um tributo aos meus alunos que representam duas décadas de gerações de gestores turísticos e hoteleiros, conferindo acréscimo de responsabilidade e empenho numa profissão tão exigente quanto apaixonante como é a profissão de Professor.
+                </target>
+            </trans-unit>
+      
+            <trans-unit id="testimonials_daniel_pinto" resname="testimonials_daniel_pinto">
+                <source>testimonials_daniel_pinto</source>
+                <target>Inovação, Criatividade e Trabalho de Equipa!! Foram estas dimensões que procurámos evidenciar no projeto “Cozinha de Autor”, realizado na Escola de Hotelaria e Turismo do Oeste, que venceu o prémio na categoria de Melhor Projeto Educacional dos Hospitality Education Awards 2018. 
+                    Muito obrigado a toda a equipa da Escola pelo trabalho desenvolvido!! Muitos parabéns ao Fórum Turismo pela organização de excelência dos seus eventos e pela oportunidade e inteligência das suas ações !!
+                </target>
+            </trans-unit>
+      
+        </body>
+    </file>
 </xliff>
