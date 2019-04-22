@@ -250,6 +250,70 @@
                     Muito obrigado a toda a equipa da Escola pelo trabalho desenvolvido!! Muitos parabéns ao Fórum Turismo pela organização de excelência dos seus eventos e pela oportunidade e inteligência das suas ações !!
                 </target>
             </trans-unit>
+            
+            
+            
+            
+              <trans-unit id="footer_premios" resname="footer_premios">
+                <source>footer_premios</source>
+                <target>Prémios</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_regulamento" resname="footer_regulamento">
+                <source>footer_regulamento</source>
+                <target>Regulamento</target>
+            </trans-unit>
+            
+            <trans-unit id="footer_parceiros" resname="footer_parceiros">
+                <source>footer_parceiros</source>
+                <target>Parceiros</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_agenda" resname="footer_agenda">
+                <source>footer_agenda</source>
+                <target>Agenda</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_testemunhos" resname="footer_testemunhos">
+                <source>footer_testemunhos</source>
+                <target>Testemunhos</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_jantar" resname="footer_jantar">
+                <source>footer_jantar</source>
+                <target>Jantar</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_homepage" resname="footer_homepage">
+                <source>footer_homepage</source>
+                <target>Homepage</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="footer_sobre" resname="footer_sobre">
+                <source>footer_sobre</source>
+                <target>Sobre</target>
+            </trans-unit>
+            
+               
+            <trans-unit id="footer_galeria" resname="footer_galeria">
+                <source>footer_galeria</source>
+                <target>Galeria</target>
+            </trans-unit>
+            
+               
+            <trans-unit id="footer_contactos" resname="footer_contactos">
+                <source>footer_contactos</source>
+                <target>Contactos</target>
+            </trans-unit>
+            
+            
+            
       
         </body>
     </file>
