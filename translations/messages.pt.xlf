@@ -7,7 +7,7 @@
         <body>
             <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
                 <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-                <target>Hospitality Education Awards - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no sector e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
+                <target><![CDATA[<b>Hospitality Education Awards</b>]]> - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no sector e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
             </trans-unit>
             <trans-unit id="Xk1mZur" resname="schedule_Project">
                 <source>schedule_Project</source>
@@ -41,6 +41,17 @@
                 <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
                 <target>Fecho de Candidaturas</target>
             </trans-unit>
+            
+            <trans-unit id="schedule_anuncio" resname="schedule_anuncio">
+                <source>schedule_anuncio</source>
+                <target>20 Junho</target>
+            </trans-unit>
+            <trans-unit id="schedule_anuncio_detalhes" resname="schedule_anuncio_detalhes">
+                <source>schedule_anuncio_detalhes</source>
+                <target>Anúncio de Finalistas</target>
+            </trans-unit>
+            
+            
             <trans-unit id="k114jCj" resname="schedule_Paying Clients">
                 <source>schedule_Paying Clients</source>
                 <target>2 Julho</target>
@@ -107,7 +118,7 @@
             </trans-unit>
             <trans-unit id="qixnMvD" resname="cover_Register">
                 <source>cover_Register</source>
-                <target>Candidate-se Já</target>
+                <target>Candidate-se já</target>
             </trans-unit>
             <trans-unit id="RUjxoWJ" resname="cover_Dec 18, 2018">
                 <source>cover_Dec 18, 2018</source>
@@ -285,7 +296,7 @@
             
             <trans-unit id="footer_jantar" resname="footer_jantar">
                 <source>footer_jantar</source>
-                <target>Jantar</target>
+                <target>Venue</target>
             </trans-unit>
             
             
@@ -311,6 +322,15 @@
                 <source>footer_contactos</source>
                 <target>Contactos</target>
             </trans-unit>
+            
+            
+            
+            
+             <trans-unit id="partners_title" resname="partners_title">
+                <source>partners_title</source>
+                <target>Parceiros</target>
+            </trans-unit>
+            
             
             
             

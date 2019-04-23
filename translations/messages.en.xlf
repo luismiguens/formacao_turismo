@@ -7,7 +7,7 @@
         <body>
             <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
                 <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-                <target>Hospitality Education Awards - the awards that value the talent in Education and Training in Tourism in Portugal. They contribute to the dignification of the professions in the tourism sector and stimulate the improvement of the formative quality, responding to the needs of national companies.</target>
+                <target><![CDATA[<b>Hospitality Education Awards</b>]]> - the awards that value the talent in Education and Training in Tourism in Portugal. They contribute to the dignification of the professions in the tourism sector and stimulate the improvement of the formative quality, responding to the needs of national companies.</target>
             </trans-unit>
             <trans-unit id="Xk1mZur" resname="schedule_Project">
                 <source>schedule_Project</source>
@@ -41,6 +41,18 @@
                 <source>schedule_MinimumLorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</source>
                 <target>Closing of Applications</target>
             </trans-unit>
+            
+            <trans-unit id="schedule_anuncio" resname="schedule_anuncio">
+                <source>schedule_anuncio</source>
+                <target>June 20th</target>
+            </trans-unit>
+            <trans-unit id="schedule_anuncio_detalhes" resname="schedule_anuncio_detalhes">
+                <source>schedule_anuncio_detalhes</source>
+                <target>Announcement of finalists</target>
+            </trans-unit>
+            
+            
+            
             <trans-unit id="k114jCj" resname="schedule_Paying Clients">
                 <source>schedule_Paying Clients</source>
                 <target>July 2nd</target>
@@ -288,7 +300,7 @@
             
             <trans-unit id="footer_jantar" resname="footer_jantar">
                 <source>footer_jantar</source>
-                <target>Dinner</target>
+                <target>Venue</target>
             </trans-unit>
             
             
@@ -316,7 +328,10 @@
             </trans-unit>
             
       
-      
+      <trans-unit id="partners_title" resname="partners_title">
+                <source>partners_title</source>
+                <target>Partners</target>
+            </trans-unit>
       
       
       

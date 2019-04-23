@@ -89,7 +89,8 @@ class CandidaturaController extends Controller {
         return $this->render('candidatura/new.html.twig', array(
                     'candidatura' => $candidatura,
                     'form' => $form->createView(),
-            'criterios' => $criterios
+            'criterios' => $criterios,
+                'categoria' => $categoria
         ));
     }
 

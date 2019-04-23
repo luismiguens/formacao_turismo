@@ -57,6 +57,20 @@
                 </ul>
 
 
+                         <ul class="navbar-nav align-items-center mr-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ app.request.locale|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ path('homepage', {'_locale':'pt' }) }}">PT</a>
+                                <a class="dropdown-item" href="{{ path('homepage', {'_locale':'en' }) }}">EN</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                             &nbsp;&nbsp;&nbsp;  
+                        
                 {% if app.user %}
                     {#user is logged in#}
                     <ul class="navbar-nav align-items-center mr-0">
