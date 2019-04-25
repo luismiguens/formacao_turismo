@@ -19,10 +19,25 @@ class VotacaoController extends Controller {
     public function indexAction() {
         $em = $this->getDoctrine()->getManager();
 
-        //$votacaos = $em->getRepository('AppBundle:Votacao')->findAll();
+        $user = $this->getUser();
+        
+//VOTACOES JÁ EXISTENTES
+//$votacaos = $em->getRepository('AppBundle:Votacao')->findAll();
+        $votacoes = $user->getVotacoes();
+        
+        //CANDIDATURAS SEM VOTACAO
+        
         $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        
+        
+        dump(count($votacoes));
+        dump(count($candidaturas));
+        
+        
+        //dump($candidaturas);
 
         return $this->render('votacao/index.html.twig', array(
+            'votacoes' => $votacoes,
                     'candidaturas' => $candidaturas,
         ));
     }
@@ -32,21 +47,22 @@ class VotacaoController extends Controller {
      *
      */
     public function newAction(Request $request, \AppBundle\Entity\Candidatura $candidatura) {
+        
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        
+        
         $votacao = new Votacao();
         $votacao->setCandidatura($candidatura);
+        $votacao->setFosUser($user);
 
         $respostas = $candidatura->getRespostas();
-        
-       //dump($respostas[0]);
 
         foreach ($respostas as $key => $resposta) {
             $voto = new \AppBundle\Entity\Voto();
             $voto->setResposta($resposta);
             $votacao->getVotos()->add($voto);
         }
-
-
-
 
         $form = $this->createForm('AppBundle\Form\VotacaoType', $votacao);
         $form->handleRequest($request);
@@ -56,14 +72,17 @@ class VotacaoController extends Controller {
             
             foreach ($votacao->getVotos() as $voto) {
                 $voto->setVotacao($votacao);
+                $em->persist($votacao);
             }
             
             
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($votacao);
             $em->flush();
+            
+              $this->get('session')->getFlashBag()->add(
+                    'notice', 'Votação criada com sucesso!'
+            );
 
-            return $this->redirectToRoute('admin_votacao_show', array('id' => $votacao->getId()));
+            return $this->redirectToRoute('admin_votacao_edit', array('id' => $votacao->getId()));
         }
 
         return $this->render('votacao/new.html.twig', array(
@@ -96,6 +115,10 @@ class VotacaoController extends Controller {
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            
+            $this->get('session')->getFlashBag()->add(
+                    'notice', 'Votação actualizada com sucesso!'
+            );
 
             return $this->redirectToRoute('admin_votacao_edit', array('id' => $votacao->getId()));
         }

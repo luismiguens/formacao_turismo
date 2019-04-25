@@ -4,8 +4,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="{{ path('homepage') }}">
-                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.svg') }}" alt="Logo">
-                <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/logo-dark.svg') }}" alt="Logo">
+                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.png') }}" alt="Logo">
+                <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/logo-dark.png') }}" alt="Logo">
 
 {#                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/hea-branco.svg') }}" alt="Logo">
                 <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/hea-preto.svg') }}" alt="Logo">#}
@@ -31,17 +31,21 @@
                         </a>
                     </li>
 
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('homepage') }}#testimonials" role="button">
+                            {% trans %}header_Testimonials{% endtrans %}
+                        </a>
+                    </li>
+                    
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('homepage') }}#gallery" role="button">
                             {% trans %}header_Gallery{% endtrans %}
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('homepage') }}#testimonials" role="button">
-                            {% trans %}header_Testimonials{% endtrans %}
-                        </a>
-                    </li>
+                    
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('homepage') }}#blog" role="button">
@@ -80,11 +84,18 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ path('admin_candidatura_index') }}">{% trans %}menu_Candidaturas{% endtrans %}</a>
+                                
+                                {% if is_granted('ROLE_ADMIN') %} 
                                 <a class="dropdown-item" href="{{ path('admin_categoria_index') }}">{% trans %}menu_Categorias{% endtrans %}</a>
                                 <a class="dropdown-item" href="{{ path('admin_criterio_index') }}">{% trans %}menu_Critérios{% endtrans %}</a>
                                 <a class="dropdown-item" href="{{ path('admin_parceiro_index') }}">{% trans %}menu_Parceiros{% endtrans %}</a>
+                                {% endif %}
+                                
+                                
+                                {% if is_granted('ROLE_JURI') %} 
                                 <a class="dropdown-item" href="{{ path('admin_votacao_index') }}">{% trans %}menu_Votações{% endtrans %}</a>
-
+                                {% endif %}
+                                
 {#                              <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../app/profile.html">Public Profile</a>
                                 <a class="dropdown-item" href="../app/settings.html">Settings</a>#}

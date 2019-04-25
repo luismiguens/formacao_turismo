@@ -28,6 +28,11 @@ class User extends BaseUser
      */
     protected $candidaturas;
     
+     /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     */
+    protected $votacoes;
+    
 
 
 
@@ -79,5 +84,49 @@ class User extends BaseUser
     
     
 
+     /**
+     * Add votacao
+     *
+     * @param \AppBundle\Entity\Votacao $votacao
+     *
+     * @return Votacao
+     */
+    public function addVotacao(\AppBundle\Entity\Votacao $votacao)
+    {
+       
+        
+        $votacao->setVotacao($this);
+         $this->votacoes->add($votacao);
+        
+        //$this->votacaos[] = $votacao;
+
+        return $this;
+    }
+
+    /**
+     * Remove votacao
+     *
+     * @param \AppBundle\Entity\Votacao $votacao
+     */
+    public function removeVotacao(\AppBundle\Entity\Votacao $votacao)
+    {
+        $this->votacoes->removeElement($votacao);
+    }
+
+    /**
+     * Get votacoes
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getVotacoes()
+    {
+        return $this->votacoes;
+    }
+    
+    
+    
+    
+    
+    
     
 }

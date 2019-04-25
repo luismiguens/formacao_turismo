@@ -16,5 +16,12 @@
             </cascade>
         </one-to-many>
         
+        
+        <one-to-many field="votacoes" target-entity="Votacao" mapped-by="fosUser" >
+            <cascade>
+                <cascade-persist/>
+            </cascade>
+        </one-to-many>
+        
     </entity>
 </doctrine-mapping>

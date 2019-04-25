@@ -25,25 +25,22 @@ class CandidaturaController extends Controller {
 //                    'candidaturas' => $candidaturas,
 //        ));
 //    }
-    
-    
-        public function indexAction() {
-               $em = $this->getDoctrine()->getManager();
-//        $user = $this->getUser();
-//        $candidaturas = $user->getCandidaturas();
+
+
+    public function indexAction() {
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        $candidaturas = $user->getCandidaturas();
         
-        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        $categorias = $em->getRepository('AppBundle:Categoria')->findAll();
+
+        //$candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
 
         return $this->render('candidatura/index.html.twig', array(
                     'candidaturas' => $candidaturas,
+            'categorias' => $categorias
         ));
     }
-    
-    
-    
-    
-    
-    
 
     /**
      * Creates a new candidatura entity.
@@ -51,18 +48,21 @@ class CandidaturaController extends Controller {
      */
     public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
         $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        
         $candidatura = new Candidatura();
         $candidatura->setCategoria($categoria);
-        
+        $candidatura->setFosUser($user);
+
         $criterios = $categoria->getCriterios();
-       
-            //$criterios = $em->getRepository('AppBundle:Criterio')->findBy(array('categoria' => $categoria->getId()));
-            foreach ($criterios as $key => $criterio) {
-                $resposta = new \AppBundle\Entity\Resposta();
-                $resposta->setCriterio($criterio);
-                $candidatura->getRespostas()->add($resposta);
-            }
-       
+
+        //$criterios = $em->getRepository('AppBundle:Criterio')->findBy(array('categoria' => $categoria->getId()));
+        foreach ($criterios as $key => $criterio) {
+            $resposta = new \AppBundle\Entity\Resposta();
+            $resposta->setCriterio($criterio);
+            $candidatura->getRespostas()->add($resposta);
+        }
+
         $form = $this->createForm('AppBundle\Form\CandidaturaType', $candidatura);
         $form->handleRequest($request);
 
@@ -75,13 +75,28 @@ class CandidaturaController extends Controller {
             $em = $this->getDoctrine()->getManager();
             $em->persist($candidatura);
             $em->flush();
-            
-            
-                $this->get('session')->getFlashBag()->add(
+
+
+            $this->get('session')->getFlashBag()->add(
                     'notice', 'Candidatura criada com sucesso!'
             );
 
- 
+
+            $body = "<p>Olá ".$candidatura->getPromotorNome().", recebemos a sua candidatura com sucesso. Obrigado por nos ajudar a valorizar o seu trabalho.</p>
+         <p>Vamos agora avaliar se a sua candidatura cumpre todos os requisitos do regulamento e iremos notificá-lo/a caso seja necessário fazer alguma correção.</p>
+         <p>Caso a sua candidatura cumpra todos os requisitos necessários, entraremos em contato assim que forem selecionados os três finalistas da sua categoria a partir do dia 20 de Junho.</p>
+         <p>Fique atento e boa sorte!</p>";
+
+            $message = (new \Swift_Message('Hea.pt - Candidatura numero ' . $candidatura->getId() . ' criada com sucesso! '))
+                    ->setFrom('hea.no.reply@gmail.com', "Hea.pt")
+                    //->setTo('luis.t.miguens@gmail.com')
+                    ->setTo($candidatura->getPromotorEmail())
+                    ->setCc(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org'])
+                    ->setBody($body)
+                    ->setContentType("text/html");
+
+
+            $this->get('mailer')->send($message);
 
             return $this->redirectToRoute('admin_candidatura_edit', array('id' => $candidatura->getId()));
         }
@@ -89,8 +104,8 @@ class CandidaturaController extends Controller {
         return $this->render('candidatura/new.html.twig', array(
                     'candidatura' => $candidatura,
                     'form' => $form->createView(),
-            'criterios' => $criterios,
-                'categoria' => $categoria
+                    'criterios' => $criterios,
+                    'categoria' => $categoria
         ));
     }
 
@@ -112,22 +127,21 @@ class CandidaturaController extends Controller {
      *
      */
     public function editAction(Request $request, Candidatura $candidatura) {
-        
+
         //$respostas = $candidatura->getRespostas();
-        
         //dump($respostas);
-        
-        
+
+
         $criterios = $candidatura->getCategoria()->getCriterios();
-        
+
         $deleteForm = $this->createDeleteForm($candidatura);
         $editForm = $this->createForm('AppBundle\Form\CandidaturaType', $candidatura);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-            
-              $this->get('session')->getFlashBag()->add(
+
+            $this->get('session')->getFlashBag()->add(
                     'notice', 'Candidatura actualizada com sucesso!'
             );
 
@@ -138,7 +152,7 @@ class CandidaturaController extends Controller {
                     'candidatura' => $candidatura,
                     'edit_form' => $editForm->createView(),
                     'delete_form' => $deleteForm->createView(),
-            'criterios' => $criterios
+                    'criterios' => $criterios
         ));
     }
 
@@ -154,11 +168,10 @@ class CandidaturaController extends Controller {
             $em = $this->getDoctrine()->getManager();
             $em->remove($candidatura);
             $em->flush();
-            
-             $this->get('session')->getFlashBag()->add(
+
+            $this->get('session')->getFlashBag()->add(
                     'notice', 'Candidatura eliminada com sucesso!'
             );
-            
         }
 
         return $this->redirectToRoute('admin_candidatura_index');

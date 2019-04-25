@@ -334,7 +334,50 @@
             </trans-unit>
       
       
+      <trans-unit id="juris_title" resname="juris_title">
+                <source>juris_title</source>
+                <target>Juries</target>
+            </trans-unit>
       
+                  
+      
+            
+            <trans-unit id="imprensa_title_01" resname="imprensa_title_01">
+                <source>imprensa_title_01</source>
+                <target>Hospitality Education Awards Revealed</target>
+            </trans-unit>
+            
+            <trans-unit id="imprensa_title_02" resname="imprensa_title_02">
+                <source>imprensa_title_02</source>
+                <target>Open Applications For The Hospitality Education Awards</target>
+            </trans-unit>
+                        
+                              
+            <trans-unit id="imprensa_title_03" resname="imprensa_title_03">
+                <source>imprensa_title_03</source>
+                <target>Applications To Hospitality Education Awards 2018 Open Until May 20</target>
+            </trans-unit>                      
+                                                
+            
+            
+            
+            <trans-unit id="imprensa_publicado_01" resname="imprensa_publicado_01">
+                <source>imprensa_publicado_01</source>
+                <target>Posted by Publituris</target>
+            </trans-unit>
+            
+            <trans-unit id="imprensa_publicado_02" resname="imprensa_publicado_02">
+                <source>imprensa_publicado_01</source>
+                <target>Posted by Turisver</target>
+            </trans-unit>
+                        
+                              
+            <trans-unit id="imprensa_publicado_03" resname="imprensa_publicado_03">
+                <source>imprensa_publicado_03</source>
+                <target>Posted by Ambitur</target>
+            </trans-unit>    
+            
+            
       
       
         </body>

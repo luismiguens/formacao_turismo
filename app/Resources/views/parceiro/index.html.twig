@@ -38,6 +38,7 @@
                                         <tr>
                                             <th scope="col">Id</th>
                                             <th scope="col">Nome</th>
+                                            <th scope="col">Juri</th>
                                             <th scope="col">Imagem</th>
                                             <th>Acções</th>
                                         </tr>
@@ -47,19 +48,9 @@
                                             <tr>
                                                 <th scope="row">{{ parceiro.id}}</th>
                                                 <th scope="row">{{ parceiro.nome }}</th>
+                                                <th scope="row">{% if parceiro.isJuri %}yes{% else %}no{% endif%}</th>
                                                 <td><img src="{{ vich_uploader_asset(parceiro, 'imagemFile') }}" alt="{{ parceiro.nome }}" /></td>
-                                                
-
-                                                <td>
-                                                    <ul>
-                                                        {#                        <li>
-                                                                                    <a href="{{ path('admin_candidatura_show', { 'id': candidatura.id }) }}">show</a>
-                                                                                </li>#}
-                                                        <li>
-                                                            <a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">editar</a>
-                                                        </li>
-                                                    </ul>
-                                                </td>
+                                                <td><a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">Editar</a></td>
                                             </tr>
                                         {% endfor %}
 

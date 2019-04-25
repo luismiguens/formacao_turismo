@@ -51,15 +51,7 @@
                                                 <td>{{ criterio.tituloPt }}</td>
                                                 <td>{{ criterio.descricaoPt }}</td>
                                                 <td>{{ criterio.categoria }}</td>
-
-                                                <td>
-                                                    <ul>
-
-                                                        <li>
-                                                            <a href="{{ path('admin_criterio_edit', { 'id': criterio.id }) }}">editar</a>
-                                                        </li>
-                                                    </ul>
-                                                </td>
+                                                <td> <a href="{{ path('admin_criterio_edit', { 'id': criterio.id }) }}">Editar</a></td>
                                             </tr>
                                         {% endfor %}
                                     </tbody>

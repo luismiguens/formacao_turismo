@@ -265,7 +265,7 @@
             
             
             
-              <trans-unit id="footer_premios" resname="footer_premios">
+            <trans-unit id="footer_premios" resname="footer_premios">
                 <source>footer_premios</source>
                 <target>Prémios</target>
             </trans-unit>
@@ -326,10 +326,56 @@
             
             
             
-             <trans-unit id="partners_title" resname="partners_title">
+            <trans-unit id="partners_title" resname="partners_title">
                 <source>partners_title</source>
                 <target>Parceiros</target>
             </trans-unit>
+            
+            
+            <trans-unit id="juris_title" resname="juris_title">
+                <source>juris_title</source>
+                <target>Júris</target>
+            </trans-unit>
+            
+      
+            
+            <trans-unit id="imprensa_title_01" resname="imprensa_title_01">
+                <source>imprensa_title_01</source>
+                <target>Revelados Os Vencedores Dos Hospitality Education Awards</target>
+            </trans-unit>
+            
+            <trans-unit id="imprensa_title_02" resname="imprensa_title_02">
+                <source>imprensa_title_02</source>
+                <target>Candidaturas Abertas Para Os Hospitality Education Awards</target>
+            </trans-unit>
+                        
+                              
+            <trans-unit id="imprensa_title_03" resname="imprensa_title_03">
+                <source>imprensa_title_03</source>
+                <target>Candidaturas Aos Prémios “Hospitality Education Awards 2018” Abertas Até 20 De Maio</target>
+            </trans-unit>                      
+                                                
+            
+            
+            
+            <trans-unit id="imprensa_publicado_01" resname="imprensa_publicado_01">
+                <source>imprensa_publicado_01</source>
+                <target>Publicado por Publituris</target>
+            </trans-unit>
+            
+            <trans-unit id="imprensa_publicado_02" resname="imprensa_publicado_02">
+                <source>imprensa_publicado_01</source>
+                <target>Publicado por Turisver</target>
+            </trans-unit>
+                        
+                              
+            <trans-unit id="imprensa_publicado_03" resname="imprensa_publicado_03">
+                <source>imprensa_publicado_03</source>
+                <target>Publicado por Publituris</target>
+            </trans-unit>    
+            
+            
+            
             
             
             

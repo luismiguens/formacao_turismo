@@ -17,7 +17,7 @@ class ParceiroType extends AbstractType
     {
         $builder
                 ->add('nome')
-//                ->add('imagem')
+                ->add('isJuri')
                 ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, ['required' => false,
                     'label' => "Imagem",
                     'allow_delete' => true,

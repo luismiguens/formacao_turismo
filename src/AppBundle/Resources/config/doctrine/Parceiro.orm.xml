@@ -15,6 +15,7 @@
       </options>
     </field>
     
+    <field name="isJuri" type="boolean" column="is_juri" nullable="false"/>
     
         <field name="updatedAt" type="datetime" column="updated_at" nullable="true"/>
     

@@ -1,32 +1,41 @@
 {# empty Twig template #}
 <!-- cta -->
-    <section id="regulation">
-      <div class="container">
+<section id="regulation">
+    <div class="container">
         <div class="bordered p-5" data-aos="fade-up">
-          <div class="row justify-content-between align-items-center text-center text-md-left">
-            <div class="col-md-2">
-              <i class="svg-icon fs-60 text-blue">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M11,48C5.477,48,1,43.523,1,38s4.477-10,10-10h2v20
-                  H11z"/>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M53,28c5.523,0,10,4.477,10,10s-4.477,10-10,10h-2
-                  V28H53z"/>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M13,31v-9c0,0,0-16,19-16s19,16,19,16v6"/>
-                <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="51,48 51,53 36,59 28,59 28,55 36,55 
-                  36,58 "/>
-                </svg>
-              </i>
+            <div class="row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-md-2">
+                    {#<i class="svg-icon fs-60 text-blue">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M11,48C5.477,48,1,43.523,1,38s4.477-10,10-10h2v20
+                        H11z"/>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M53,28c5.523,0,10,4.477,10,10s-4.477,10-10,10h-2
+                        V28H53z"/>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M13,31v-9c0,0,0-16,19-16s19,16,19,16v6"/>
+                      <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="51,48 51,53 36,59 28,59 28,55 36,55 
+                        36,58 "/>
+                      </svg>
+                    </i>#}
+                    <img src="{{ asset('bundles/app/assets/images/demo/icons/icone-reg.png') }}"/>
+
+
+                </div>
+                <div class="col-md-6">
+                    <h3>{% trans %}cta_Get in touch with us.{% endtrans %}</h3>
+                    <p>{% trans %}cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{% endtrans %}</p>
+                </div>
+                <div class="col-md-4 text-lg-right">
+
+                    {% if app.request.locale == 'en' %}
+                        <a target="_blank" href="{{ asset('bundles/app/assets/files/regulamento-en.pdf') }}" class="btn btn-primary btn-rounded px-5 mt-2 mt-md-0">{% trans %}cta_Write Us{% endtrans %}</a>
+                    {%else%}
+                        <a target="_blank" href="{{ asset('bundles/app/assets/files/regulamento-en.pdf') }}" class="btn btn-primary btn-rounded px-5 mt-2 mt-md-0">{% trans %}cta_Write Us{% endtrans %}</a>
+                    {% endif%}
+
+                </div>
             </div>
-            <div class="col-md-6">
-              <h3>{% trans %}cta_Get in touch with us.{% endtrans %}</h3>
-              <p>{% trans %}cta_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{% endtrans %}</p>
-            </div>
-            <div class="col-md-4 text-lg-right">
-              <a href="" class="btn btn-primary btn-rounded px-5 mt-2 mt-md-0">{% trans %}cta_Write Us{% endtrans %}</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- / cta -->
+    </div>
+</section>
+<!-- / cta -->

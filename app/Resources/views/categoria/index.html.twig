@@ -24,19 +24,19 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                
-                                
+
+
                                 {% for flashMessage in app.session.flashbag.get('notice') %}
                                     <div class="alert alert-success">
                                         {{ flashMessage }}
                                     </div>
                                 {% endfor %}
-                                
-                                
+
+
                                 <table class="table table-lined">
                                     <thead>
                                         <tr>
-                                             <th scope="col">Id</th>
+                                            <th scope="col">Id</th>
                                             <th scope="col">Titulopt</th>
                                             <th scope="col">Descricaopt</th>
                                             <th scope="col">Imagem</th>
@@ -50,16 +50,7 @@
                                                 <th scope="row">{{ categoria.tituloPt }}</th>
                                                 <td>{{ categoria.descricaoPt }}</td>
                                                 <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                <td>
-                                                    <ul>
-                                                       {# <li>
-                                                            <a href="{{ path('admin_categoria_show', { 'id': categoria.id }) }}">show</a>
-                                                        </li>#}
-                                                        <li>
-                                                            <a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">editar</a>
-                                                        </li>
-                                                    </ul>
-                                                </td>
+                                                <td><a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">Editar</a></td>
                                             </tr>
                                         {% endfor %}
 

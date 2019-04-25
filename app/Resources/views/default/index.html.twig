@@ -1,6 +1,10 @@
 {# empty Twig template #}
 {% extends 'base.html.twig' %}
 
+
+{% block title %}Hospitality Education Awards - Welcome!{% endblock %}
+
+
 {% block stylesheets %}
     {{ parent() }}
 {% endblock %}
@@ -13,13 +17,14 @@
     {% include 'default/text.html.twig'   with {'selected_menu': 'homepage'} %}
     {% include 'default/categories.html.twig'   with {'selected_menu': 'homepage'} %}
     {% include 'default/cta.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/juris.html.twig'   with {'selected_menu': 'homepage', 'juris': juris} %}
     {% include 'default/schedule.html.twig'   with {'selected_menu': 'homepage'} %}
     {% include 'default/partners.html.twig'   with {'selected_menu': 'homepage', 'parceiros': parceiros} %}
     {% include 'default/testimonials.html.twig'   with {'selected_menu': 'homepage'} %}
     
     {% include 'default/gallery.html.twig'   with {'selected_menu': 'homepage'} %}
     
-    {% include 'default/blog.html.twig'   with {'selected_menu': 'homepage'} %}
+    {% include 'default/imprensa.html.twig'   with {'selected_menu': 'homepage'} %}
     {% include 'default/map.html.twig'   with {'selected_menu': 'homepage'} %}
     {% include 'default/footer.html.twig'   with {'selected_menu': 'homepage'} %}
 

@@ -25,13 +25,8 @@ class Parceiro {
      * @var integer
      */
     private $id;
-
-    
-    
-    
-    
-    
-      private $updatedAt;
+    private $isJuri;
+    private $updatedAt;
 
     function getUpdatedAt() {
         return $this->updatedAt;
@@ -40,10 +35,7 @@ class Parceiro {
     function setUpdatedAt($updatedAt) {
         $this->updatedAt = $updatedAt;
     }
-    
-    
-    
-    
+
     /**
      * Set nome
      *
@@ -110,6 +102,14 @@ class Parceiro {
      */
     public function getId() {
         return $this->id;
+    }
+
+    function getIsJuri() {
+        return $this->isJuri;
+    }
+
+    function setIsJuri($isJuri) {
+        $this->isJuri = $isJuri;
     }
 
 }

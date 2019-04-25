@@ -29,27 +29,76 @@
                                 {% endfor %}
 
 
-                                <table class="table table-lined">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Id</th>
-                                            <th>Categoria</th>
-                                             <th>PromotorNome</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for candidatura in candidaturas %}
-                                            <tr>
-                                                <td>{{ candidatura.id }}</td>
-                                                <td>{{ candidatura.categoria }}</td>
-                                                <td>{{ candidatura.promotorNome }}</td>
-                                                <td><a href="{{ path('admin_votacao_new', { 'candidatura': candidatura.id }) }}">Registar votação</a></td>
-                                            </tr>
-                                        {% endfor %}
+                                {% set candidaturas_votadas = [] %}
 
-                                    </tbody>
-                                </table>
+                                {% if votacoes|length > 0 %}
+
+                                    <h4>Votações já existentes</h4>
+                                    <table class="table table-lined">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id</th>
+                                                <th>Categoria</th>
+                                                <th>PromotorNome</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+
+
+                                            {% for votacao in votacoes %}
+
+                                                {% set candidaturas_votadas = candidaturas_votadas|merge([votacao.candidatura.id]) %}
+                                                <tr>
+                                                    <td>{{ votacao.id }}</td>
+                                                    <td>{{ votacao.candidatura.categoria }}</td>
+                                                    <td>{{ votacao.candidatura.promotorNome }}</td>
+                                                    <td><a href="{{ path('admin_votacao_edit', { 'id': votacao.id }) }}">Alterar votação</a></td>
+                                                </tr>
+                                            {% endfor %}
+
+                                        </tbody>
+                                    </table>
+
+                                    <br/><br/>
+
+                                {% endif %}
+
+
+                                {% if votacoes|length != candidaturas|length %}
+
+                                    <h4>Candidaturas sem Votação</h4>
+
+                                    <table class="table table-lined">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id</th>
+                                                <th>Categoria</th>
+                                                <th>PromotorNome</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for candidatura in candidaturas %}
+
+                                                {% if candidatura.id not in candidaturas_votadas %}
+                                                    <tr>
+                                                        <td>{{ candidatura.id }}</td>
+                                                        <td>{{ candidatura.categoria }}</td>
+                                                        <td>{{ candidatura.promotorNome }}</td>
+                                                        <td><a href="{{ path('admin_votacao_new', { 'candidatura': candidatura.id }) }}">Registar votação</a></td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+
+                                        </tbody>
+                                    </table>
+
+                                {% endif %}
+
+
+
                             </div>
                         </div>
                     </div>

@@ -15,12 +15,12 @@ class VotacaoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-                ->add('candidatura')
+//                ->add('candidatura')
                 ->add('votos', \Symfony\Component\Form\Extension\Core\Type\CollectionType::class, [
                     'entry_type' => VotoType::class,
                     'entry_options' => ['label' => false],
-                ])
-                ->add('fosUser');
+                ]);
+//                ->add('fosUser');
     }/**
      * {@inheritdoc}
      */

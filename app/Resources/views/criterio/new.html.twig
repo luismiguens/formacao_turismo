@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    
+
     {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
 
     <!-- form controls -->
@@ -22,7 +22,6 @@
                             <div class="col-md-12">
                                 {{ form_start(form) }}
 
-
                                 {% for flashMessage in app.session.flashbag.get('notice') %}
                                     <div class="alert alert-success">
                                         {{ flashMessage }}
@@ -39,7 +38,6 @@
                                     {{ form_errors(form.tituloEn) }}
                                     {{ form_widget(form.tituloEn, {'attr': {'class': 'form-control'}}) }}
                                 </div>
-
                                 <div class="form-group">
                                     {{ form_label(form.descricaoPt) }}
                                     {{ form_errors(form.descricaoPt) }}
@@ -50,13 +48,11 @@
                                     {{ form_errors(form.descricaoEn) }}
                                     {{ form_widget(form.descricaoEn, {'attr': {'class': 'form-control'}}) }}
                                 </div>
-
                                 <div class="form-group">
                                     {{ form_label(form.categoria) }}
                                     {{ form_errors(form.categoria) }}
                                     {{ form_widget(form.categoria, {'attr': {'class': 'form-control'}}) }}
                                 </div>
-
 
                                 <hr/>
 
@@ -67,21 +63,13 @@
                                     <li>
                                         <a href="{{ path('admin_criterio_index') }}">Voltar a lista</a>
                                     </li>
-
-                                    
                                 </ul>
-
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
-
-
     </section>
 
 

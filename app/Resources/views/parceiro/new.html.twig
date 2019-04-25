@@ -36,6 +36,14 @@
                                     {{ form_errors(form.nome) }}
                                     {{ form_widget(form.nome, {'attr': {'class': 'form-control'}}) }}
                                 </div>
+                                
+                                <div class="form-group">
+                                    {{ form_label(form.isJuri) }}
+                                    {{ form_errors(form.isJuri) }}
+                                    {{ form_widget(form.isJuri, {'attr': {'class': ''}}) }}
+                                </div>
+                                
+                                
                                 <div class="form-group">
                                     {{ form_label(form.imagemFile) }}
                                     {{ form_errors(form.imagemFile) }}
