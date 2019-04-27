@@ -28,7 +28,7 @@
 
                     <div class="accordion open" data-accordion>
                         <div class="accordion-control" data-control>
-                            <h5>Recuperar Password</h5>
+                            <h5>{{ 'resetting.request.submit'|trans({}, 'FOSUserBundle') }}</h5>
                         </div>
                         <div class="accordion-content" data-content>
                             <div class="accordion-content-wrapper">
@@ -44,7 +44,7 @@
 
                                     <hr/>
                                     <fieldset class="col-sm-12">
-                                        Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                                        {% trans %}registo_ja_registado{% endtrans %} <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
 
                                         <br />
                                     </fieldset>

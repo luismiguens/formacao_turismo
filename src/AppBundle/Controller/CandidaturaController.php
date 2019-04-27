@@ -152,7 +152,8 @@ class CandidaturaController extends Controller {
                     'candidatura' => $candidatura,
                     'edit_form' => $editForm->createView(),
                     'delete_form' => $deleteForm->createView(),
-                    'criterios' => $criterios
+                    'criterios' => $criterios,
+             'categoria' => $candidatura->getCategoria()
         ));
     }
 

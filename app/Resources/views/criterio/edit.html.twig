@@ -57,17 +57,17 @@
 
                                 <hr/>
 
-                                <button type="submit" class="btn btn-primary">Guardar</button>
+                                <button type="submit" class="btn btn-primary">{% trans %}botao_actualizar{% endtrans %}</button>
                                 {{ form_end(edit_form) }}
 
                                 <ul>
                                     <li>
-                                        <a href="{{ path('admin_criterio_index') }}">Voltar a lista</a>
+                                        <a href="{{ path('admin_criterio_index') }}">{% trans %}botao_voltar{% endtrans %}</a>
                                     </li>
 
                                     <li>
                                         {{ form_start(delete_form) }}
-                                        <input type="submit" value="Delete">
+                                        <input type="submit" value="{% trans %}botao_eliminar{% endtrans %}">
                                         {{ form_end(delete_form) }}
                                     </li>
                                 </ul>

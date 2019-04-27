@@ -50,7 +50,7 @@
                                                 <th scope="row">{{ parceiro.nome }}</th>
                                                 <th scope="row">{% if parceiro.isJuri %}yes{% else %}no{% endif%}</th>
                                                 <td><img src="{{ vich_uploader_asset(parceiro, 'imagemFile') }}" alt="{{ parceiro.nome }}" /></td>
-                                                <td><a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">Editar</a></td>
+                                                <td><a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>
                                         {% endfor %}
 
@@ -59,7 +59,7 @@
 
                                 <ul>
                                     <li>
-                                        <a href="{{ path('admin_parceiro_new') }}">Parceiros criar</a>
+                                        <a href="{{ path('admin_parceiro_new') }}">{% trans %}botao_criar{% endtrans %}</a>
                                     </li>
                                 </ul>
 

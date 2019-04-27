@@ -2,4 +2,9 @@ AppBundle\Entity\Candidatura:
     documentoFile:
         mapping:           candidatura_documento
         filename_property: documento
-
+    cvFile:
+        mapping:           candidatura_cv
+        filename_property: cv
+    imagemFile:
+        mapping:           candidatura_imagem
+        filename_property: imagem

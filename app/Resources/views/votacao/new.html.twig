@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <h4>Votação criar</h4>
+                    <h4>{% trans %}votacao_criar_title{% endtrans %}</h4>
                 </div>
             </div>
         </div>
@@ -31,29 +31,52 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <h5>Categoria</h5> <p>{{ votacao.candidatura.categoria }}</p>
-                                <h5>Nome do Promotor</h5> <p>{{ votacao.candidatura.promotorNome }}</p>
-                                <h5>Projecto do Promotor</h5><p> {{ votacao.candidatura.promotorProjecto }}</p>
+
+                                {% if app.request.locale == 'pt' %}
+                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloPt }}</p>
+                                {% else %}
+                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloEn }}</p>
+                                {% endif %}
+
+                                <h5>{% trans %}votacao_form_nome_promotor{% endtrans %}</h5> <p>{{ votacao.candidatura.promotorNome }}</p>
+                                <h5>{% trans %}votacao_form_projecto_promotor{% endtrans %}</h5><p> {{ votacao.candidatura.promotorProjecto }}</p>
+                                <h5>{% trans %}votacao_form_logotipo_promotor{% endtrans %}</h5> <img style="max-width: 200px" src="{{ vich_uploader_asset(votacao.candidatura, 'imagemFile') }}" alt="" />
                             </div>
                         </div>
+
+                        <style>
+
+                            .vich-image img{
+                                max-height: 100px;
+                            }
+
+                        </style>
+
+
+
 
                         {% for voto in form.votos %}
                             <div class="row">
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Critério</label><br/>
-                                        {{ voto.vars.value.resposta.criterio }}
+                                        <label>{% trans %}votacao_form_criterio{% endtrans %}</label><br/>
+
+                                        {% if app.request.locale == 'pt' %}
+                                            {{ voto.vars.value.resposta.criterio.tituloPt }}
+                                        {% else %}
+                                            {{ voto.vars.value.resposta.criterio.tituloEn }}
+                                        {% endif %}
+
                                     </div>
                                 </div>
 
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label>Resposta</label><br/>
+                                        <label>{% trans %}votacao_form_resposta{% endtrans %}</label><br/>
                                         {{ voto.vars.value.resposta.texto}}
                                     </div>
                                 </div>
-
 
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -70,13 +93,13 @@
 
                         <hr/>
 
-                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="submit" class="btn btn-primary">{% trans %}botao_guardar{% endtrans %}</button>
 
                         {{ form_end(form) }}
 
                         <ul>
                             <li>
-                                <a href="{{ path('admin_votacao_index') }}">Voltar a lista</a>
+                                <a href="{{ path('admin_votacao_index') }}">{% trans %}botao_voltar{% endtrans %}</a>
                             </li>
                         </ul>
 

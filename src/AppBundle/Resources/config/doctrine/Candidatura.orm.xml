@@ -44,6 +44,18 @@
             </options>
         </field>
     
+        <field name="cv" type="string" column="cv" length="80" nullable="true">
+            <options>
+                <option name="fixed"/>
+            </options>
+        </field>
+    
+    
+        <field name="imagem" type="string" column="imagem" length="80" nullable="true">
+            <options>
+                <option name="fixed"/>
+            </options>
+        </field>
     
     
     

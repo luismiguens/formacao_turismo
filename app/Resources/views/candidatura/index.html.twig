@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <h4>Candidaturas lista</h4>
+                    <h4>{% trans %}candidaturas_lista_title{% endtrans %}</h4>
                 </div>
             </div>
         </div>
@@ -31,61 +31,55 @@
                                         {{ flashMessage }}
                                     </div>
                                 {% endfor %}
- {% set categorias_com_candidatura = [] %}
- 
- 
- 
+                                {% set categorias_com_candidatura = [] %}
+
+
+
                                 {% if candidaturas|length > 0 %}
-                                
-                                <h4>Candidaturas criadas</h4>
-                                <table class="table table-lined">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Id</th>
-                                            <th scope="col">Categoria</th>
-                                            <th scope="col">PromotorNome</th>
-                                            <th scope="col">PromotorProjecto</th>
-                                            <th>Acções</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
 
-                                       
-
-                                        {% for candidatura in candidaturas %}
-
-                                            {% set categorias_com_candidatura = categorias_com_candidatura|merge([candidatura.categoria.id]) %}
+                                    <h4>{% trans %}candidaturas_lista_criadas{% endtrans %}</h4>
+                                    <table class="table table-lined">
+                                        <thead>
                                             <tr>
-                                                <th scope="row">{{ candidatura.id}}</th>
-                                                <th scope="row">{{ candidatura.categoria }}</th>
-                                                <td>{{ candidatura.promotorNome }}</td>
-                                                <td>{{ candidatura.promotorProjecto }}</td>
-
-                                                <td>
-
-                                                    <a href="{{ path('admin_candidatura_edit', { 'id': candidatura.id }) }}">Editar</a>
-
-                                                </td>
+                                                {#<th scope="col">Id</th>#}
+                                                <th scope="col">{% trans %}candidaturas_lista_categoria{% endtrans %}</th>
+                                                <th scope="col">{% trans %}candidaturas_lista_promotorNome{% endtrans %}</th>
+                                                <th scope="col">{% trans %}candidaturas_lista_promotorProjecto{% endtrans %}</th>
+                                                <th>&nbsp;</th>
                                             </tr>
-                                        {% endfor %}
+                                        </thead>
+                                        <tbody>
 
-                                    </tbody>
-                                </table>
+                                            {% for candidatura in candidaturas %}
+                                                {% set categorias_com_candidatura = categorias_com_candidatura|merge([candidatura.categoria.id]) %}
+                                                <tr>
+                                                    {#<th scope="row">{{ candidatura.id}}</th>#}
+                                                    <th scope="row">{{ candidatura.categoria }}</th>
+                                                    <td>{{ candidatura.promotorNome }}</td>
+                                                    <td>{{ candidatura.promotorProjecto }}</td>
+                                                    <td>
+                                                        <a href="{{ path('admin_candidatura_edit', { 'id': candidatura.id }) }}">{% trans %}botao_editar{% endtrans %}</a>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
 
-                                <br/><br/>
-                                
+                                        </tbody>
+                                    </table>
+
+                                    <br/><br/>
+
                                 {% endif %}
 
-                                <h4>Categorias sem candidatura</h4>
+                                <h4>{% trans %}candidaturas_lista_categorias_sem_candidatura {% endtrans %}</h4>
 
                                 <table class="table table-lined">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Id</th>
-                                            <th scope="col">Titulopt</th>
-                                            <th scope="col">Descricaopt</th>
-                                            <th scope="col">Imagem</th>
-                                            <th scope="col">Acções</th>
+                                            {#<th scope="col">Id</th>#}
+                                            <th scope="col">{% trans %}candidaturas_lista_titulo{% endtrans %}</th>
+                                            <th scope="col">{% trans %}candidaturas_lista_descricao{% endtrans %}</th>
+                                            <th scope="col">{% trans %}candidaturas_lista_imagem{% endtrans %}</th>
+                                            <th scope="col">&nbsp;</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -93,31 +87,30 @@
 
                                             {% if categoria.id not in categorias_com_candidatura %}
                                                 <tr>
-                                                    <th scope="row">{{ categoria.id }}</th>
-                                                    <th scope="row">{{ categoria.tituloPt }}</th>
-                                                    <td>{{ categoria.descricaoPt }}</td>
+                                                    {#<th scope="row">{{ categoria.id }}</th>#}
+                                                    {% if app.request.locale == 'pt' %}
+                                                        <th scope="row">{{ categoria.tituloPt }}</th>
+                                                        {% else %}
+                                                        <th scope="row">{{ categoria.tituloEn }}</th>
+                                                        {% endif %}
+
+                                                    {% if app.request.locale == 'pt' %}
+                                                        <td>{{ categoria.descricaoPt }}</td>
+                                                    {% else %}
+                                                        <td>{{ categoria.descricaoEn }}</td>
+                                                    {% endif %}
+
                                                     <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                    <td><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}categories_Watch Now{% endtrans %}</a></td>
+                                                    <td><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a></td>
                                                 </tr>
                                             {% endif %}
                                         {% endfor %}
 
                                     </tbody>
                                 </table>
-
-
-
-                                {#<ul>
-                                    <li>
-                                        <a href="{{ path('admin_categoria_new') }}">Categorias criar</a>
-                                    </li>
-                                </ul>#}
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

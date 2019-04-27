@@ -19,10 +19,6 @@ app_admin_votacao:
     prefix:   /admin_votacao
 
 
-homepage:
-    path:      /{_locale}
-    defaults:  { _controller: AppBundle:Default:index, _locale: pt }
-    requirements:
-        _locale:  en|pt
+
 
         

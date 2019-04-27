@@ -50,7 +50,7 @@
                                                 <th scope="row">{{ categoria.tituloPt }}</th>
                                                 <td>{{ categoria.descricaoPt }}</td>
                                                 <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                <td><a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">Editar</a></td>
+                                                <td><a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>
                                         {% endfor %}
 
@@ -59,7 +59,7 @@
 
                                 <ul>
                                     <li>
-                                        <a href="{{ path('admin_categoria_new') }}">Categorias criar</a>
+                                        <a href="{{ path('admin_categoria_new') }}">{% trans %}botao_criar{% endtrans %}</a>
                                     </li>
                                 </ul>
 

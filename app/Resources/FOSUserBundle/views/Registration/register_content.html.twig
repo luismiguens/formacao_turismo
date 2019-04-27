@@ -18,7 +18,7 @@
 
 
 <div class="viewport">
-    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.jpg') }})"></div>
+    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.png') }})"></div>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 col-lg-5">
@@ -26,7 +26,7 @@
 
                     <div class="accordion open" data-accordion>
                         <div class="accordion-control" data-control>
-                            <h5>Create Account</h5>
+                            <h5>{% trans %}registo_criar_conta{% endtrans %}</h5>
                         </div>
                         <div class="accordion-content" data-content>
                             <div class="accordion-content-wrapper">
@@ -55,7 +55,7 @@
 
                                 <hr/>
                                 <fieldset class="col-sm-12">
-                                    Já estás registado? Então faz <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                                    {% trans %}registo_ja_registado{% endtrans %} <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
                                     <br />
                                 </fieldset>
 

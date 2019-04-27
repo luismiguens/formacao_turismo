@@ -103,7 +103,18 @@ vich_uploader:
             delete_on_update:   true
             delete_on_remove:   true
             namer:              vich_uploader.namer_uniqid
+        candidatura_imagem:
+            uri_prefix:         /uploads/imagens
+            upload_destination: %kernel.root_dir%/../web/uploads/imagens
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
+            namer:              vich_uploader.namer_uniqid
         candidatura_documento:
             uri_prefix:         /uploads/documentos
             upload_destination: %kernel.root_dir%/../web/uploads/documentos
             namer:              vich_uploader.namer_uniqid     
+        candidatura_cv:
+            uri_prefix:         /uploads/cvs
+            upload_destination: %kernel.root_dir%/../web/uploads/cvs
+            namer:              vich_uploader.namer_uniqid  

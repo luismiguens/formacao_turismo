@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <h4>Votações lista</h4>
+                    <h4>{% trans %}votacoes_lista_title{% endtrans %}</h4>
                 </div>
             </div>
         </div>
@@ -33,31 +33,26 @@
 
                                 {% if votacoes|length > 0 %}
 
-                                    <h4>Votações já existentes</h4>
+                                    <h4>{% trans %}votacoes_lista_votadas{% endtrans %}</h4>
                                     <table class="table table-lined">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Id</th>
-                                                <th>Categoria</th>
-                                                <th>PromotorNome</th>
-                                                <th>Actions</th>
+                                                {#<th scope="col">Id</th>#}
+                                                <th>{% trans %}votacoes_lista_categoria{% endtrans %}</th>
+                                                <th>{% trans %}votacoes_lista_promotor_nome{% endtrans %}</th>
+                                                <th>&nbsp;</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-
-
-
                                             {% for votacao in votacoes %}
-
                                                 {% set candidaturas_votadas = candidaturas_votadas|merge([votacao.candidatura.id]) %}
                                                 <tr>
-                                                    <td>{{ votacao.id }}</td>
+                                                    {#<td>{{ votacao.id }}</td>#}
                                                     <td>{{ votacao.candidatura.categoria }}</td>
                                                     <td>{{ votacao.candidatura.promotorNome }}</td>
-                                                    <td><a href="{{ path('admin_votacao_edit', { 'id': votacao.id }) }}">Alterar votação</a></td>
+                                                    <td><a href="{{ path('admin_votacao_edit', { 'id': votacao.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                                 </tr>
                                             {% endfor %}
-
                                         </tbody>
                                     </table>
 
@@ -68,30 +63,27 @@
 
                                 {% if votacoes|length != candidaturas|length %}
 
-                                    <h4>Candidaturas sem Votação</h4>
-
+                                    <h4>{% trans %}votacoes_lista_nao_votadas{% endtrans %}</h4>
                                     <table class="table table-lined">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Id</th>
-                                                <th>Categoria</th>
-                                                <th>PromotorNome</th>
-                                                <th>Actions</th>
+                                                {#<th scope="col">Id</th>#}
+                                                <th>{% trans %}votacoes_lista_categoria{% endtrans %}</th>
+                                                <th>{% trans %}votacoes_lista_promotor_nome{% endtrans %}</th>
+                                                <th>&nbsp;</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {% for candidatura in candidaturas %}
-
                                                 {% if candidatura.id not in candidaturas_votadas %}
                                                     <tr>
-                                                        <td>{{ candidatura.id }}</td>
+                                                        {#<td>{{ candidatura.id }}</td>#}
                                                         <td>{{ candidatura.categoria }}</td>
                                                         <td>{{ candidatura.promotorNome }}</td>
-                                                        <td><a href="{{ path('admin_votacao_new', { 'candidatura': candidatura.id }) }}">Registar votação</a></td>
+                                                        <td><a href="{{ path('admin_votacao_new', { 'candidatura': candidatura.id }) }}">{% trans %}botao_criar{% endtrans %}</a></td>
                                                     </tr>
                                                 {% endif %}
                                             {% endfor %}
-
                                         </tbody>
                                     </table>
 

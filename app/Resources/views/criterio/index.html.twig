@@ -51,7 +51,7 @@
                                                 <td>{{ criterio.tituloPt }}</td>
                                                 <td>{{ criterio.descricaoPt }}</td>
                                                 <td>{{ criterio.categoria }}</td>
-                                                <td> <a href="{{ path('admin_criterio_edit', { 'id': criterio.id }) }}">Editar</a></td>
+                                                <td> <a href="{{ path('admin_criterio_edit', { 'id': criterio.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>
                                         {% endfor %}
                                     </tbody>
@@ -59,7 +59,7 @@
 
                                 <ul>
                                     <li>
-                                        <a href="{{ path('admin_criterio_new') }}">Critérios criar</a>
+                                        <a href="{{ path('admin_criterio_new') }}">{% trans %}botao_criar{% endtrans %}</a>
                                     </li>
                                 </ul>
 

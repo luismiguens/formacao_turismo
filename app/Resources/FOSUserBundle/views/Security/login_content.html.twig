@@ -64,11 +64,11 @@
 
                                     <hr/>
                                     <fieldset class="col-sm-12">
-                                        Não estás registado? Segue para <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
+                                        {% trans %}autenticao_sem_registo{% endtrans %} <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
 
                                         <br />
 
-                                        Não tens password? Segue para <a href="{{ path('fos_user_resetting_request') }}">Recuperar</a>
+                                        {% trans %}autenticao_sem_password{% endtrans %} <a href="{{ path('fos_user_resetting_request') }}">{{ 'resetting.request.submit'|trans({}, 'FOSUserBundle') }}</a>
                                     </fieldset>
 
                                 </form>

@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/cover.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/juris.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/translations/messages.en.xlf</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/FOSUserBundle/views/base_fos_user.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/config/security.yml</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/AppCache.php</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/partners.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/AppKernel.php</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/edit.html.twig</file>
+        </group>
     </open-files>
 </project-private>
