@@ -30,8 +30,8 @@ class VotacaoController extends Controller {
         $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
         
         
-        dump(count($votacoes));
-        dump(count($candidaturas));
+//        dump(count($votacoes));
+//        dump(count($candidaturas));
         
         
         //dump($candidaturas);
