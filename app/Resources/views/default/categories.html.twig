@@ -1,93 +1,55 @@
 {# empty Twig template #}
 
-    <!-- lessons -->
-    <section id="categories" class="bg-light">
-      <div class="container">
+<!-- lessons -->
+<section id="categories" class="bg-light">
+    <div class="container">
         <div class="row text-white justify-content-between align-items-center">
-          <div class="col-md-4">
-            <h2 class="text-black"><span class="text-black">6</span> {% trans %}categories_Categories{% endtrans %}</h2>
-          </div>
-          {#<div class="col-md-7">
-            <div class="input-group rounded">
-              <input type="text" class="form-control px-3" placeholder="Search lessons ..." aria-label="Search lessons">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">Search</button>
-              </div>
+            <div class="col-md-4">
+                <h2 class="text-black"><span class="text-black">6</span> {% trans %}categories_Categories{% endtrans %}</h2>
             </div>
-          </div>#}
+            {#<div class="col-md-7">
+              <div class="input-group rounded">
+                <input type="text" class="form-control px-3" placeholder="Search lessons ..." aria-label="Search lessons">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </div>
+              </div>
+            </div>#}
         </div>
         <div class="row text-white" data-aos="fade-left">
-          <div class="col">
-            <div class="owl-carousel owl-carousel-library visible" data-loop="true" data-items="[3,2,1]" data-margin="30" data-nav="true">
-             
-                 {% for categoria in categorias %}
-                
-                <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url({{ vich_uploader_asset(categoria, 'imagemFile') }})"></div>
-                <div>
-                  <div class="tile-header on-hover text-right">
-                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-sm btn-outline-white">{% trans %}categories_Watch Now{% endtrans %}</a>
-                  </div>
-                  <div class="tile-footer">
-                    <span class="eyebrow">&nbsp;</span>
-                    <h4>{{ categoria.tituloPt }}</h4>
-                  </div>
+            <div class="col">
+                <div class="owl-carousel owl-carousel-library visible" data-loop="true" data-items="[3,2,1]" data-margin="30" data-nav="true">
+
+                    {% for categoria in categorias %}
+
+                        <article class="tile tile-long">
+                            <div class="tile-image" style="background-image: url({{ vich_uploader_asset(categoria, 'imagemFile') }})"></div>
+                            <div>
+                                <div class="tile-header on-hover text-right">
+                                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-sm btn-outline-white">{% trans %}categories_Watch Now{% endtrans %}</a>
+                                </div>
+                                <div class="tile-footer">
+                                    <span class="eyebrow">&nbsp;</span>
+
+                                    {% if app.request.locale == 'pt' %}
+                                        <h4>{{ categoria.tituloPt }}</h4>
+                                    {% else %}
+                                        <h4>{{ categoria.tituloEn }}</h4>
+                                    {% endif %}
+
+                                </div>
+
+                            </div>
+                        </article>
+
+                    {% endfor %}
+
                 </div>
-              </article>
-                  
-                  {% endfor %}
-              {#<article class="tile tile-long">
-                <div class="tile-image" style="background-image: url({{ asset('bundles/app/assets/images/demo/learning/learning-5.jpg') }})"></div>
-                <div>
-                  <div class="tile-header on-hover text-right">
-                    <button class="btn btn-sm btn-outline-white">Watch Now</button>
-                  </div>
-                  <div class="tile-footer">
-                    <span class="eyebrow">Photography</span>
-                    <h3>Finding the Right Exposure in Low Light</h3>
-                  </div>
-                </div>
-              </article>
-              <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url({{ asset('bundles/app/assets/images/demo/learning/learning-6.jpg') }})"></div>
-                <div>
-                  <div class="tile-header on-hover text-right">
-                    <button class="btn btn-sm btn-outline-white">Watch Now</button>
-                  </div>
-                  <div class="tile-footer">
-                    <span class="eyebrow">Design</span>
-                    <h3>Unleash Your Hand Drawing Skills</h3>
-                  </div>
-                </div>
-              </article>
-              <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url({{ asset('bundles/app/assets/images/demo/learning/learning-6.jpg') }})"></div>
-                <div>
-                  <div class="tile-header on-hover text-right">
-                    <button class="btn btn-sm btn-outline-white">Watch Now</button>
-                  </div>
-                  <div class="tile-footer">
-                    <span class="eyebrow">Design</span>
-                    <h3>Unleash Your Hand Drawing Skills</h3>
-                  </div>
-                </div>
-              </article>
-                <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url({{ asset('bundles/app/assets/images/demo/learning/learning-6.jpg') }})"></div>
-                <div>
-                  <div class="tile-header on-hover text-right">
-                    <button class="btn btn-sm btn-outline-white">Watch Now</button>
-                  </div>
-                  <div class="tile-footer">
-                    <span class="eyebrow">Design</span>
-                    <h3>Unleash Your Hand Drawing Skills</h3>
-                  </div>
-                </div>
-              </article>#}
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- / lessons -->
+    </div>
+</section>
+<!-- / lessons -->
+
+
 

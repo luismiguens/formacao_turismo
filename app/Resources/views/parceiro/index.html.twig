@@ -36,7 +36,7 @@
                                 <table class="table table-lined">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Id</th>
+                                           {# <th scope="col">Id</th>#}
                                             <th scope="col">Nome</th>
                                             <th scope="col">Juri</th>
                                             <th scope="col">Imagem</th>
@@ -46,9 +46,9 @@
                                     <tbody>
                                         {% for parceiro in parceiros %}
                                             <tr>
-                                                <th scope="row">{{ parceiro.id}}</th>
-                                                <th scope="row">{{ parceiro.nome }}</th>
-                                                <th scope="row">{% if parceiro.isJuri %}yes{% else %}no{% endif%}</th>
+                                                {#<th scope="row">{{ parceiro.id}}</th>#}
+                                                <td scope="row">{{ parceiro.nome }}</td>
+                                                <td scope="row">{% if parceiro.isJuri %}yes{% else %}no{% endif%}</td>
                                                 <td><img src="{{ vich_uploader_asset(parceiro, 'imagemFile') }}" alt="{{ parceiro.nome }}" /></td>
                                                 <td><a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>

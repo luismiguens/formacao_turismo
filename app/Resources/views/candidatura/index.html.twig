@@ -89,19 +89,19 @@
                                                 <tr>
                                                     {#<th scope="row">{{ categoria.id }}</th>#}
                                                     {% if app.request.locale == 'pt' %}
-                                                        <th scope="row">{{ categoria.tituloPt }}</th>
+                                                        <td width="25%" scope="row">{{ categoria.tituloPt }}</td>
                                                         {% else %}
-                                                        <th scope="row">{{ categoria.tituloEn }}</th>
+                                                        <td width="25%" scope="row">{{ categoria.tituloEn }}</td>
                                                         {% endif %}
 
                                                     {% if app.request.locale == 'pt' %}
-                                                        <td>{{ categoria.descricaoPt }}</td>
+                                                        <td width="50%" >{{ categoria.descricaoPt }}</td>
                                                     {% else %}
-                                                        <td>{{ categoria.descricaoEn }}</td>
+                                                        <td width="50%">{{ categoria.descricaoEn }}</td>
                                                     {% endif %}
 
-                                                    <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                    <td><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a></td>
+                                                    <td width="15%" ><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
+                                                    <td width="10%" ><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a></td>
                                                 </tr>
                                             {% endif %}
                                         {% endfor %}
