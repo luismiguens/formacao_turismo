@@ -325,167 +325,169 @@
       </trans-unit>
       <trans-unit id="6jrIXD4" resname="candidaturas_lista_title">
         <source>candidaturas_lista_title</source>
-        <target>_candidaturas_lista_title</target>
+        <target>List of applications</target>
       </trans-unit>
       <trans-unit id="c6eVquz" resname="candidaturas_lista_criadas">
         <source>candidaturas_lista_criadas</source>
-        <target>_candidaturas_lista_criadas</target>
+        <target>List of applications created</target>
       </trans-unit>
       <trans-unit id="tFQ0RJf" resname="candidaturas_criar_title">
         <source>candidaturas_criar_title</source>
-        <target>_candidaturas_criar_title</target>
+        <target>Retirar texto</target>
       </trans-unit>
       <trans-unit id="pwy_22z" resname="candidaturas_editar_title">
         <source>candidaturas_editar_title</source>
-        <target>_candidaturas_editar_title</target>
+        <target>Retirar texto</target>
       </trans-unit>
       <trans-unit id="QkO3UUj" resname="candidatura_form_promotorNome">
         <source>candidatura_form_promotorNome</source>
-        <target>_candidatura_form_promotorNome</target>
+        <target>Name of candidate</target>
       </trans-unit>
       <trans-unit id="iXiyCLB" resname="candidatura_form_promotorProjecto">
         <source>candidatura_form_promotorProjecto</source>
-        <target>_candidatura_form_promotorProjecto</target>
+        <target>Name of project/company/school</target>
       </trans-unit>
       <trans-unit id="MoVo5Pb" resname="candidatura_form_promotorEmail">
         <source>candidatura_form_promotorEmail</source>
-        <target>_candidatura_form_promotorEmail</target>
+        <target>Email of candidate</target>
       </trans-unit>
       <trans-unit id="yeJe0fN" resname="candidatura_form_promotorTelefone">
         <source>candidatura_form_promotorTelefone</source>
-        <target>_candidatura_form_promotorTelefone</target>
+        <target>Contact of candidate</target>
       </trans-unit>
       <trans-unit id="YWEaR7t" resname="candidatura_form_promotorDescricaoPt">
         <source>candidatura_form_promotorDescricaoPt</source>
-        <target>_candidatura_form_promotorDescricaoPt</target>
+        <target>Application abstract PT (portuguese)</target>
       </trans-unit>
       <trans-unit id="oVk6yw6" resname="candidatura_form_promotorDescricaoEn">
         <source>candidatura_form_promotorDescricaoEn</source>
-        <target>_candidatura_form_promotorDescricaoEn</target>
+        <target>Application abstract ENG (english)</target>
       </trans-unit>
       <trans-unit id="4nlEaHr" resname="candidatura_form_documentoFile">
         <source>candidatura_form_documentoFile</source>
-        <target>_candidatura_form_documentoFile</target>
+        <target>Complementary document for the project presentation. (In this field a document in pdf format must be submitted - not exceeding
+10 pages, which should include other evidence to support the project .: Eg photographs, testimonies, links to videos,
+data, among others considered relevant.)</target>
       </trans-unit>
       <trans-unit id="9Nw.kEZ" resname="candidatura_form_cvFile">
         <source>candidatura_form_cvFile</source>
-        <target>_candidatura_form_cvFile</target>
+        <target>Curriculum Vitae</target>
       </trans-unit>
       <trans-unit id="IwS1A3m" resname="candidatura_form_imagemFile">
         <source>candidatura_form_imagemFile</source>
-        <target>_candidatura_form_imagemFile</target>
+        <target>Project logo/candidate's photograph</target>
       </trans-unit>
       <trans-unit id="36TlVFi" resname="candidatura_form_download_candidatura">
         <source>candidatura_form_download_candidatura</source>
-        <target>_candidatura_form_download_candidatura</target>
+        <target>Application download</target>
       </trans-unit>
       <trans-unit id="LDnNOko" resname="candidatura_form_download_curriculo">
         <source>candidatura_form_download_curriculo</source>
-        <target>_candidatura_form_download_curriculo</target>
+        <target>Download of Curriculum Vitae</target>
       </trans-unit>
       <trans-unit id="JdRNhFG" resname="botao_editar">
         <source>botao_editar</source>
-        <target>__botao_editar</target>
+        <target>Edit</target>
       </trans-unit>
       <trans-unit id="DiXUPUk" resname="botao_criar">
         <source>botao_criar</source>
-        <target>__botao_criar</target>
+        <target>Add new</target>
       </trans-unit>
       <trans-unit id="PVC.sS8" resname="botao_guardar">
         <source>botao_guardar</source>
-        <target>__botao_guardar</target>
+        <target>Submit</target>
       </trans-unit>
       <trans-unit id="0dJ5ZyJ" resname="botao_voltar">
         <source>botao_voltar</source>
-        <target>__botao_voltar</target>
+        <target>Return</target>
       </trans-unit>
       <trans-unit id="TqG4EG0" resname="botao_actualizar">
         <source>botao_actualizar</source>
-        <target>__botao_actualizar</target>
+        <target>Update</target>
       </trans-unit>
       <trans-unit id="JWrhpaF" resname="botao_eliminar">
         <source>botao_eliminar</source>
-        <target>__botao_eliminar</target>
+        <target>Eliminate</target>
       </trans-unit>
       <trans-unit id="PST0MqK" resname="candidaturas_lista_categoria">
         <source>candidaturas_lista_categoria</source>
-        <target>__candidaturas_lista_categoria</target>
+        <target>Criteria</target>
       </trans-unit>
       <trans-unit id="ubmQ_EF" resname="candidaturas_lista_promotorNome">
         <source>candidaturas_lista_promotorNome</source>
-        <target>__candidaturas_lista_promotorNome</target>
+        <target>Name of candidate</target>
       </trans-unit>
       <trans-unit id="XvaeRo3" resname="candidaturas_lista_promotorProjecto">
         <source>candidaturas_lista_promotorProjecto</source>
-        <target>__candidaturas_lista_promotorProjecto</target>
+        <target>Name of project/company/school</target>
       </trans-unit>
       <trans-unit id="cozTazW" resname="candidaturas_lista_categorias_sem_candidatura">
         <source>candidaturas_lista_categorias_sem_candidatura</source>
-        <target>__candidaturas_lista_categorias_sem_candidatura</target>
+        <target>List of categories with no applications</target>
       </trans-unit>
       <trans-unit id="L2Dwr9U" resname="candidaturas_lista_titulo">
         <source>candidaturas_lista_titulo</source>
-        <target>__candidaturas_lista_titulo</target>
+        <target>Category</target>
       </trans-unit>
       <trans-unit id="VF7hQQw" resname="candidaturas_lista_descricao">
         <source>candidaturas_lista_descricao</source>
-        <target>__candidaturas_lista_descricao</target>
+        <target>Description</target>
       </trans-unit>
       <trans-unit id="m5mOE9K" resname="candidaturas_lista_imagem">
         <source>candidaturas_lista_imagem</source>
-        <target>__candidaturas_lista_imagem</target>
+        <target>Image</target>
       </trans-unit>
       <trans-unit id="Gkzn8ew" resname="votacoes_lista_title">
         <source>votacoes_lista_title</source>
-        <target>__votacoes_lista_title</target>
+        <target>List of applications for voting</target>
       </trans-unit>
       <trans-unit id="ZRy6fUC" resname="votacoes_lista_votadas">
         <source>votacoes_lista_votadas</source>
-        <target>__votacoes_lista_votadas</target>
+        <target>Applications voted</target>
       </trans-unit>
       <trans-unit id="Ooyr_Br" resname="votacoes_lista_categoria">
         <source>votacoes_lista_categoria</source>
-        <target>__votacoes_lista_categoria</target>
+        <target>Category</target>
       </trans-unit>
       <trans-unit id="2EMEuBf" resname="votacoes_lista_promotor_nome">
         <source>votacoes_lista_promotor_nome</source>
-        <target>__votacoes_lista_promotor_nome</target>
+        <target>Name of candidate</target>
       </trans-unit>
       <trans-unit id="NSRK8iB" resname="votacoes_lista_nao_votadas">
         <source>votacoes_lista_nao_votadas</source>
-        <target>__votacoes_lista_nao_votadas</target>
+        <target>Applications with no voting</target>
       </trans-unit>
       <trans-unit id="zLFSMZ." resname="votacao_criar_title">
         <source>votacao_criar_title</source>
-        <target>__votacao_criar_title</target>
+        <target>Evaluation of applications</target>
       </trans-unit>
       <trans-unit id="..yvEx5" resname="votacao_form_categoria">
         <source>votacao_form_categoria</source>
-        <target>__votacao_form_categoria</target>
+        <target>Category</target>
       </trans-unit>
       <trans-unit id="DWvY8Vs" resname="votacao_form_nome_promotor">
         <source>votacao_form_nome_promotor</source>
-        <target>__votacao_form_nome_promotor</target>
+        <target>Name of candidate</target>
       </trans-unit>
       <trans-unit id="AiTH1g6" resname="votacao_form_projecto_promotor">
         <source>votacao_form_projecto_promotor</source>
-        <target>__votacao_form_projecto_promotor</target>
+        <target>Name of projet/company/school</target>
       </trans-unit>
       <trans-unit id="r0104.z" resname="votacao_form_logotipo_promotor">
         <source>votacao_form_logotipo_promotor</source>
-        <target>__votacao_form_logotipo_promotor</target>
+        <target>Project logo/candidate's photograph</target>
       </trans-unit>
       <trans-unit id="gKDgzx8" resname="votacao_form_criterio">
         <source>votacao_form_criterio</source>
-        <target>__votacao_form_criterio</target>
+        <target>Criteria</target>
       </trans-unit>
       <trans-unit id="j270BtQ" resname="votacao_form_resposta">
         <source>votacao_form_resposta</source>
-        <target>__votacao_form_resposta</target>
+        <target>Response</target>
       </trans-unit>
       <trans-unit id="ARQIYB2" resname="votacao_editar_title">
         <source>votacao_editar_title</source>
-        <target>__votacao_editar_title</target>
+        <target>Edit voting</target>
       </trans-unit>
     </body>
   </file>
