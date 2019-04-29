@@ -366,7 +366,7 @@
       </trans-unit>
       <trans-unit id="4nlEaHr" resname="candidatura_form_documentoFile">
         <source>candidatura_form_documentoFile</source>
-        <target>Documento complementar de apresentação do projeto. (Neste campo deve ser submetido um documento em formato pdf - n�o excedendo as 10 p�ginas, do qual dever�o constar outras evid�ncias que sustentem o projeto.: Ex: fotografias, testemunhos, links para vídeos, dados, entre outros considerados pertinentes.)</target>
+        <target>Documento complementar de apresentação do projeto. (Neste campo deve ser submetido um documento em formato pdf - não excedendo as 10 páginas, do qual deverão constar outras evidências que sustentem o projeto.: Ex: fotografias, testemunhos, links para vídeos, dados, entre outros considerados pertinentes.)</target>
       </trans-unit>
       <trans-unit id="9Nw.kEZ" resname="candidatura_form_cvFile">
         <source>candidatura_form_cvFile</source>
