@@ -19,7 +19,7 @@
 
 
 <div class="viewport">
-    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.jpg') }})"></div>
+    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.png') }})"></div>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 col-lg-5">
@@ -64,11 +64,11 @@
 
                                     <hr/>
                                     <fieldset class="col-sm-12">
-                                        {% trans %}autenticao_sem_registo{% endtrans %} <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
+                                     {{ 'autenticao_sem_registo'|trans({}, 'messages') }} <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
 
                                         <br />
 
-                                        {% trans %}autenticao_sem_password{% endtrans %} <a href="{{ path('fos_user_resetting_request') }}">{{ 'resetting.request.submit'|trans({}, 'FOSUserBundle') }}</a>
+                                     {{ 'autenticao_sem_password'|trans({}, 'messages') }}  <a href="{{ path('fos_user_resetting_request') }}">{{ 'resetting.request.submit'|trans({}, 'FOSUserBundle') }}</a>
                                     </fieldset>
 
                                 </form>

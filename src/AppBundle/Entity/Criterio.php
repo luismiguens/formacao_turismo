@@ -37,7 +37,7 @@ class Criterio
      */
     private $categoria;
 
- 
+ private $isApenasVotacao;
     
     
     /**
@@ -177,6 +177,20 @@ class Criterio
         return $this->getTituloPt();
         
     }
+    
+    
+    function getIsApenasVotacao() {
+        return $this->isApenasVotacao;
+    }
+
+    function setIsApenasVotacao($isApenasVotacao) {
+        $this->isApenasVotacao = $isApenasVotacao;
+    }
+
+
+    
+    
+    
     
 }
 

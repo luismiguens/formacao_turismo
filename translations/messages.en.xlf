@@ -157,6 +157,13 @@
         <source>header_Categories</source>
         <target>Categories</target>
       </trans-unit>
+      
+      
+        <trans-unit id="header_Regulation" resname="header_Regulation">
+        <source>header_Regulation</source>
+        <target>Regulation</target>
+      </trans-unit>
+      
       <trans-unit id="84TQvGT" resname="header_Schedule">
         <source>header_Schedule</source>
         <target>Agenda</target>
@@ -489,6 +496,31 @@ data, among others considered relevant.)</target>
         <source>votacao_editar_title</source>
         <target>Edit voting</target>
       </trans-unit>
+      
+      
+      
+       <trans-unit id="autenticao_sem_registo" resname="autenticao_sem_registo">
+        <source>autenticao_sem_registo</source>
+        <target>Don't have an account yet?</target>
+      </trans-unit>
+      
+      <trans-unit id="autenticao_sem_password" resname="autenticao_sem_password">
+        <source>autenticao_sem_password</source>
+        <target>Forgot the password?</target>
+      </trans-unit>
+      
+      <trans-unit id="registo_ja_registado" resname="registo_ja_registado">
+        <source>registo_ja_registado</source>
+        <target>Already have an account?</target>
+      </trans-unit>
+      
+      
+      <trans-unit id="Os prémios da formação turística em Portugal" resname="Os prémios da formação turística em Portugal">
+        <source>Os prémios da formação turística em Portugal</source>
+        <target>The tourism training awards in Portugal</target>
+      </trans-unit>
+      
+      
     </body>
   </file>
 </xliff>

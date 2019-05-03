@@ -27,6 +27,7 @@ class CategoriaType extends AbstractType
                     'label' => "Imagem",
                     'allow_delete' => true,
                     'download_link' => true])
+                ->add('isSemCandidatura')
                 ->add('candidaturaVencedora');
     }/**
      * {@inheritdoc}

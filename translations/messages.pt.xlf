@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target><![CDATA[<b>Hospitality Education Awards</b> - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no sector e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.]]></target>
+        <target><![CDATA[<b>Hospitality Education Awards</b> - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no setor e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.]]></target>
       </trans-unit>
       <trans-unit id="Xk1mZur" resname="schedule_Project">
         <source>schedule_Project</source>
@@ -157,6 +157,15 @@
         <source>header_Categories</source>
         <target>Categorias</target>
       </trans-unit>
+      
+      <trans-unit id="header_Regulation" resname="header_Regulation">
+        <source>header_Regulation</source>
+        <target>Regulamento</target>
+      </trans-unit>
+      
+      
+ 
+      
       <trans-unit id="84TQvGT" resname="header_Schedule">
         <source>header_Schedule</source>
         <target>Agenda</target>
@@ -496,6 +505,32 @@
         <source>votacao_editar_title</source>
         <target>Editar votação</target>
       </trans-unit>
+      
+      
+      
+      <trans-unit id="autenticao_sem_registo" resname="autenticao_sem_registo">
+        <source>autenticao_sem_registo</source>
+        <target>Ainda não tem conta?</target>
+      </trans-unit>
+      
+      <trans-unit id="autenticao_sem_password" resname="autenticao_sem_password">
+        <source>autenticao_sem_password</source>
+        <target>Esqueceu-se da password?</target>
+      </trans-unit>
+      
+      <trans-unit id="registo_ja_registado" resname="registo_ja_registado">
+        <source>registo_ja_registado</source>
+        <target>Já tem conta?</target>
+      </trans-unit>
+      
+      <trans-unit id="Os prémios da formação turística em Portugal" resname="Os prémios da formação turística em Portugal">
+        <source>Os prémios da formação turística em Portugal</source>
+        <target>Os prémios da formação turística em Portugal</target>
+      </trans-unit>
+      
+      
+      
+      
     </body>
   </file>
 </xliff>

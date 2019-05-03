@@ -27,6 +27,7 @@
         <option name="fixed"/>
       </options>
     </field>
+    <field name="isApenasVotacao" type="boolean" column="is_apenas_votacao" nullable="true"/>
     <many-to-one field="categoria" target-entity="Categoria" fetch="LAZY">
       <join-columns>
         <join-column name="categoria_id" referenced-column-name="id"/>
@@ -34,3 +35,7 @@
     </many-to-one>
   </entity>
 </doctrine-mapping>
+
+
+<!--ALTER TABLE `formacao_turismo`.`criterio` 
+ADD COLUMN `is_apenas_votacao` TINYINT NULL AFTER `descricao_en`;-->

@@ -55,6 +55,14 @@
                                     {{ form_widget(form.imagemFile, {'attr': {'class': 'form-control'}}) }}
                                 </div>
 
+                                
+                                <div class="form-group">
+                                    {{ form_label(form.isSemCandidatura) }}
+                                    {{ form_errors(form.isSemCandidatura) }}
+                                    {{ form_widget(form.isSemCandidatura, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+                                
+                                
                                 <div class="form-group">
                                     {{ form_label(form.candidaturaVencedora) }}
                                     {{ form_errors(form.candidaturaVencedora) }}

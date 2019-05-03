@@ -1,55 +1,95 @@
-{# empty Twig template #}
 
-<!-- lessons -->
+
+<!-- presentation -->
 <section id="categories" class="bg-light">
     <div class="container">
-        <div class="row text-white justify-content-between align-items-center">
-            <div class="col-md-4">
-                <h2 class="text-black"><span class="text-black">6</span> {% trans %}categories_Categories{% endtrans %}</h2>
-            </div>
-            {#<div class="col-md-7">
-              <div class="input-group rounded">
-                <input type="text" class="form-control px-3" placeholder="Search lessons ..." aria-label="Search lessons">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">Search</button>
-                </div>
-              </div>
-            </div>#}
+
+        {% for categoria in categorias %}
+
+            
+            
+            
+            {% if loop.index is divisible by(2) %}
+            
+            
+                
+                                   
+                    
+ <div class="row align-items-center justify-content-center presentation-container">
+        <div class="col-md-6 col-lg-5 pr-md-7 text-center text-md-right">
+          {#<span class="eyebrow text-primary mb-1">Special for you</span>#}
+          {% if app.request.locale == 'pt' %}
+                        <h3 class="h2">{{ categoria.tituloPt }}</h3>
+                    {% else %}
+                        <h3 class="h2">{{ categoria.tituloEn }}</h3>
+                    {% endif %}
+           {% if app.request.locale == 'pt' %}
+                        <p>{{ categoria.descricaoPt| raw }}</p>
+                    {% else %}
+                        <p>{{ categoria.descricaoEn| raw }}</p>
+                    {% endif %}
+                    
+                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
+                        {% trans %}categories_Watch Now{% endtrans %}
+                    </a>
         </div>
-        <div class="row text-white" data-aos="fade-left">
-            <div class="col">
-                <div class="owl-carousel owl-carousel-library visible" data-loop="true" data-items="[3,2,1]" data-margin="30" data-nav="true">
+        <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="presentation-circle with-delay">
+            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
+          </div>
+        </div>
+      </div>
+                
+           
+                    
+                     {% else %} 
+                    
+                    
+                    
+  <div class="row align-items-center justify-content-center presentation-container">
+                <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="presentation-circle">
+                        <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 pl-md-7 text-center text-md-left">
+                    <!--<span class="eyebrow text-primary mb-1">Special for you</span>-->
+                    {#<h3 class="h2">Amazing Teachers</h3>#}
 
-                    {% for categoria in categorias %}
+                    {% if app.request.locale == 'pt' %}
+                        <h3 class="h2">{{ categoria.tituloPt }}</h3>
+                    {% else %}
+                        <h3 class="h2">{{ categoria.tituloEn }}</h3>
+                    {% endif %}
 
-                        <article class="tile tile-long">
-                            <div class="tile-image" style="background-image: url({{ vich_uploader_asset(categoria, 'imagemFile') }})"></div>
-                            <div>
-                                <div class="tile-header on-hover text-right">
-                                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-sm btn-outline-white">{% trans %}categories_Watch Now{% endtrans %}</a>
-                                </div>
-                                <div class="tile-footer">
-                                    <span class="eyebrow">&nbsp;</span>
+                    {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus.</p>#}
 
-                                    {% if app.request.locale == 'pt' %}
-                                        <h4>{{ categoria.tituloPt }}</h4>
-                                    {% else %}
-                                        <h4>{{ categoria.tituloEn }}</h4>
-                                    {% endif %}
+                    {% if app.request.locale == 'pt' %}
+                        <p>{{ categoria.descricaoPt| raw }}</p>
+                    {% else %}
+                        <p>{{ categoria.descricaoEn| raw }}</p>
+                    {% endif %}
 
-                                </div>
-
-                            </div>
-                        </article>
-
-                    {% endfor %}
-
+                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
+                        {% trans %}categories_Watch Now{% endtrans %}
+                    </a>
                 </div>
             </div>
-        </div>
+                    
+                         
+                     {% endif%} 
+                    
+                    
+                    
+                    
+                    
+        {% endfor %}
+
+       
+        
+        
+        
+        
     </div>
 </section>
-<!-- / lessons -->
-
-
-
+<!-- / presentation -->

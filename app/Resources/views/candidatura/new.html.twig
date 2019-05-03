@@ -14,9 +14,9 @@
                 <div class="col">
 
                     {% if app.request.locale == 'pt' %}
-                        <h4>{{categoria.tituloPt}} - {% trans %}candidaturas_criar_title{% endtrans %}</h4>
+                        <h4>{{categoria.tituloPt}} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
                     {% else %}
-                        <h4>{{categoria.tituloEn}} - {% trans %}candidaturas_criar_title{% endtrans %}</h4>
+                        <h4>{{categoria.tituloEn}} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
                     {% endif %}
 
                 </div>
@@ -33,9 +33,9 @@
                             <div class="col-md-12">
 
                                 {% if app.request.locale == 'pt' %}
-                                    <p>{{categoria.descricaoPt}}</p>
+                                    <p>{{categoria.descricaoPt| raw}}</p>
                                 {% else %}
-                                    <p>{{categoria.descricaoEn}}</p>
+                                    <p>{{categoria.descricaoEn| raw}}</p>
                                 {% endif %}
 
                                 {{ form_start(form) }}
@@ -87,17 +87,27 @@
 
                                 {# iterate over each existing tag and render its only field: name #}
                                 {% for resposta in form.respostas %}
-                                    <div class="form-group">
 
-                                        {% if app.request.locale == 'pt' %}
-                                            {{ resposta.vars.value.criterio.tituloPt}}
+                                    {% if resposta.vars.value.criterio.isApenasVotacao == false %}
+
+                                        <div class="form-group">
+                                            {% if app.request.locale == 'pt' %}
+                                                {{ resposta.vars.value.criterio.tituloPt}}
+                                            {% else %}
+                                                {{ resposta.vars.value.criterio.tituloEn}}
+                                            {% endif %}
+
+                                            {{ form_errors(resposta.texto) }}
+                                            {{ form_widget(resposta.texto, {'attr': {'class': 'form-control'}}) }}
+                                        </div>
+
+                                        
                                         {% else %}
-                                            {{ resposta.vars.value.criterio.tituloEn}}
+                                            <div style="display: none;">
+                                            {{ form_widget(resposta.texto, {'value' : '--'}, {'attr': { 'class': 'form-control'}}) }}
+                                         </div>
                                         {% endif %}
-
-                                        {{ form_errors(resposta.texto) }}
-                                        {{ form_widget(resposta.texto, {'attr': {'class': 'form-control'}}) }}
-                                    </div>
+                                   
                                 {% endfor %}
 
                                 <div class="form-group">

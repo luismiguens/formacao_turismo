@@ -77,6 +77,10 @@ class Categoria
     
     
       private $updatedAt;
+      
+      private $isSemCandidatura;
+      
+      
 
     function getUpdatedAt() {
         return $this->updatedAt;
@@ -397,7 +401,15 @@ class Categoria
         return $this->criterios;
     }
     
-    
+    function getIsSemCandidatura() {
+        return $this->isSemCandidatura;
+    }
+
+    function setIsSemCandidatura($isSemCandidatura) {
+        $this->isSemCandidatura = $isSemCandidatura;
+    }
+
+
     
     
 }

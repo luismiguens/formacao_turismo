@@ -18,8 +18,8 @@ class CandidaturaType extends AbstractType {
                 ->add('promotorProjecto', null, array('label' => 'candidatura_form_promotorProjecto'))
                 ->add('promotorEmail', null, array('label' => 'candidatura_form_promotorEmail'))
                 ->add('promotorTelefone', null, array('label' => 'candidatura_form_promotorTelefone'))
-                ->add('promotorDescricaoPt', null, array('label' => 'candidatura_form_promotorDescricaoPt'))
-                ->add('promotorDescricaoEn', null, array('label' => 'candidatura_form_promotorDescricaoEn'))
+                ->add('promotorDescricaoPt', null, array('label' => 'candidatura_form_promotorDescricaoPt', 'attr' => array('maxlength' => 2000)))
+                ->add('promotorDescricaoEn', null, array('label' => 'candidatura_form_promotorDescricaoEn', 'attr' => array('maxlength' => 2000)))
                 //->add('documentoApresentacao')
                 ->add('documentoFile', \Vich\UploaderBundle\Form\Type\VichFileType::class, [
                     'required' => false,

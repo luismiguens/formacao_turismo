@@ -41,7 +41,7 @@
                                     <table class="table table-lined">
                                         <thead>
                                             <tr>
-                                                {#<th scope="col">Id</th>#}
+                                               
                                                 <th scope="col">{% trans %}candidaturas_lista_categoria{% endtrans %}</th>
                                                 <th scope="col">{% trans %}candidaturas_lista_promotorNome{% endtrans %}</th>
                                                 <th scope="col">{% trans %}candidaturas_lista_promotorProjecto{% endtrans %}</th>
@@ -75,11 +75,11 @@
                                 <table class="table table-lined">
                                     <thead>
                                         <tr>
-                                            {#<th scope="col">Id</th>#}
-                                            <th>{% trans %}candidaturas_lista_titulo{% endtrans %}</th>
-                                            <th>{% trans %}candidaturas_lista_descricao{% endtrans %}</th>
-                                            <th>{% trans %}candidaturas_lista_imagem{% endtrans %}</th>
-                                            <th>&nbsp;</th>
+                                           
+                                            <th width="25%" >{% trans %}candidaturas_lista_titulo{% endtrans %}</th>
+                                            <th width="50%">{% trans %}candidaturas_lista_descricao{% endtrans %}</th>
+                                            <th width="15%">{% trans %}candidaturas_lista_imagem{% endtrans %}</th>
+                                            <th width="10%">&nbsp;</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -87,7 +87,7 @@
 
                                             {% if categoria.id not in categorias_com_candidatura %}
                                                 <tr>
-                                                    {#<th scope="row">{{ categoria.id }}</th>#}
+                                                    
                                                     {% if app.request.locale == 'pt' %}
                                                         <td width="25%" scope="row">{{ categoria.tituloPt }}</td>
                                                         {% else %}
@@ -95,9 +95,9 @@
                                                         {% endif %}
 
                                                     {% if app.request.locale == 'pt' %}
-                                                        <td width="50%" >{{ categoria.descricaoPt }}</td>
+                                                        <td width="50%" >{{ categoria.descricaoPt |raw }}</td>
                                                     {% else %}
-                                                        <td width="50%">{{ categoria.descricaoEn }}</td>
+                                                        <td width="50%">{{ categoria.descricaoEn  |raw}}</td>
                                                     {% endif %}
 
                                                     <td width="15%" ><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>

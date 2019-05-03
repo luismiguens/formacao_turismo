@@ -37,10 +37,10 @@
                                     <thead>
                                         <tr>
                                             {#<th scope="col">Id</th>#}
-                                            <th scope="col">Titulopt</th>
-                                            <th scope="col">Descricaopt</th>
-                                            <th scope="col">Imagem</th>
-                                            <th scope="col">Acções</th>
+                                            <th width="25%"  scope="col">Titulopt</th>
+                                            <th width="50%"  scope="col">Descricaopt</th>
+                                            <th width="15%"  scope="col">Imagem</th>
+                                            <th width="10%"  scope="col">Acções</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -48,7 +48,7 @@
                                             <tr>
                                                 {#<th scope="row">{{ categoria.id }}</th>#}
                                                 <td scope="row">{{ categoria.tituloPt }}</td>
-                                                <td>{{ categoria.descricaoPt }}</td>
+                                                <td>{{ categoria.descricaoPt |raw }}</td>
                                                 <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
                                                 <td><a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>

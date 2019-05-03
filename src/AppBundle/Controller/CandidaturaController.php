@@ -31,14 +31,14 @@ class CandidaturaController extends Controller {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $candidaturas = $user->getCandidaturas();
-        
-        $categorias = $em->getRepository('AppBundle:Categoria')->findAll();
+
+        $categorias = $em->getRepository('AppBundle:Categoria')->findBy(['isSemCandidatura' => false]);
 
         //$candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
 
         return $this->render('candidatura/index.html.twig', array(
                     'candidaturas' => $candidaturas,
-            'categorias' => $categorias
+                    'categorias' => $categorias
         ));
     }
 
@@ -49,14 +49,20 @@ class CandidaturaController extends Controller {
     public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        
+
         $candidatura = new Candidatura();
         $candidatura->setCategoria($categoria);
         $candidatura->setFosUser($user);
 
+
+
+
         $criterios = $categoria->getCriterios();
 
-        //$criterios = $em->getRepository('AppBundle:Criterio')->findBy(array('categoria' => $categoria->getId()));
+        //$criterios = $em->getRepository('AppBundle:Criterio')->findBy(array('categoria' => $categoria->getId(), 'isApenasVotacao' => true));
+
+
+
         foreach ($criterios as $key => $criterio) {
             $resposta = new \AppBundle\Entity\Resposta();
             $resposta->setCriterio($criterio);
@@ -82,7 +88,7 @@ class CandidaturaController extends Controller {
             );
 
 
-            $body = "<p>Olá ".$candidatura->getPromotorNome().", recebemos a sua candidatura com sucesso. Obrigado por nos ajudar a valorizar o seu trabalho.</p>
+            $body = "<p>Olá " . $candidatura->getPromotorNome() . ", recebemos a sua candidatura com sucesso. Obrigado por nos ajudar a valorizar o seu trabalho.</p>
          <p>Vamos agora avaliar se a sua candidatura cumpre todos os requisitos do regulamento e iremos notificá-lo/a caso seja necessário fazer alguma correção.</p>
          <p>Caso a sua candidatura cumpra todos os requisitos necessários, entraremos em contato assim que forem selecionados os três finalistas da sua categoria a partir do dia 20 de Junho.</p>
          <p>Fique atento e boa sorte!</p>";
@@ -91,7 +97,7 @@ class CandidaturaController extends Controller {
                     ->setFrom('hea.no.reply@gmail.com', "Hea.pt")
                     //->setTo('luis.t.miguens@gmail.com')
                     ->setTo($candidatura->getPromotorEmail())
-                    ->setCc(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org'])
+                    ->setBcc(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org', 'vcunha@forumturismo21.org'])
                     ->setBody($body)
                     ->setContentType("text/html");
 
@@ -153,7 +159,7 @@ class CandidaturaController extends Controller {
                     'edit_form' => $editForm->createView(),
                     'delete_form' => $deleteForm->createView(),
                     'criterios' => $criterios,
-             'categoria' => $candidatura->getCategoria()
+                    'categoria' => $candidatura->getCategoria()
         ));
     }
 

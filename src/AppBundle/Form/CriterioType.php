@@ -18,6 +18,7 @@ class CriterioType extends AbstractType
                 ->add('tituloEn')
                 ->add('descricaoPt')
                 ->add('descricaoEn')
+                ->add('isApenasVotacao')
                 ->add('categoria');
     }/**
      * {@inheritdoc}
