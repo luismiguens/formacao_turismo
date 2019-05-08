@@ -27,6 +27,19 @@
                 <option name="fixed"/>
             </options>
         </field>
+        
+        <field name="descricaoInternaPt" type="text" column="descricao_interna_pt" length="65535" nullable="true">
+            <options>
+                <option name="fixed"/>
+            </options>
+        </field>
+        <field name="descricaoInternaEn" type="text" column="descricao_interna_en" length="65535" nullable="true">
+            <options>
+                <option name="fixed"/>
+            </options>
+        </field>
+        
+        
         <field name="imagem" type="string" column="imagem" length="80" nullable="true">
             <options>
                 <option name="fixed"/>

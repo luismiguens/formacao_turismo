@@ -364,11 +364,11 @@
       </trans-unit>
       <trans-unit id="YWEaR7t" resname="candidatura_form_promotorDescricaoPt">
         <source>candidatura_form_promotorDescricaoPt</source>
-        <target>Application abstract PT (portuguese)</target>
+        <target>Application abstract PT (portuguese) (2000 characters)</target>
       </trans-unit>
       <trans-unit id="oVk6yw6" resname="candidatura_form_promotorDescricaoEn">
         <source>candidatura_form_promotorDescricaoEn</source>
-        <target>Application abstract ENG (english)</target>
+        <target>Application abstract ENG (english) (2000 characters)</target>
       </trans-unit>
       <trans-unit id="4nlEaHr" resname="candidatura_form_documentoFile">
         <source>candidatura_form_documentoFile</source>

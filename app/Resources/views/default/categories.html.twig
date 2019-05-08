@@ -5,91 +5,83 @@
     <div class="container">
 
         {% for categoria in categorias %}
-
-            
-            
-            
             {% if loop.index is divisible by(2) %}
-            
-            
-                
-                                   
-                    
- <div class="row align-items-center justify-content-center presentation-container">
-        <div class="col-md-6 col-lg-5 pr-md-7 text-center text-md-right">
-          {#<span class="eyebrow text-primary mb-1">Special for you</span>#}
-          {% if app.request.locale == 'pt' %}
-                        <h3 class="h2">{{ categoria.tituloPt }}</h3>
-                    {% else %}
-                        <h3 class="h2">{{ categoria.tituloEn }}</h3>
-                    {% endif %}
-           {% if app.request.locale == 'pt' %}
-                        <p>{{ categoria.descricaoPt| raw }}</p>
-                    {% else %}
-                        <p>{{ categoria.descricaoEn| raw }}</p>
-                    {% endif %}
-                    
-                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
-                        {% trans %}categories_Watch Now{% endtrans %}
-                    </a>
-        </div>
-        <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="presentation-circle with-delay">
-            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
-          </div>
-        </div>
-      </div>
-                
-           
-                    
-                     {% else %} 
-                    
-                    
-                    
-  <div class="row align-items-center justify-content-center presentation-container">
-                <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
-                    <div class="presentation-circle">
-                        <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
+
+               <div class="row align-items-center justify-content-center presentation-container">
+                    <div class="col-md-6 col-lg-5 pr-md-7 text-center text-md-right">
+                        {#<span class="eyebrow text-primary mb-1">Special for you</span>#}
+                        {% if app.request.locale == 'pt' %}
+                            <h3 class="h2">{{ categoria.tituloPt }}</h3>
+                        {% else %}
+                            <h3 class="h2">{{ categoria.tituloEn }}</h3>
+                        {% endif %}
+                        {% if app.request.locale == 'pt' %}
+                            <p>{{ categoria.descricaoPt| raw }}</p>
+                        {% else %}
+                            <p>{{ categoria.descricaoEn| raw }}</p>
+                        {% endif %}
+
+                        <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
+                            {% trans %}categories_Watch Now{% endtrans %}
+                        </a>
+                    </div>
+                    <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+                        <div class="presentation-circle with-delay">
+                            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 pl-md-7 text-center text-md-left">
-                    <!--<span class="eyebrow text-primary mb-1">Special for you</span>-->
-                    {#<h3 class="h2">Amazing Teachers</h3>#}
 
-                    {% if app.request.locale == 'pt' %}
-                        <h3 class="h2">{{ categoria.tituloPt }}</h3>
-                    {% else %}
-                        <h3 class="h2">{{ categoria.tituloEn }}</h3>
-                    {% endif %}
+            {% else %} 
 
-                    {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus.</p>#}
+                <div class="row align-items-center justify-content-center presentation-container">
+                    <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+                        <div class="presentation-circle">
+                            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 pl-md-7 text-center text-md-left">
+                        <!--<span class="eyebrow text-primary mb-1">Special for you</span>-->
+                        {#<h3 class="h2">Amazing Teachers</h3>#}
 
-                    {% if app.request.locale == 'pt' %}
-                        <p>{{ categoria.descricaoPt| raw }}</p>
-                    {% else %}
-                        <p>{{ categoria.descricaoEn| raw }}</p>
-                    {% endif %}
+                        {% if app.request.locale == 'pt' %}
+                            <h3 class="h2">{{ categoria.tituloPt }}</h3>
+                        {% else %}
+                            <h3 class="h2">{{ categoria.tituloEn }}</h3>
+                        {% endif %}
 
-                    <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
-                        {% trans %}categories_Watch Now{% endtrans %}
-                    </a>
+                        {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus.</p>#}
+
+                        {% if app.request.locale == 'pt' %}
+                            <p>{{ categoria.descricaoPt| raw }}</p>
+                        {% else %}
+                            <p>{{ categoria.descricaoEn| raw }}</p>
+                        {% endif %}
+
+                        
+                        {% if categoria.isSemCandidatura == false %}
+                        <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
+                            {% trans %}categories_Watch Now{% endtrans %}
+                        </a>
+                        {% endif %}
+                        
+                    </div>
                 </div>
-            </div>
-                    
-                         
-                     {% endif%} 
-                    
-                    
-                    
-                    
-                    
+
+
+            {% endif%} 
+
+
+
+
+
         {% endfor %}
 
-       
-        
-        
-        
-        
+
+
+
+
+
     </div>
 </section>
 <!-- / presentation -->

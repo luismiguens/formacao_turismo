@@ -6,13 +6,12 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CategoriaType extends AbstractType
-{
+class CategoriaType extends AbstractType {
+
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
-    {
+    public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
 //                ->add('promotorNome')
 //                ->add('promotorProjecto')
@@ -22,6 +21,8 @@ class CategoriaType extends AbstractType
                 ->add('tituloEn')
                 ->add('descricaoPt', \Symfony\Component\Form\Extension\Core\Type\TextareaType::class)
                 ->add('descricaoEn', \Symfony\Component\Form\Extension\Core\Type\TextareaType::class)
+                ->add('descricaoInternaPt', \Symfony\Component\Form\Extension\Core\Type\TextareaType::class)
+                ->add('descricaoInternaEn', \Symfony\Component\Form\Extension\Core\Type\TextareaType::class)
 //                ->add('imagem')
                 ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, ['required' => false,
                     'label' => "Imagem",
@@ -29,11 +30,13 @@ class CategoriaType extends AbstractType
                     'download_link' => true])
                 ->add('isSemCandidatura')
                 ->add('candidaturaVencedora');
-    }/**
+    }
+
+/**
      * {@inheritdoc}
      */
-    public function configureOptions(OptionsResolver $resolver)
-    {
+
+    public function configureOptions(OptionsResolver $resolver) {
         $resolver->setDefaults(array(
             'data_class' => 'AppBundle\Entity\Categoria'
         ));
@@ -42,10 +45,8 @@ class CategoriaType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
-    {
+    public function getBlockPrefix() {
         return 'appbundle_categoria';
     }
-
 
 }

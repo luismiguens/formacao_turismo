@@ -30,6 +30,21 @@ class Categoria
      */
     private $descricaoEn;
 
+        /**
+     * @var string
+     */
+    private $descricaoInternaPt;
+
+    /**
+     * @var string
+     */
+    private $descricaoInternaEn;
+
+    
+    
+    
+    
+    
     /**
      * @var string
      */
@@ -410,6 +425,22 @@ class Categoria
     }
 
 
-    
+    function getDescricaoInternaPt() {
+        return $this->descricaoInternaPt;
+    }
+
+    function getDescricaoInternaEn() {
+        return $this->descricaoInternaEn;
+    }
+
+    function setDescricaoInternaPt($descricaoInternaPt) {
+        $this->descricaoInternaPt = $descricaoInternaPt;
+    }
+
+    function setDescricaoInternaEn($descricaoInternaEn) {
+        $this->descricaoInternaEn = $descricaoInternaEn;
+    }
+
+
     
 }

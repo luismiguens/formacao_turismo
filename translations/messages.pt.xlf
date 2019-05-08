@@ -367,11 +367,11 @@
       </trans-unit>
       <trans-unit id="YWEaR7t" resname="candidatura_form_promotorDescricaoPt">
         <source>candidatura_form_promotorDescricaoPt</source>
-        <target>Abstract da candidatura PT(português)</target>
+        <target>Abstract da candidatura PT(português) (2000 caracteres)</target>
       </trans-unit>
       <trans-unit id="oVk6yw6" resname="candidatura_form_promotorDescricaoEn">
         <source>candidatura_form_promotorDescricaoEn</source>
-        <target>Abstract da candidatura ING (inglês)</target>
+        <target>Abstract da candidatura ING (inglês) (2000 caracteres)</target>
       </trans-unit>
       <trans-unit id="4nlEaHr" resname="candidatura_form_documentoFile">
         <source>candidatura_form_documentoFile</source>
