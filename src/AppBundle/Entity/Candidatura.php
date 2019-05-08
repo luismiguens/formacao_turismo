@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
 
 /**
  * Candidatura
@@ -448,6 +450,37 @@ class Candidatura {
         return $this->imagemFile;
     }
 
+    
+    
+    
+    
+//    public static function loadValidatorMetadata(ClassMetadata $metadata)
+//    {
+//        $metadata->addPropertyConstraint('documentoFile', new Assert\File([
+//            'maxSize' => '1M',
+//            'mimeTypes' => [
+//                'application/pdf',
+//                'application/x-pdf',
+//            ],
+//            'mimeTypesMessage' => 'Please upload a valid PDF',
+//            'maxSizeMessage' => 'bla 1000000'
+//        ]));
+//    }
+    
+    
+    
+    
+    
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('documentoFile', new Assert\File([
+            'maxSize' => '2M',
+        ]))->addPropertyConstraint('cvFile', new Assert\File([
+            'maxSize' => '2M',
+        ]))->addPropertyConstraint('imagemFile', new Assert\File([
+            'maxSize' => '2M',
+        ]));
+    }
     
     
 }

@@ -18,10 +18,20 @@ class ParceiroType extends AbstractType
         $builder
                 ->add('nome')
                 ->add('isJuri')
-                ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, ['required' => false,
-                    'label' => "Imagem",
+                ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, [
+//                    'required' => false,
+//                    'label' => "Imagem",
+//                    'allow_delete' => true,
+//                    'download_link' => true
+                    'required' => false,
                     'allow_delete' => true,
-                    'download_link' => true])
+                    'download_uri' => true,
+                    'download_label' => 'Click para Download - Certidão Permantente',
+                    'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
+                        'maxSize' => '1M'
+                            )),
+                
+                    ])
                 ;
     }/**
      * {@inheritdoc}

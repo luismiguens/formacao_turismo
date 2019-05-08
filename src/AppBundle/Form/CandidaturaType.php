@@ -14,7 +14,7 @@ class CandidaturaType extends AbstractType {
      */
     public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
-                ->add('promotorNome', null, array('label' => 'candidatura_form_promotorNome'))
+                ->add('promotorNome', null, array('required' => true, 'label' => 'candidatura_form_promotorNome'))
                 ->add('promotorProjecto', null, array('label' => 'candidatura_form_promotorProjecto'))
                 ->add('promotorEmail', null, array('label' => 'candidatura_form_promotorEmail'))
                 ->add('promotorTelefone', null, array('label' => 'candidatura_form_promotorTelefone'))
@@ -27,7 +27,13 @@ class CandidaturaType extends AbstractType {
                     'download_uri' => true,
                     'download_label' => 'candidatura_form_download_candidatura',
                     'label' => 'candidatura_form_documentoFile',
-                    'translation_domain' => 'messages'
+                    'translation_domain' => 'messages',
+                    'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
+                        'maxSize' => '2M',
+//                        'mimeTypes' => ["application/pdf", "application/x-pdf"],
+//                        'mimeTypesMessage' => "Please upload a valid PDF",
+//                        'maxSizeMessage' => "Upload not more than 2M size files"
+                            )),
                 ])
                 ->add('cvFile', \Vich\UploaderBundle\Form\Type\VichFileType::class, [
                     'required' => false,
@@ -35,14 +41,20 @@ class CandidaturaType extends AbstractType {
                     'download_uri' => true,
                     'download_label' => 'candidatura_form_download_curriculo',
                     'label' => 'candidatura_form_cvFile',
-                    'translation_domain' => 'messages'
+                    'translation_domain' => 'messages',
+                    'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
+                        'maxSize' => '2M'
+                            )),
                 ])
                 ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, ['required' => false,
-//                    'label' => "Imagem",
                     'allow_delete' => true,
                     'download_link' => true,
                     'label' => 'candidatura_form_imagemFile',
-                    'translation_domain' => 'messages']
+                    'translation_domain' => 'messages',
+                    'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
+                        'maxSize' => '2M'
+                            )),
+                    ]
                 )
                 //->add('categoria')
                 ->add('respostas', CollectionType::class, [

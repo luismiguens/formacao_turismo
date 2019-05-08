@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Candidatura;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Validator\Constraints\File;
 
 /**
  * Candidatura controller.
@@ -134,15 +135,14 @@ class CandidaturaController extends Controller {
      */
     public function editAction(Request $request, Candidatura $candidatura) {
 
-        //$respostas = $candidatura->getRespostas();
-        //dump($respostas);
-
 
         $criterios = $candidatura->getCategoria()->getCriterios();
 
         $deleteForm = $this->createDeleteForm($candidatura);
         $editForm = $this->createForm('AppBundle\Form\CandidaturaType', $candidatura);
         $editForm->handleRequest($request);
+        
+
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
