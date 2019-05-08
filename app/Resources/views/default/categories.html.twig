@@ -59,7 +59,7 @@
                         {% endif %}
 
                         
-                        {% if categoria.isSemCandidatura == false %}
+                        {% if categoria.isSemCandidatura == 1 %}
                         <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
                             {% trans %}categories_Watch Now{% endtrans %}
                         </a>
