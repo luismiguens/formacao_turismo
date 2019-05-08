@@ -34,11 +34,11 @@
                                 
                                 
                                 
-                                {% set categorias_com_candidatura = [] %}
+                               
 
 
 
-                                {% if candidaturas|length > 0 %}
+                                
 
                                     <h4>{% trans %}candidaturas_lista_criadas{% endtrans %}</h4>
                                     <table class="table table-lined">
@@ -53,7 +53,7 @@
                                         <tbody>
 
                                             {% for candidatura in candidaturas %}
-                                                {% set categorias_com_candidatura = categorias_com_candidatura|merge([candidatura.categoria.id]) %}
+                                               
                                                 <tr>
                                                     {#<th scope="row">{{ candidatura.id}}</th>#}
                                                     <th scope="row">{{ candidatura.categoria }}</th>
@@ -68,48 +68,11 @@
                                         </tbody>
                                     </table>
 
-                                    <br/><br/>
+                          
 
-                                {% endif %}
+                               
 
-                                <h4>{% trans %}candidaturas_lista_categorias_sem_candidatura {% endtrans %}</h4>
-
-                                <table class="table table-lined">
-                                    <thead>
-                                        <tr>
-                                           
-                                            <th width="25%" >{% trans %}candidaturas_lista_titulo{% endtrans %}</th>
-                                            <th width="50%">{% trans %}candidaturas_lista_descricao{% endtrans %}</th>
-                                            <th width="15%">{% trans %}candidaturas_lista_imagem{% endtrans %}</th>
-                                            <th width="10%">&nbsp;</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for categoria in categorias %}
-
-                                            {% if categoria.id not in categorias_com_candidatura %}
-                                                <tr>
-                                                    
-                                                    {% if app.request.locale == 'pt' %}
-                                                        <td width="25%" scope="row">{{ categoria.tituloPt }}</td>
-                                                        {% else %}
-                                                        <td width="25%" scope="row">{{ categoria.tituloEn }}</td>
-                                                        {% endif %}
-
-                                                    {% if app.request.locale == 'pt' %}
-                                                        <td width="50%" >{{ categoria.descricaoPt |raw }}</td>
-                                                    {% else %}
-                                                        <td width="50%">{{ categoria.descricaoEn  |raw}}</td>
-                                                    {% endif %}
-
-                                                    <td width="15%" ><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                    <td width="10%" ><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a></td>
-                                                </tr>
-                                            {% endif %}
-                                        {% endfor %}
-
-                                    </tbody>
-                                </table>
+                                
                             </div>
                         </div>
                     </div>

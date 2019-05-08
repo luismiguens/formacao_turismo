@@ -30,17 +30,23 @@ class CandidaturaController extends Controller {
 
     public function indexAction() {
         $em = $this->getDoctrine()->getManager();
-        $user = $this->getUser();
-        $candidaturas = $user->getCandidaturas();
 
-        $categorias = $em->getRepository('AppBundle:Categoria')->findBy(['isSemCandidatura' => false]);
 
-        //$candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN') || $this->get('security.authorization_checker')->isGranted('ROLE_JURI')) {
+            $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+            return $this->render('candidatura/index_admin.html.twig', array(
+                        'candidaturas' => $candidaturas
+            ));
+        } else {
+            $user = $this->getUser();
+            $candidaturas = $user->getCandidaturas();
+            $categorias = $em->getRepository('AppBundle:Categoria')->findBy(['isSemCandidatura' => false]);
 
-        return $this->render('candidatura/index.html.twig', array(
-                    'candidaturas' => $candidaturas,
-                    'categorias' => $categorias
-        ));
+            return $this->render('candidatura/index.html.twig', array(
+                        'candidaturas' => $candidaturas,
+                        'categorias' => $categorias
+            ));
+        }
     }
 
     /**
@@ -141,7 +147,7 @@ class CandidaturaController extends Controller {
         $deleteForm = $this->createDeleteForm($candidatura);
         $editForm = $this->createForm('AppBundle\Form\CandidaturaType', $candidatura);
         $editForm->handleRequest($request);
-        
+
 
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
