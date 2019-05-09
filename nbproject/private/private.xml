@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Form/CandidaturaType.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Form/ParceiroType.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/new.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/config/config.yml</file>
             <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/CandidaturaController.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Entity/Candidatura.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/edit.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/translations/messages.pt.xlf</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/index.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/index_admin.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/header.html.twig</file>
         </group>
     </open-files>
 </project-private>
