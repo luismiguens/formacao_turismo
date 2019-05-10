@@ -7,6 +7,10 @@
             <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/index.html.twig</file>
             <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/index_admin.html.twig</file>
             <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/header.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/categoria/edit.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/categoria/new.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/new.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/edit.html.twig</file>
         </group>
     </open-files>
 </project-private>
