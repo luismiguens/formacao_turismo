@@ -47,6 +47,10 @@ class DefaultController extends Controller {
 
     public function indexAction(Request $request) {
 
+        
+        echo phpinfo();
+        
+        
         $em = $this->getDoctrine()->getManager();
 
         $parceiros = $em->getRepository('AppBundle:Parceiro')->findBy(['isJuri' => false]);
