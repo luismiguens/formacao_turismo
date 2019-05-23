@@ -29,7 +29,7 @@ class CandidaturaType extends AbstractType {
                     'label' => 'candidatura_form_documentoFile',
                     'translation_domain' => 'messages',
                     'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
-                        'maxSize' => '3M',
+                        'maxSize' => '10M',
 //                        'mimeTypes' => ["application/pdf", "application/x-pdf"],
 //                        'mimeTypesMessage' => "Please upload a valid PDF",
 //                        'maxSizeMessage' => "Upload not more than 2M size files"
@@ -43,7 +43,7 @@ class CandidaturaType extends AbstractType {
                     'label' => 'candidatura_form_cvFile',
                     'translation_domain' => 'messages',
                     'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
-                        'maxSize' => '3M'
+                        'maxSize' => '10M'
                             )),
                 ])
                 ->add('imagemFile', \Vich\UploaderBundle\Form\Type\VichImageType::class, ['required' => false,
@@ -52,7 +52,7 @@ class CandidaturaType extends AbstractType {
                     'label' => 'candidatura_form_imagemFile',
                     'translation_domain' => 'messages',
                     'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
-                        'maxSize' => '3M'
+                        'maxSize' => '10M'
                             )),
                     ]
                 )

@@ -193,8 +193,8 @@
     var appbundle_candidatura_imagemFile_file = document.getElementById("appbundle_candidatura_imagemFile_file");
 
     appbundle_candidatura_imagemFile_file.onchange = function () {
-        if (this.files[0].size > 3000000) {
-            alert("O LOGOTIPO DO PROJETO/FOTOGRAFIA DO CANDIDATO é muito grande. O tamanho máximo permitido é de 3MB!");
+        if (this.files[0].size > 10000000) {
+            alert("O LOGOTIPO DO PROJETO/FOTOGRAFIA DO CANDIDATO é muito grande. O tamanho máximo permitido é de 10MB!");
             this.value = "";
         }
         ;
@@ -205,8 +205,8 @@
     var appbundle_candidatura_cvFile_file = document.getElementById("appbundle_candidatura_cvFile_file");
 
     appbundle_candidatura_cvFile_file.onchange = function () {
-        if (this.files[0].size > 3000000) {
-            alert("O CURRICULUM VITAE é muito grande. O tamanho máximo permitido é de 3MB!");
+        if (this.files[0].size > 10000000) {
+            alert("O CURRICULUM VITAE é muito grande. O tamanho máximo permitido é de 10MB!");
             this.value = "";
         }
         ;
@@ -215,8 +215,8 @@
     var appbundle_candidatura_documentoFile_file = document.getElementById("appbundle_candidatura_documentoFile_file");
 
     appbundle_candidatura_documentoFile_file.onchange = function () {
-        if (this.files[0].size > 3000000) {
-            alert("O DOCUMENTO COMPLEMENTAR é muito grande. O tamanho máximo permitido é de 3MB!");
+        if (this.files[0].size > 10000000) {
+            alert("O DOCUMENTO COMPLEMENTAR é muito grande. O tamanho máximo permitido é de 10MB!");
             this.value = "";
         }
         ;
