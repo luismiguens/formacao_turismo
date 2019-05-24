@@ -32,7 +32,7 @@ class CandidaturaType extends AbstractType {
                         'maxSize' => '10M',
 //                        'mimeTypes' => ["application/pdf", "application/x-pdf"],
 //                        'mimeTypesMessage' => "Please upload a valid PDF",
-//                        'maxSizeMessage' => "Upload not more than 2M size files"
+//                        'maxSizeMessage' => "Upload not more than 100000000M size files"
                             )),
                 ])
                 ->add('cvFile', \Vich\UploaderBundle\Form\Type\VichFileType::class, [

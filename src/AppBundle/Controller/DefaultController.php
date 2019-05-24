@@ -48,7 +48,7 @@ class DefaultController extends Controller {
     public function indexAction(Request $request) {
 
         
-        //echo phpinfo();
+        echo phpinfo();
         
         
         $em = $this->getDoctrine()->getManager();

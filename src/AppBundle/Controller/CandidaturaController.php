@@ -141,7 +141,7 @@ class CandidaturaController extends Controller {
      */
     public function editAction(Request $request, Candidatura $candidatura) {
 
-
+       
         $criterios = $candidatura->getCategoria()->getCriterios();
 
         $deleteForm = $this->createDeleteForm($candidatura);

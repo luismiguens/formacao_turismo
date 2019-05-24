@@ -471,16 +471,16 @@ class Candidatura {
     
     
     
-    public static function loadValidatorMetadata(ClassMetadata $metadata)
-    {
-        $metadata->addPropertyConstraint('documentoFile', new Assert\File([
-            'maxSize' => '2M',
-        ]))->addPropertyConstraint('cvFile', new Assert\File([
-            'maxSize' => '2M',
-        ]))->addPropertyConstraint('imagemFile', new Assert\File([
-            'maxSize' => '2M',
-        ]));
-    }
+//    public static function loadValidatorMetadata(ClassMetadata $metadata)
+//    {
+//        $metadata->addPropertyConstraint('documentoFile', new Assert\File([
+//            'maxSize' => '2M',
+//        ]))->addPropertyConstraint('cvFile', new Assert\File([
+//            'maxSize' => '2M',
+//        ]))->addPropertyConstraint('imagemFile', new Assert\File([
+//            'maxSize' => '2M',
+//        ]));
+//    }
     
     
 }
