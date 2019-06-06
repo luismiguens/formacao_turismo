@@ -28,7 +28,7 @@ class VotacaoController extends Controller {
         // 1) calcular para cada resposta o somatorio dos votos e actualizar campo votos na tabela de respostas
                 
         
-        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findBy(array(), array('categoria' => 'DESC'));
         
 
         return $this->render('votacao/resultados.html.twig', array(
