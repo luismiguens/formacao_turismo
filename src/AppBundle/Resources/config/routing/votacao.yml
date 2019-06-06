@@ -22,3 +22,10 @@ admin_votacao_delete:
     path:     /{id}/delete
     defaults: { _controller: "AppBundle:Votacao:delete" }
     methods:  DELETE
+
+
+
+admin_votacao_resultados:
+    path:     /resultados
+    defaults: { _controller: "AppBundle:Votacao:resultados" }
+    methods:  GET

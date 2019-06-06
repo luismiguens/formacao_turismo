@@ -3,23 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/cta.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/config/routing.yml</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Form/ContactType.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/faq.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/header.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/index.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/header_landing.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Entity/Contact.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/categories.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/email.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/cover.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/contact.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/imprensa.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/DefaultController.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/CandidaturaController.php</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/gallery.html.twig</file>
-            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/footer.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/VotacaoController.php</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Resources/config/doctrine/Resposta.orm.xml</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Resources/config/doctrine/Voto.orm.xml</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/votacao/resultados.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Resources/config/routing/votacao.yml</file>
         </group>
     </open-files>
 </project-private>

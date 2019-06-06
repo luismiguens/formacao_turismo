@@ -27,6 +27,60 @@ class Resposta
      */
     private $candidatura;
 
+    
+    private $votos;
+    
+    
+    
+    
+    
+     /**
+     * Add voto
+     *
+     * @param \AppBundle\Entity\Voto $voto
+     *
+     * @return Candidatura
+     */
+    public function addVoto(\AppBundle\Entity\Voto $voto)
+    {
+       
+        
+        $voto->setResposta($this);
+         $this->votos->add($voto);
+        
+        //$this->votos[] = $voto;
+
+        return $this;
+    }
+
+    /**
+     * Remove voto
+     *
+     * @param \AppBundle\Entity\Voto $voto
+     */
+    public function removeVoto(\AppBundle\Entity\Voto $voto)
+    {
+        $this->votos->removeElement($voto);
+    }
+
+    /**
+     * Get votos
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getVotos()
+    {
+        return $this->votos;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /**
      * Set texto
@@ -116,5 +170,10 @@ class Resposta
     public function __toString() {
         return (string)$this->getId();
     }
+    
+    
+    
+    
+    
 }
 

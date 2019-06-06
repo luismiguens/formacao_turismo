@@ -12,6 +12,37 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class VotacaoController extends Controller {
 
+    
+    
+    
+    
+        /**
+     * Lists all resultados.
+     *
+     */
+    public function resultadosAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        
+        // 1) calcular para cada resposta o somatorio dos votos e actualizar campo votos na tabela de respostas
+                
+        
+        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
+        
+
+        return $this->render('votacao/resultados.html.twig', array(
+            'candidaturas' => $candidaturas,
+        ));
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Lists all votacao entities.
      *
@@ -20,24 +51,22 @@ class VotacaoController extends Controller {
         $em = $this->getDoctrine()->getManager();
 
         $user = $this->getUser();
-        
+
 //VOTACOES JÁ EXISTENTES
 //$votacaos = $em->getRepository('AppBundle:Votacao')->findAll();
         $votacoes = $user->getVotacoes();
-        
+
         //CANDIDATURAS SEM VOTACAO
-        
+
         $candidaturas = $em->getRepository('AppBundle:Candidatura')->findAll();
-        
-        
+
+
 //        dump(count($votacoes));
 //        dump(count($candidaturas));
-        
-        
         //dump($candidaturas);
 
         return $this->render('votacao/index.html.twig', array(
-            'votacoes' => $votacoes,
+                    'votacoes' => $votacoes,
                     'candidaturas' => $candidaturas,
         ));
     }
@@ -47,11 +76,11 @@ class VotacaoController extends Controller {
      *
      */
     public function newAction(Request $request, \AppBundle\Entity\Candidatura $candidatura) {
-        
+
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        
-        
+
+
         $votacao = new Votacao();
         $votacao->setCandidatura($candidatura);
         $votacao->setFosUser($user);
@@ -68,17 +97,17 @@ class VotacaoController extends Controller {
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            
-            
+
+
             foreach ($votacao->getVotos() as $voto) {
                 $voto->setVotacao($votacao);
                 $em->persist($votacao);
             }
-            
-            
+
+
             $em->flush();
-            
-              $this->get('session')->getFlashBag()->add(
+
+            $this->get('session')->getFlashBag()->add(
                     'notice', 'Votação criada com sucesso!'
             );
 
@@ -115,7 +144,7 @@ class VotacaoController extends Controller {
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-            
+
             $this->get('session')->getFlashBag()->add(
                     'notice', 'Votação actualizada com sucesso!'
             );

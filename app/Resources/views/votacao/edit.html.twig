@@ -42,6 +42,8 @@
                                 <h5>{% trans %}votacao_form_nome_promotor{% endtrans %}</h5> <p>{{ votacao.candidatura.promotorNome }}</p>
                                 <h5>{% trans %}votacao_form_projecto_promotor{% endtrans %}</h5><p> {{ votacao.candidatura.promotorProjecto }}</p>
                                 <h5>{% trans %}votacao_form_logotipo_promotor{% endtrans %}</h5> <img style="max-width: 200px" src="{{ vich_uploader_asset(votacao.candidatura, 'imagemFile') }}" alt="" />
+                                <h5>{% trans %}Documento complementar{% endtrans %}</h5> <p> <a target="_blank" href="{{ vich_uploader_asset(votacao.candidatura, 'documentoFile') }}" >Download Documento complementar</a></p>
+                                <h5>{% trans %}Curriculum vitae {% endtrans %}</h5> <p><a target="_blank" href="{{ vich_uploader_asset(votacao.candidatura, 'cvFile') }}" >Download Curriculum vitae</a></p>
                             </div>
                         </div>
 
