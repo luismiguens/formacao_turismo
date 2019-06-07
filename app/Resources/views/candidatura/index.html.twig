@@ -55,12 +55,13 @@
                                             {% for candidatura in candidaturas %}
                                                 {% set categorias_com_candidatura = categorias_com_candidatura|merge([candidatura.categoria.id]) %}
                                                 <tr>
-                                                    {#<th scope="row">{{ candidatura.id}}</th>#}
                                                     <th scope="row">{{ candidatura.categoria }}</th>
                                                     <td>{{ candidatura.promotorNome }}</td>
                                                     <td>{{ candidatura.promotorProjecto }}</td>
                                                     <td>
-                                                        <a href="{{ path('admin_candidatura_edit', { 'id': candidatura.id }) }}">{% trans %}botao_editar{% endtrans %}</a>
+                                                    {#    
+                                                    FORA DO TEMPO PARA CANDIDATURA
+                                                    <a href="{{ path('admin_candidatura_edit', { 'id': candidatura.id }) }}">{% trans %}botao_editar{% endtrans %}</a>#}
                                                     </td>
                                                 </tr>
                                             {% endfor %}
@@ -103,7 +104,13 @@
                                                     {% endif %}
 
                                                     <td width="15%" ><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
-                                                    <td width="10%" ><a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a></td>
+                                                    <td width="10%" >
+                                                        {#
+                                                        
+                                                        FORA DO TEMPO PARA CANDIDATURA
+                                                        
+                                                        <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}">{% trans %}botao_criar{% endtrans %}</a>#}
+                                                    </td>
                                                 </tr>
                                             {% endif %}
                                         {% endfor %}

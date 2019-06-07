@@ -49,11 +49,19 @@ class CandidaturaController extends Controller {
         }
     }
 
+    
+    
+    
+    public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
+    return $this->redirectToRoute('admin_candidatura_index');
+    }
+    
+    
     /**
      * Creates a new candidatura entity.
      *
      */
-    public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
+    public function newRealAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
 
@@ -135,11 +143,19 @@ class CandidaturaController extends Controller {
         ));
     }
 
+    
+    
+    
+     public function editAction(Request $request, Candidatura $candidatura) {
+    return $this->redirectToRoute('admin_candidatura_index');
+    }
+    
+    
     /**
      * Displays a form to edit an existing candidatura entity.
      *
      */
-    public function editAction(Request $request, Candidatura $candidatura) {
+    public function editRealAction(Request $request, Candidatura $candidatura) {
 
        
         $criterios = $candidatura->getCategoria()->getCriterios();

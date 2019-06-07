@@ -21,11 +21,14 @@
                             <p>{{ categoria.descricaoEn| raw }}</p>
                         {% endif %}
 
+                          {#
+                          
+                          COMENTADO PORQUE NÃO ESTÁ DENTRO DO TEMPO DE CANDIDATURA
                           {% if categoria.isSemCandidatura == 0 %}
                         <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
                             {% trans %}categories_Watch Now{% endtrans %}
                         </a>
-                        {% endif %}
+                        {% endif %}#}
                     </div>
                     <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
                         <div class="presentation-circle with-delay">
@@ -60,12 +63,15 @@
                             <p>{{ categoria.descricaoEn| raw }}</p>
                         {% endif %}
 
+                        {#
+                        
+                        COMENTADO PORQUE ESTÁ FORA DO TEMPO DE CANDIDATURA
                         
                         {% if categoria.isSemCandidatura == 0 %}
                         <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
                             {% trans %}categories_Watch Now{% endtrans %}
                         </a>
-                        {% endif %}
+                        {% endif %}#}
                         
                     </div>
                 </div>
