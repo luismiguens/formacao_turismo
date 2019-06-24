@@ -74,7 +74,10 @@ class Candidatura {
     private $cv;
     private $cvFile;
     
+    private $nomeada;
     
+        
+        
         /**
      * @var string
      */
@@ -451,7 +454,15 @@ class Candidatura {
     }
 
     
-    
+    function getNomeada() {
+        return $this->nomeada;
+    }
+
+    function setNomeada($nomeada) {
+        $this->nomeada = $nomeada;
+    }
+
+
     
     
 //    public static function loadValidatorMetadata(ClassMetadata $metadata)

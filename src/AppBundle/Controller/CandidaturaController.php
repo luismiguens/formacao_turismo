@@ -26,6 +26,22 @@ class CandidaturaController extends Controller {
 //                    'candidaturas' => $candidaturas,
 //        ));
 //    }
+    
+    
+    
+    
+        public function nomeadasAction() {
+        $em = $this->getDoctrine()->getManager();
+
+        $candidaturas = $em->getRepository('AppBundle:Candidatura')->findBy(array('nomeada'=>1), array('categoria' => 'DESC'));
+
+        return $this->render('candidatura/nomeadas.html.twig', array(
+                    'candidaturas' => $candidaturas,
+        ));
+    }
+
+
+    
 
 
     public function indexAction() {

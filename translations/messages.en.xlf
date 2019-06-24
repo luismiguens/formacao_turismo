@@ -97,6 +97,16 @@
         <source>categories_Watch Now</source>
         <target>Apply</target>
       </trans-unit>
+      
+            
+      <trans-unit id="candidaturas_ver_nomeados" resname="candidaturas_ver_nomeados">
+        <source>candidaturas_ver_nomeados</source>
+        <target>See nominees</target>
+      </trans-unit>
+      
+      
+      
+      
       <trans-unit id="Js5J8na" resname="blog_From the">
         <source>blog_From the</source>
         <target>RETIRAR TEXTO</target>

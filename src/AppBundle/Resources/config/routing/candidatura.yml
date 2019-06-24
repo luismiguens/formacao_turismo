@@ -22,3 +22,9 @@ admin_candidatura_delete:
     path:     /{id}/delete
     defaults: { _controller: "AppBundle:Candidatura:delete" }
     methods:  DELETE
+
+
+admin_candidatura_nomeadas:
+    path:     /nomeadas
+    defaults: { _controller: "AppBundle:Candidatura:nomeadas" }
+    methods:  GET

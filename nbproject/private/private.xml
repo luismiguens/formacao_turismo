@@ -13,6 +13,11 @@
             <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/votacao/edit.html.twig</file>
             <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/votacao/new.html.twig</file>
             <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/VotacaoController.php</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/categories.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/default/cover.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/candidatura/index.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/app/Resources/views/categoria/index.html.twig</file>
+            <file>file:/home/luis/sfprojects/formacao_turismo/src/AppBundle/Controller/CandidaturaController.php</file>
         </group>
     </open-files>
 </project-private>

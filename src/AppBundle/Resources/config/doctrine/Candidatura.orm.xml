@@ -79,5 +79,18 @@
         <field name="updatedAt" type="datetime" column="updated_at" nullable="true"/>
     
     
+            <field name="nomeada" type="integer" column="nomeada" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+        
+        
+        
     </entity>
 </doctrine-mapping>
+
+
+<!--
+ALTER TABLE `formacao_turismo`.`candidatura` 
+ADD COLUMN `nomeada` INT NULL DEFAULT 0 AFTER `imagem`;-->

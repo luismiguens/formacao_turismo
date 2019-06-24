@@ -93,10 +93,24 @@
         <source>categories_Categories</source>
         <target>Categorias</target>
       </trans-unit>
+      
+      
+      
+      
       <trans-unit id="hicoFLd" resname="categories_Watch Now">
         <source>categories_Watch Now</source>
         <target>Candidatar</target>
       </trans-unit>
+      
+      <trans-unit id="candidaturas_ver_nomeados" resname="candidaturas_ver_nomeados">
+        <source>candidaturas_ver_nomeados</source>
+        <target>Ver Nomeados</target>
+      </trans-unit>
+      
+      
+      
+      
+      
       <trans-unit id="Js5J8na" resname="blog_From the">
         <source>blog_From the</source>
         <target>RETIRAR TEXTO</target>
