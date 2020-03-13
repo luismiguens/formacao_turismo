@@ -68,7 +68,7 @@ class CandidaturaController extends Controller {
     
     
     
-    public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
+    public function newAfterAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
     return $this->redirectToRoute('admin_candidatura_index');
     }
     
@@ -77,7 +77,7 @@ class CandidaturaController extends Controller {
      * Creates a new candidatura entity.
      *
      */
-    public function newRealAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
+    public function newAction(Request $request, \AppBundle\Entity\Categoria $categoria) {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
 
