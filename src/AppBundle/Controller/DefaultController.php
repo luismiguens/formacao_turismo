@@ -95,6 +95,10 @@ class DefaultController extends Controller {
         ));
     }
 
+    public function landingPageAction() {
+        return $this->render('landing/landing.html.twig');
+    }
+
     private function sendEmail(\AppBundle\Entity\Contact $contact) {
 
         
