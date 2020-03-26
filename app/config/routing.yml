@@ -28,3 +28,9 @@ homepage:
 #    defaults:  { _controller: AppBundle:Default:index, _locale: pt }
     requirements:
         _locale:  en|pt
+
+index:
+    path:      /{_locale}/index
+    defaults:  { _controller: AppBundle:Default:index, _locale: pt }
+    requirements:
+        _locale:  en|pt
