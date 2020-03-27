@@ -22,14 +22,14 @@ email:
     path:      /{_locale}/email
     defaults:  { _controller: AppBundle:Default:email}
 
-homepage:
+landing_page:
     path:      /{_locale}
     defaults:  { _controller: AppBundle:Default:landingPage, _locale: pt }
 #    defaults:  { _controller: AppBundle:Default:index, _locale: pt }
     requirements:
         _locale:  en|pt
 
-index:
+homepage:
     path:      /{_locale}/index
     defaults:  { _controller: AppBundle:Default:index, _locale: pt }
     requirements:
