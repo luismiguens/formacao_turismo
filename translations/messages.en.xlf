@@ -529,7 +529,108 @@ data, among others considered relevant.)</target>
         <source>Os prémios da formação turística em Portugal</source>
         <target>The tourism training awards in Portugal</target>
       </trans-unit>
-      
+
+
+
+
+
+      <trans-unit id="input_one_project_responsible" resname="input_one_project_responsible">
+        <source>input_one_project_responsible</source>
+        <target>Name of the promoter/or the person responsible for the application</target>
+      </trans-unit>
+
+      <trans-unit id="input_one_teacher" resname="input_one_teacher">
+        <source>input_one_teacher</source>
+        <target>Name of the Teacher</target>
+      </trans-unit>
+
+      <trans-unit id="input_one_responsible" resname="input_one_responsible">
+        <source>input_one_responsible</source>
+        <target>Name of the person responsible for the application</target>
+      </trans-unit>
+
+
+
+      <trans-unit id="input_two_project_name" resname="input_two_project_name">
+        <source>input_two_project_name</source>
+        <target>Project name</target>
+      </trans-unit>
+
+      <trans-unit id="input_two_institution" resname="input_two_institution">
+        <source>input_two_institution</source>
+        <target>Name of the Educational Institution to which the professor is employed to</target>
+      </trans-unit>
+
+      <trans-unit id="input_two_entity" resname="input_two_entity">
+        <source>input_two_entity</source>
+        <target>Name of the entity</target>
+      </trans-unit>
+
+
+
+      <trans-unit id="input_three_project_email" resname="input_three_project_email">
+        <source>input_three_project_email</source>
+        <target>Email of the promoter/or of the person responsible for the application</target>
+      </trans-unit>
+
+      <trans-unit id="input_three_teacher_email" resname="input_three_teacher_email">
+        <source>input_three_teacher_email</source>
+        <target>Email of the Teacher/or the person responsible for the application</target>
+      </trans-unit>
+
+      <trans-unit id="input_three_responsible_email" resname="input_three_responsible_email">
+        <source>input_three_responsible_emaily</source>
+        <target>Email of the person responsible for the application</target>
+      </trans-unit>
+
+
+
+      <trans-unit id="input_four_project_phone" resname="input_four_project_phone">
+        <source>input_four_project_phone</source>
+        <target>Telephone of the promoter/or of the person responsible for the application</target>
+      </trans-unit>
+
+      <trans-unit id="input_four_teacher_phone" resname="input_four_teacher_phone">
+        <source>input_four_teacher_phone</source>
+        <target>Telephone of the Teacher/or person responsible for the application</target>
+      </trans-unit>
+
+      <trans-unit id="input_four_responsible_phone" resname="input_four_responsible_phone">
+        <source>input_four_responsible_phone</source>
+        <target>Telephone number of the person responsible for the application</target>
+      </trans-unit>
+
+
+
+      <trans-unit id="input_five_project_resume_pt" resname="input_five_project_resume_pt">
+        <source>input_five_project_resume_pt</source>
+        <target>Project summary in Portuguese (500 characters)</target>
+      </trans-unit>
+
+      <trans-unit id="input_five_project_resume_en" resname="input_five_project_resume_en">
+        <source>input_five_project_resume_en</source>
+        <target>Project summary in English (500 characters)</target>
+      </trans-unit>
+
+      <trans-unit id="input_five_project_logo" resname="input_five_project_logo">
+        <source>input_five_project_logo</source>
+        <target>Project logo</target>
+      </trans-unit>
+
+      <trans-unit id="input_five_teacher_photo" resname="input_five_teacher_photo">
+        <source>input_five_teacher_photo</source>
+        <target>Teacher photo</target>
+      </trans-unit>
+
+      <trans-unit id="input_five_business_logo" resname="input_five_business_logo">
+        <source>input_five_business_logo</source>
+        <target>COmpany logo</target>
+      </trans-unit>
+
+      <trans-unit id="input_six_teacher_cv" resname="input_six_teacher_cv">
+        <source>input_six_teacher_cv</source>
+        <target>Submission of the CURRICULUM VITAE of the teacher</target>
+      </trans-unit>
       
     </body>
   </file>

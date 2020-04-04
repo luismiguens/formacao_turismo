@@ -542,9 +542,105 @@
         <target>Os prémios da formação turística em Portugal</target>
       </trans-unit>
       
-      
-      
-      
+
+    <trans-unit id="input_one_project_responsible" resname="input_one_project_responsible">
+      <source>input_one_project_responsible</source>
+      <target>Nome do promotor/ou do responsável pela candidatura</target>
+    </trans-unit>
+
+    <trans-unit id="input_one_teacher" resname="input_one_teacher">
+      <source>input_one_teacher</source>
+      <target>Nome do(a) Docente</target>
+    </trans-unit>
+
+    <trans-unit id="input_one_responsible" resname="input_one_responsible">
+      <source>input_one_responsible</source>
+      <target>Nome do responsável pela candidatura</target>
+    </trans-unit>
+
+
+
+    <trans-unit id="input_two_project_name" resname="input_two_project_name">
+      <source>input_two_project_name</source>
+      <target>Nome do projeto</target>
+    </trans-unit>
+
+    <trans-unit id="input_two_institution" resname="input_two_institution">
+      <source>input_two_institution</source>
+      <target>Nome da Instituição de Ensino a que está vinculado</target>
+    </trans-unit>
+
+    <trans-unit id="input_two_entity" resname="input_two_entity">
+      <source>input_two_entity</source>
+      <target>Nome da entidade</target>
+    </trans-unit>
+
+
+
+    <trans-unit id="input_three_project_email" resname="input_three_project_email">
+      <source>input_three_project_email</source>
+      <target>Email promotor/ou do responsável pela candidatura</target>
+    </trans-unit>
+
+    <trans-unit id="input_three_teacher_email" resname="input_three_teacher_email">
+      <source>input_three_teacher_email</source>
+      <target>Email do(a) Docente/ou do responsável pela candidatura</target>
+    </trans-unit>
+
+    <trans-unit id="input_three_responsible_email" resname="input_three_responsible_email">
+      <source>input_three_responsible_emaily</source>
+      <target>Email do responsável da candidatura</target>
+    </trans-unit>
+
+
+
+    <trans-unit id="input_four_project_phone" resname="input_four_project_phone">
+      <source>input_four_project_phone</source>
+      <target>Telefone promotor/ou do responsável pela candidatura</target>
+    </trans-unit>
+
+    <trans-unit id="input_four_teacher_phone" resname="input_four_teacher_phone">
+      <source>input_four_teacher_phone</source>
+      <target>Telefone do(a) Docente/ou do responsável pela candidatura</target>
+    </trans-unit>
+
+    <trans-unit id="input_four_responsible_phone" resname="input_four_responsible_phone">
+      <source>input_four_responsible_phone</source>
+      <target>Telefone do responsável da candidatura</target>
+    </trans-unit>
+
+
+
+    <trans-unit id="input_five_project_resume_pt" resname="input_five_project_resume_pt">
+      <source>input_five_project_resume_pt</source>
+      <target>Resumo do projeto em português (500 caracteres)</target>
+    </trans-unit>
+
+    <trans-unit id="input_five_project_resume_en" resname="input_five_project_resume_en">
+      <source>input_five_project_resume_en</source>
+      <target>Resumo do projeto em inglês (500 caracteres)</target>
+    </trans-unit>
+
+    <trans-unit id="input_five_project_logo" resname="input_five_project_logo">
+      <source>input_five_project_logo</source>
+      <target>Logótipo do projeto</target>
+    </trans-unit>
+
+    <trans-unit id="input_five_teacher_photo" resname="input_five_teacher_photo">
+      <source>input_five_teacher_photo</source>
+      <target>Fotografia do candidato</target>
+    </trans-unit>
+
+    <trans-unit id="input_five_business_logo" resname="input_five_business_logo">
+      <source>input_five_business_logo</source>
+      <target>Logótipo da empresa</target>
+    </trans-unit>
+
+    <trans-unit id="input_six_teacher_cv" resname="input_six_teacher_cv">
+      <source>input_six_teacher_cv</source>
+      <target>Submissão do CURRICULUM VITAE do docente em avaliação</target>
+    </trans-unit>
+
     </body>
   </file>
 </xliff>

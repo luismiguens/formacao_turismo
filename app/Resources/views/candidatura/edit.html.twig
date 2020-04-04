@@ -10,9 +10,9 @@
             <div class="row align-items-center">
                 <div class="col">
                     {% if app.request.locale == 'pt' %}
-                        <h4>{{categoria.tituloPt}} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
+                        <h4>{{categoria.tituloPt| raw }} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
                     {% else %}
-                        <h4>{{categoria.tituloEn}} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
+                        <h4>{{categoria.tituloEn| raw }} {#- {% trans %}candidaturas_criar_title{% endtrans %}#}</h4>
                     {% endif %}
                 </div>
             </div>
@@ -49,16 +49,32 @@
                                 {% endfor %}
 
                                 <div class="form-group">
-                                    {{ form_label(edit_form.promotorNome) }}
+                                    {% if categoria.id == 1 or categoria.id == 3 %}
+                                        {% trans %}input_one_project_responsible{% endtrans %}
+                                    {% elseif categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_one_teacher{% endtrans %}
+                                    {% elseif categoria.id == 6 %}
+                                        {% trans %}input_one_responsible{% endtrans %}
+                                    {% else %}
+                                        {{ form_label(edit_form.promotorNome) }}
+                                    {% endif %}
                                     {{ form_errors(edit_form.promotorNome) }}
                                     {{ form_widget(edit_form.promotorNome, {'attr': {'class': 'form-control'}}) }}
                                 </div>
+
                                 <div class="form-group">
-                                    {{ form_label(edit_form.promotorProjecto) }}
+                                    {% if categoria.id == 1 or categoria.id == 3 %}
+                                        {% trans %}input_two_project_name{% endtrans %}
+                                    {% elseif categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_two_institution{% endtrans %}
+                                    {% elseif categoria.id == 6 %}
+                                        {% trans %}input_two_entity{% endtrans %}
+                                    {% else %}
+                                        {{ form_label(edit_form.promotorProjecto) }}
+                                    {% endif %}
                                     {{ form_errors(edit_form.promotorProjecto) }}
                                     {{ form_widget(edit_form.promotorProjecto, {'attr': {'class': 'form-control'}}) }}
                                 </div>
-
 
                                 <style>
 
@@ -68,42 +84,77 @@
 
                                 </style>
 
+                                <div class="form-group">
+                                    {% if categoria.id == 1 or categoria.id == 3 %}
+                                        {% trans %}input_three_project_email{% endtrans %}
+                                    {% elseif categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_three_teacher_email{% endtrans %}
+                                    {% elseif categoria.id == 6 %}
+                                        {% trans %}input_three_responsible_email{% endtrans %}
+                                    {% else %}
+                                        {{ form_label(edit_form.promotorEmail) }}
+                                    {% endif %}
+                                    {{ form_errors(edit_form.promotorEmail) }}
+                                    {{ form_widget(edit_form.promotorEmail, {'attr': {'class': 'form-control'}}) }}
+                                </div>
 
                                 <div class="form-group">
-                                    {{ form_label(edit_form.imagemFile) }}
+                                    {% if categoria.id == 1 or categoria.id == 3 %}
+                                        {% trans %}input_four_project_phone{% endtrans %}
+                                    {% elseif categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_four_teacher_phone{% endtrans %}
+                                    {% elseif categoria.id == 6 %}
+                                        {% trans %}input_four_responsible_phone{% endtrans %}
+                                    {% else %}
+                                        {{ form_label(edit_form.promotorTelefone) }}
+                                    {% endif %}
+                                    {{ form_errors(edit_form.promotorTelefone) }}
+                                    {{ form_widget(edit_form.promotorTelefone, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+
+                                {% if categoria.id == 1 or categoria.id == 3 %}
+
+                                    <div class="form-group">
+                                        {% trans %}input_five_project_resume_pt{% endtrans %}
+                                        {{ form_errors(edit_form.promotorDescricaoPt) }}
+                                        {{ form_widget(edit_form.promotorDescricaoPt, {'attr': {'class': 'form-control'}}) }}
+                                    </div>
+
+                                    <div class="form-group">
+                                        {% trans %}input_five_project_resume_en{% endtrans %}
+                                        {{ form_errors(edit_form.promotorDescricaoEn) }}
+                                        {{ form_widget(edit_form.promotorDescricaoEn, {'attr': {'class': 'form-control'}}) }}
+                                    </div>
+
+                                {% else %}
+
+                                    {{ form_widget(edit_form.promotorDescricaoPt, {'attr': {'class': 'd-none'}}) }}
+                                    {{ form_widget(edit_form.promotorDescricaoEn, {'attr': {'class': 'd-none'}}) }}
+
+                                {% endif %}
+
+                                <div class="form-group">
+                                    {% if categoria.id == 1 or categoria.id == 3 %}
+                                        {% trans %}input_five_project_logo{% endtrans %}
+                                    {% elseif categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_five_teacher_photo{% endtrans %}
+                                    {% elseif categoria.id == 6 %}
+                                        {% trans %}input_five_business_logo{% endtrans %}
+                                    {% else %}
+                                        {{ form_label(edit_form.imagemFile) }}
+                                    {% endif %}
                                     {{ form_errors(edit_form.imagemFile) }}
                                     {{ form_widget(edit_form.imagemFile, {'attr': {'class': 'form-control'}}) }}
                                 </div>
 
                                 <div class="form-group">
-                                    {{ form_label(edit_form.promotorEmail) }}
-                                    {{ form_errors(edit_form.promotorEmail) }}
-                                    {{ form_widget(edit_form.promotorEmail, {'attr': {'class': 'form-control'}}) }}
-                                </div>
-                                <div class="form-group">
-                                    {{ form_label(edit_form.promotorTelefone) }}
-                                    {{ form_errors(edit_form.promotorTelefone) }}
-                                    {{ form_widget(edit_form.promotorTelefone, {'attr': {'class': 'form-control'}}) }}
-                                </div>
-
-                                <div class="form-group">
-                                    {{ form_label(edit_form.promotorDescricaoPt) }}
-                                    {{ form_errors(edit_form.promotorDescricaoPt) }}
-                                    {{ form_widget(edit_form.promotorDescricaoPt, {'attr': {'class': 'form-control'}}) }}
-                                </div>
-
-                                <div class="form-group">
-                                    {{ form_label(edit_form.promotorDescricaoEn) }}
-                                    {{ form_errors(edit_form.promotorDescricaoEn) }}
-                                    {{ form_widget(edit_form.promotorDescricaoEn, {'attr': {'class': 'form-control'}}) }}
-                                </div>
-
-
-
-                                <div class="form-group">
-                                    {{ form_label(edit_form.cvFile) }}
-                                    {{ form_errors(edit_form.cvFile) }}
-                                    {{ form_widget(edit_form.cvFile, {'attr': {'class': 'form-control'}}) }}
+                                    {% if categoria.id == 4 or categoria.id == 5 %}
+                                        {% trans %}input_six_teacher_cv{% endtrans %}
+                                        {{ form_errors(edit_form.cvFile) }}
+                                        {{ form_widget(edit_form.cvFile, {'attr': {'class': 'form-control'}}) }}
+                                    {% else %}
+                                        {{ form_widget(edit_form.cvFile.file, {'attr': {'class': 'd-none'}}) }}
+                                    {% endif %}
                                 </div>
 
                                 {# iterate over each existing tag and render its only field: name #}
