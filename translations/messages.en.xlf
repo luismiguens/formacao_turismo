@@ -261,7 +261,7 @@
       </trans-unit>
       <trans-unit id="4gcIs58" resname="footer_premios">
         <source>footer_premios</source>
-        <target>Awards</target>
+        <target>Categories</target>
       </trans-unit>
       <trans-unit id="AgO3O2n" resname="footer_regulamento">
         <source>footer_regulamento</source>
@@ -651,6 +651,21 @@ data, among others considered relevant.)</target>
     <trans-unit id="testimonial_third_title" resname="testimonial_third_title">
       <source>testimonial_third_title</source>
       <target>Winner of Hospitality Education Award 19 « Best Teaching Career in Vocacional Education »</target>
+    </trans-unit>
+
+    <trans-unit id="contacts" resname="contacts">
+      <source>contacts</source>
+      <target>Contacts</target>
+    </trans-unit>
+
+    <trans-unit id="footer_rights" resname="footer_rights">
+      <source>footer_rights</source>
+      <target>All rights reserved.</target>
+    </trans-unit>
+
+    <trans-unit id="footer_press" resname="footer_press">
+      <source>footer_press</source>
+      <target>Press</target>
     </trans-unit>
 
     </body>

@@ -98,9 +98,53 @@ p.title {
     color: #2e2e2e;
 }
 
+#footer img {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: none;
+}
+
 .blockquote::before {
     color: rgba(245, 202, 0, 0.10);
 }
+
+.footer-contacts-container h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.footer-contacts-container .footer-contacts a {
+    display: block;
+    color: #fff;
+}
+
+.footer-contacts-container .footer-contacts a .icon-mail,
+.footer-contacts-container .footer-contacts a .icon-phone {
+    color: #f5ca00 !important;
+}
+
+.footer-contacts-container .footer-socials {
+    list-style: none;
+}
+
+.footer-contacts-container .footer-socials li {
+    display: inline-block;
+}
+
+#blog a.yellow-text {
+    font-weight: 600;
+    transition: all .3s;
+}
+
+#blog a.yellow-text:hover {
+    color: #b78d00;
+}
+
+#blog a.yellow-text span {
+    text-decoration: underline;
+}
+
 
 
 @media (min-width: 1199.99px) {

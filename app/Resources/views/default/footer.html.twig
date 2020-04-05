@@ -1,54 +1,70 @@
-{# empty Twig template #}
-    <!-- footer 4 -->
-    
-            <footer class="text-white" style="background-color: #0C2637">
-              {#<div class="separator-bottom py-5">
-                <div class="container">
-                  <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6">
-                      <p class="lead">{% trans %}footer_Designing beautifull interfaces since 2010{% endtrans %}</p>
-                    </div>
-                    <div class="col-md-6 text-md-right">
-                      <ul class="socials">
-                        <li><a href="" class="icon-facebook fs-20"></a></li>
-                        <li><a href="" class="icon-instagram fs-20"></a></li>
-                        <li><a href="" class="icon-linkedin fs-20"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>#}
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="mb-1">
-                      <img class="logo-sm" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.svg') }}" alt="Logo">
-                    </div>
-                    <span class="copyright-text">{#&copy; {% trans %}footer_GO. 2018 All Right Reserved{% endtrans %}#}</span>
-                  </div>
-                  <div class="col col-lg-2">
-                    <ul class="list-group list-group-minimal">
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#categories">{% trans %}footer_premios{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#regulation">{% trans %}footer_regulamento{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#partners">{% trans %}footer_parceiros{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#schedule">{% trans %}footer_agenda{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#testimonials">{% trans %}footer_testemunhos{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="">{% trans %}footer_jantar{% endtrans %}</a></li>
-                    </ul>
-                  </div>
-                  <div class="col col-lg-2">
-                    <ul class="list-group list-group-minimal">
-                      <li class="list-group-item"><a href="{{ path('homepage') }}">{% trans %}footer_homepage{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#about">{% trans %}footer_sobre{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#gallery">{% trans %}footer_galeria{% endtrans %}</a></li>
-                      <li class="list-group-item"><a href="{{ path('homepage') }}#contact">{% trans %}footer_contactos{% endtrans %}</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-4 text-lg-right">
-                    <a href="tel:372-567-89-89" class="phone bordered">{% trans %}footer_+372 567 89 89{% endtrans %}</a>
-                  </div>
-                </div>
-              </div>
-            </footer>
-          
-    <!-- / footer 4 -->
+<footer id="footer" class="" style="background-color: #0C2637">
+
+  <div class="container">
+
+    <div class="row text-uppercase">
+
+      <div class="col-lg-3 text-white">
+
+        <div class="mb-1">
+          <img class="logo-sm" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.svg') }}" alt="Logo">
+        </div>
+
+      </div>
+
+      <div class="col col-lg-2 text-white">
+
+        <ul class="list-group list-group-minimal">
+          <li class="list-group-item"><a href="{{ path('homepage') }}">{% trans %}footer_homepage{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#categories">{% trans %}footer_premios{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#regulation">{% trans %}footer_regulamento{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#schedule">{% trans %}footer_agenda{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#partners">{% trans %}footer_parceiros{% endtrans %}</a></li>
+{#          <li class="list-group-item"><a href="">{% trans %}footer_jantar{% endtrans %}</a></li>#}
+        </ul>
+
+      </div>
+
+      <div class="col col-lg-2 text-white">
+
+        <ul class="list-group list-group-minimal">
+{#          <li class="list-group-item"><a href="{{ path('homepage') }}#about">{% trans %}footer_sobre{% endtrans %}</a></li>#}
+          <li class="list-group-item"><a href="{{ path('homepage') }}#gallery">{% trans %}footer_galeria{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#testimonials">{% trans %}footer_testemunhos{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#press">{% trans %}footer_press{% endtrans %}</a></li>
+          <li class="list-group-item"><a href="{{ path('homepage') }}#contact">{% trans %}footer_contactos{% endtrans %}</a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 footer-contacts-container">
+
+        <div class="float-lg-right">
+
+          <h4 class="text-white">{% trans %}contacts{% endtrans %}</h4>
+
+          <div class="footer-contacts mb-3">
+            <a href="mailto:geral@forumturismo21.org" class="mb-1"><div class="icon-mail"></div> geral@forumturismo21.org</a>
+            <a href="tel:372-567-89-89"><div class="icon-phone"></div> {% trans %}footer_+372 567 89 89{% endtrans %}</a>
+          </div>
+
+          <ul class="footer-socials pl-0 text-white">
+            <li class="mr-1"><a href="" class="icon-facebook fs-20"></a></li>
+            <li class="mr-1"><a href="" class="icon-linkedin fs-20"></a></li>
+            <li><a href="" class="icon-instagram fs-20"></a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="text-uppercase text-white">
+      <p class="mb-0">Copyright &#169; 2020</p>
+      <p class="mb-0">Hospitality education awards. {% trans %}footer_rights{% endtrans %}</p>
+    </div>
+
+  </div>
+
+</footer>

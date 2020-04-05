@@ -267,7 +267,7 @@
       </trans-unit>
       <trans-unit id="4gcIs58" resname="footer_premios">
         <source>footer_premios</source>
-        <target>Prémios</target>
+        <target>Categorias</target>
       </trans-unit>
       <trans-unit id="AgO3O2n" resname="footer_regulamento">
         <source>footer_regulamento</source>
@@ -659,6 +659,21 @@
         <trans-unit id="testimonial_third_title" resname="testimonial_third_title">
           <source>testimonial_third_title</source>
           <target>Vencedor Hospitality Education Award 19 «Melhor Carreira de Docente no Ensino Profissional»</target>
+        </trans-unit>
+
+        <trans-unit id="contacts" resname="contacts">
+          <source>contacts</source>
+          <target>Contatos</target>
+        </trans-unit>
+
+        <trans-unit id="footer_rights" resname="footer_rights">
+          <source>footer_rights</source>
+          <target>Todos os direitos reservados.</target>
+        </trans-unit>
+
+        <trans-unit id="footer_press" resname="footer_press">
+          <source>footer_press</source>
+          <target>Imprensa</target>
         </trans-unit>
 
     </body>
