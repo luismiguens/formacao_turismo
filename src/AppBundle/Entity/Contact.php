@@ -15,6 +15,11 @@ class Contact
     /**
      * @var string
      */
+    private $surname;
+
+    /**
+     * @var string
+     */
     private $email;
 
     /**
@@ -61,7 +66,21 @@ class Contact
         $this->message = $message;
     }
 
+    /**
+     * @return string
+     */
+    public function getSurname()
+    {
+        return $this->surname;
+    }
 
-    
+    /**
+     * @param string $surname
+     */
+    public function setSurname($surname)
+    {
+        $this->surname = $surname;
+    }
+
 }
 

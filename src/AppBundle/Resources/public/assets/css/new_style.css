@@ -133,19 +133,65 @@ p.title {
 }
 
 #blog a.yellow-text {
+    color: #f5ca00;
     font-weight: 600;
     transition: all .3s;
 }
 
 #blog a.yellow-text:hover {
-    color: #b78d00;
+    color: #cda200;
 }
 
 #blog a.yellow-text span {
     text-decoration: underline;
 }
 
+#contact {
+    background-color: #f5ca00;
+}
 
+#contact h1.title:after {
+    background-color: #fff;
+}
+
+#contact h3 {
+    font-size: 1.3rem;
+}
+
+#contact h3:last-of-type {
+    font-weight: 600;
+}
+
+#contact form .form-control {
+    color: #fff;
+}
+
+#contact form .form-control::placeholder {
+    color: #080e17;
+    opacity: .5;
+}
+
+#contact button {
+    border: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    transition: opacity .3s;
+}
+
+#contact button:hover {
+    opacity: 0.7;
+}
+
+#contact button span {
+    text-decoration: underline;
+}
+
+#partners {
+    background-color: #f5f5f5;
+}
 
 @media (min-width: 1199.99px) {
 

@@ -668,6 +668,51 @@ data, among others considered relevant.)</target>
       <target>Press</target>
     </trans-unit>
 
+    <trans-unit id="contact_title" resname="contact_title">
+      <source>contact_title</source>
+      <target>Need help?</target>
+    </trans-unit>
+
+    <trans-unit id="contact_subtitle_1" resname="contact_subtitle_1">
+      <source>contact_subtitle_1</source>
+      <target>Having troubles when submitting your application?</target>
+    </trans-unit>
+
+    <trans-unit id="contact_subtitle_2" resname="contact_subtitle_2">
+      <source>contact_subtitle_2</source>
+      <target>Get in touch with us!</target>
+    </trans-unit>
+
+    <trans-unit id="form_name" resname="form_name">
+      <source>form_name</source>
+      <target>Name</target>
+    </trans-unit>
+
+    <trans-unit id="form_surname" resname="form_surname">
+      <source>form_surname</source>
+      <target>Surname</target>
+    </trans-unit>
+
+    <trans-unit id="form_email" resname="form_email">
+      <source>form_email</source>
+      <target>Email</target>
+    </trans-unit>
+
+    <trans-unit id="form_phone" resname="form_phone">
+      <source>form_phone</source>
+      <target>Phone</target>
+    </trans-unit>
+
+    <trans-unit id="form_message" resname="form_message">
+      <source>form_message</source>
+      <target>Message</target>
+    </trans-unit>
+
+    <trans-unit id="form_tbn" resname="form_tbn">
+      <source>form_tbn</source>
+      <target>Send</target>
+    </trans-unit>
+
     </body>
   </file>
 </xliff>

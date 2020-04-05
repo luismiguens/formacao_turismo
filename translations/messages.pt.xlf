@@ -676,6 +676,51 @@
           <target>Imprensa</target>
         </trans-unit>
 
+        <trans-unit id="contact_title" resname="contact_title">
+          <source>contact_title</source>
+          <target>Precisa de ajuda?</target>
+        </trans-unit>
+
+        <trans-unit id="contact_subtitle_1" resname="contact_subtitle_1">
+          <source>contact_subtitle_1</source>
+          <target>Está com dúvidas na submissão da sua candidatura?</target>
+        </trans-unit>
+
+        <trans-unit id="contact_subtitle_2" resname="contact_subtitle_2">
+          <source>contact_subtitle_2</source>
+          <target>Entre em contato connosco!</target>
+        </trans-unit>
+
+        <trans-unit id="form_name" resname="form_name">
+          <source>form_name</source>
+          <target>Nome</target>
+        </trans-unit>
+
+        <trans-unit id="form_surname" resname="form_surname">
+          <source>form_surname</source>
+          <target>Apelido</target>
+        </trans-unit>
+
+        <trans-unit id="form_email" resname="form_email">
+          <source>form_email</source>
+          <target>Email</target>
+        </trans-unit>
+
+        <trans-unit id="form_phone" resname="form_phone">
+          <source>form_phone</source>
+          <target>Telemóvel</target>
+        </trans-unit>
+
+        <trans-unit id="form_message" resname="form_message">
+          <source>form_message</source>
+          <target>Mensagem</target>
+        </trans-unit>
+
+        <trans-unit id="form_tbn" resname="form_tbn">
+          <source>form_tbn</source>
+          <target>Enviar</target>
+        </trans-unit>
+
     </body>
   </file>
 </xliff>
