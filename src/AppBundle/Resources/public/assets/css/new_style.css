@@ -94,6 +94,10 @@ h1.title span {
     color: #f5ca00;
 }
 
+p.title {
+    color: #2e2e2e;
+}
+
 .blockquote::before {
     color: rgba(245, 202, 0, 0.10);
 }
