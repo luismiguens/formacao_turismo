@@ -250,30 +250,20 @@
       </trans-unit>
       <trans-unit id="6x2J8Cs" resname="testimonials_luis_lavrador">
         <source>testimonials_luis_lavrador</source>
-        <target>Premiar é em simultâneo reconhecer valor a quem se supera, é convocar para novos desafios e é apelar para novas responsabilidades. 
-                    O prémio que recebi foi de novo um ponto de partida, para uma nova viagem, cujo destino desconheço, mas que para a realizar com sucesso tive de me reinventar.
-                    Reinvenção precisa para dar resposta às grandes questões que o ensino da gastronomia coloca hoje às sociedades, em que o «deixar de ser» e o «ser» acontecem ao mesmo tempo.
-                </target>
+        <target><![CDATA[Esta distinção é um enorme reconhecimento do desempenho de uma equipa dedicada que acredita ser através da inovação e criatividade que se desenvolvem competências para a projeção e renovação contínuas.
+                A <strong>Formação e Desenvolvimento</strong> tem sido um dos pilares estratégicos para o nosso Grupo, ao longo dos anos, e honra-nos verdadeiramente que instituições tão relevantes nos considerem pelo compromisso, nesta área, que permitiu o crescimento de várias gerações de profissionais de hotelaria. 
+                Tudo o que construímos juntos, até à data, já marcou a diferença na vida de muitas pessoas. Por isso gostamos de pensar que o nosso trabalho nunca estará terminado e este é um dos melhores incentivos pois reforçam que estamos no caminho certo e que a jornada continua.]]>
+        </target>
       </trans-unit>
       <trans-unit id="boJp4ae" resname="testimonials_patricia_vieira">
         <source>testimonials_patricia_vieira</source>
-        <target>Após um ano da atribuição do Prémio Inovação e Desenvolvimento, a ESHTE foi convidada pelo Turismo de Portugal a desenvolver a app para a Futurália 2019. 
-                    Deste modo tivemos a oportunidade de demonstrarmos aos estudantes, futuros profissionais da área do Turismo, como a tecnologia serve a aprendizagem e a formação académica e profissional.
-                    Do Sonho à realidade... nasce o Projecto Gamification e Formação Hoteleira, made by Patrícia Vieira
-                </target>
+        <target>O Prémio foi o reconhecimento externo e internacional do trabalho desenvolvido em Instituições de Ensino Superior do Interior, nomeadamente no Instituto Politécnico da Guarda, e em prol de um Turismo que se quer mais inclusivo.</target>
       </trans-unit>
       <trans-unit id="tOdnZeI" resname="testimonials_luis_santos">
         <source>testimonials_luis_santos</source>
-        <target>Ser candidato a um prémio com a chancela de entidades como o Fórum Turismo, o Turismo de Portugal, a ANESPO, a RIPTUR, a Publituris e a Ambitur constitui, por si só, uma grande honra. 
-                    Ser distinguido na categoria “Melhor Carreira de Docente no Ensino Superior” da 1.ª edição dos Hospitality Education Awards envolve sentimentos de gratidão e de enorme satisfação. 
-                    Receber o prémio significou um tributo aos meus alunos que representam duas décadas de gerações de gestores turísticos e hoteleiros, conferindo acréscimo de responsabilidade e empenho numa profissão tão exigente quanto apaixonante como é a profissão de Professor.
-                </target>
-      </trans-unit>
-      <trans-unit id="B5fdvor" resname="testimonials_daniel_pinto">
-        <source>testimonials_daniel_pinto</source>
-        <target>Inovação, Criatividade e Trabalho de Equipa!! Foram estas dimensões que procurámos evidenciar no projeto “Cozinha de Autor”, realizado na Escola de Hotelaria e Turismo do Oeste, que venceu o prémio na categoria de Melhor Projeto Educacional dos Hospitality Education Awards 2018. 
-                    Muito obrigado a toda a equipa da Escola pelo trabalho desenvolvido!! Muitos parabéns ao Fórum Turismo pela organização de excelência dos seus eventos e pela oportunidade e inteligência das suas ações !!
-                </target>
+        <target><![CDATA[Com 23 anos fui convidado para lecionar e, chegado à Escola, agora do outro lado como professor, apercebi-me que estava perante uma exigência ainda maior. Exigência que me levou a fazer um esforço suplementar de lecionar, estudar e manter o trabalho, uma vez que, estar no mercado de trabalho e lecionar em simultâneo, permitem estar atualizado e ministrar aos alunos conteúdos muito próximos da realidade empresarial. Mas manter toda esta atividade retira ao professor vida própria, passando este a viver em função do Ensino sacrificando por vezes a sua vida pessoal e familiar.
+                <strong>Quando nos questionamos se valeu a pena? É este tipo de reconhecimentos que nos fazem acreditar que sim.</strong>]]>
+        </target>
       </trans-unit>
       <trans-unit id="4gcIs58" resname="footer_premios">
         <source>footer_premios</source>
@@ -655,6 +645,21 @@
       <source>see_categories</source>
       <target>Ver categorias</target>
     </trans-unit>
+
+        <trans-unit id="testimonial_one_title" resname="testimonial_one_title">
+          <source>testimonial_one_title</source>
+          <target>Vencedor Hospitality Education Award 19 «Melhor Stakeholder»</target>
+        </trans-unit>
+
+        <trans-unit id="testimonial_second_title" resname="testimonial_second_title">
+          <source>testimonial_second_title</source>
+          <target><![CDATA[Vencedor Hospitality Education Award 19 «Melhor Projeto de Inovação & Desenvolvimento (I&D)»]]></target>
+        </trans-unit>
+
+        <trans-unit id="testimonial_third_title" resname="testimonial_third_title">
+          <source>testimonial_third_title</source>
+          <target>Vencedor Hospitality Education Award 19 «Melhor Carreira de Docente no Ensino Profissional»</target>
+        </trans-unit>
 
     </body>
   </file>

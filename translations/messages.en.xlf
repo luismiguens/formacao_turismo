@@ -244,29 +244,20 @@
       </trans-unit>
       <trans-unit id="6x2J8Cs" resname="testimonials_luis_lavrador">
         <source>testimonials_luis_lavrador</source>
-        <target>Rewarding is simultaneously recognizing value to those who excel, calling for new challenges and appealing to new responsibilities. 
-                    The prize I received was again a starting point, for a new journey, whose destiny I do not know, but that to carry it out successfully I had to reinvent myself. 
-                    Reinvention needs to answer the great questions that the teaching of gastronomy places today in societies, where the "cease to be" and the "being" happen at the same time.
-                </target>
+        <target><![CDATA[This distinction is a huge recognition of the performance of a dedicated team that believes that it is through innovation and creativity that skills for continuous innovation are developed.
+                <strong>Training and Development</strong> has been one of the strategic pillars for our Group over the years and so, it honors us, being recognized for our commitment in this area, which has allowed the professional growth of several hotel professionals, by such influential institutions.
+                Everything we build together, until now, has already made a difference in the lives of many people. Therefore, we like to think that our work is never finished, as is recognitions like these that reassures us we are on the right path and that this journey will continue.]]>
+        </target>
       </trans-unit>
       <trans-unit id="boJp4ae" resname="testimonials_patricia_vieira">
         <source>testimonials_patricia_vieira</source>
-        <target>After a year of receiving the Innovation and Development Award, ESHTE was invited by Turismo de Portugal to develop the app for Futurália 2019. 
-                    With this, we had the opportunity to demonstrate to students, future professionals in the area of Tourism, how technology serves learning and training both in the academic and professional field.
-                    From Dream to reality ... the Project Gamification e Hotel Training was born, made by Patrícia Vieira 
-                </target>
+        <target>This Award symbolizes the international recognition of the work developed in Higher Education Institutions in the Interior region of Portugal, namely at the Instituto Politécnico da Guarda, and in favor of a more inclusive Tourism.</target>
       </trans-unit>
       <trans-unit id="tOdnZeI" resname="testimonials_luis_santos">
         <source>testimonials_luis_santos</source>
-        <target>To be a candidate for a prize with the seal of entities such Fórum Turismo, Turismo de Portugal, ANESPO, RIPTUR, Publituris and Ambitur is in itself a great honor. 
-                    Being honored in the category "Best Teaching Career in Higher Education" of the 1st edition of the Hospitality Education Awards involves feelings of gratitude and great satisfaction.
-                    To receive the prize meant a tribute to my students who represent two decades of generations of hotel and tourism managers, giving an increase of responsibility and commitment in a profession as demanding and passionate as is the profession of Professor.</target>
-      </trans-unit>
-      <trans-unit id="B5fdvor" resname="testimonials_daniel_pinto">
-        <source>testimonials_daniel_pinto</source>
-        <target>Innovation, Creativity and Teamwork !! It was these dimensions that we tried to highlight in the ”Cozinha de Autor" project, held at the School of Hospitality and Tourism of the West, which won the award in the category of Best Educational Project of the Hospitality Education Awards 2018. 
-                    Many thanks to the entire School team for the work developed!! Many congratulations to the Fórum Turismo for the excellence organization of its events and for the opportunity and intelligence of its actions !! 
-                </target>
+        <target><![CDATA[At the age of 23, I was invited to teach and, having arrived at the School, now on the other side as a teacher, I realized that I was facing an even greater demand. Demand that led me to make an extra effort to teach, study and maintain my work, since being in the job market and teaching at the same time, allow me to be up to date and teach students content very close to the business reality. But maintaining all this activity takes the teacher away from his own life because of teaching, leading him sometimes to sacrifice his personal and family life.
+                <strong>When we wonder if it was worth it? It is this type of recognition that makes us believe that Yes.</strong>]]>
+        </target>
       </trans-unit>
       <trans-unit id="4gcIs58" resname="footer_premios">
         <source>footer_premios</source>
@@ -645,6 +636,21 @@ data, among others considered relevant.)</target>
     <trans-unit id="see_categories" resname="see_categories">
       <source>see_categories</source>
       <target>See categories</target>
+    </trans-unit>
+
+    <trans-unit id="testimonial_one_title" resname="testimonial_one_title">
+      <source>testimonial_one_title</source>
+      <target>Winner of Hospitality Education Award 19 «Best Stakeholder»</target>
+    </trans-unit>
+
+    <trans-unit id="testimonial_second_title" resname="testimonial_second_title">
+      <source>testimonial_second_title</source>
+      <target><![CDATA[Winner of Hospitality Education Award 19 «Best Innovation and Development Project (I&D)»]]></target>
+    </trans-unit>
+
+    <trans-unit id="testimonial_third_title" resname="testimonial_third_title">
+      <source>testimonial_third_title</source>
+      <target>Winner of Hospitality Education Award 19 « Best Teaching Career in Vocacional Education »</target>
     </trans-unit>
 
     </body>

@@ -1,70 +1,53 @@
-{# empty Twig template #}
+<section id="testimonials">
+  <div class="container">
 
-    
-    
-    <!-- testimonials -->
-    <section id="testimonials" class="text-white separator-top" style="background-color: #0C2637">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2>{% trans %}testimonials_Kind Words{% endtrans %}</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="owl-carousel visible accent" data-dots="true" data-loop="true" data-margin="100" data-autoplay="true">
-              <blockquote class="blockquote blockquote-1">
-                <p style="font-size: 1.4rem">{% trans %}testimonials_luis_lavrador{% endtrans %}</p>
-                <footer class="blockquote-footer">
-                  <div class="media align-items-center">
-                    <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/demo/Luis-Lavrador.png') }}" alt="Luis Lavrador">
-                    <div class="media-body ml-2">
-                      <span class="d-block mb-0 text-white">Luís Lavrador</span>
-                      <small>Escolas de Turismo de Portugal</small>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-              <blockquote class="blockquote blockquote-1">
-                <p style="font-size: 1.4rem">{% trans %}testimonials_patricia_vieira{% endtrans %}</p>
-                <footer class="blockquote-footer">
-                  <div class="media align-items-center">
-                    <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/demo/Patricia-Vieira.png') }}" alt="Patricia Vieira">
-                    <div class="media-body ml-2">
-                      <span class="d-block mb-0 text-white">Patricia Vieira</span>
-                      <small>Projecto Gamification & Formação Hoteleira</small>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-              <blockquote class="blockquote blockquote-1">
-                <p style="font-size: 1.4rem">{% trans %}testimonials_luis_santos{% endtrans %}</p>
-                <footer class="blockquote-footer">
-                  <div class="media align-items-center">
-                    <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/demo/Luis-Santos.png') }}" alt="Luis Santos">
-                    <div class="media-body ml-2">
-                      <span class="d-block mb-0 text-white">Luís Lima Santos</span>
-                      <small>Escola Superior de Turismo e Tecnologia do Mar</small>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-                    
-                    <blockquote class="blockquote blockquote-1">
-                <p style="font-size: 1.4rem">{% trans %}testimonials_daniel_pinto{% endtrans %}</p>
-                <footer class="blockquote-footer">
-                  <div class="media align-items-center">
-                    <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/demo/Daniel-Pinto.png') }}" alt="Daniel Pinto">
-                    <div class="media-body ml-2">
-                      <span class="d-block mb-0 text-white">Daniel Pinto</span>
-                      <small> Diretor Escola do Turismo e Hotelaria do Oeste</small>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
+    <h1 class="title text-center text-uppercase mb-5">{% trans %}testimonials_Kind Words{% endtrans %} <span>HEA</span></h1>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="owl-carousel visible accent" data-dots="true" data-loop="true" data-margin="100" data-autoplay="true">
+
+          <blockquote class="blockquote blockquote-1">
+            <p style="font-size: 1.4rem">{% trans %}testimonials_luis_lavrador{% endtrans %}</p>
+            <footer class="blockquote-footer">
+              <div class="media align-items-center">
+                <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/testimonials2019/Testemunho_1/Minor.png') }}" alt="Luis Lavrador">
+                <div class="media-body ml-2">
+                  <span class="d-block mb-0 text-black">Minor Hotels</span>
+                  <small class="yellow-text">{% trans %}testimonial_one_title{% endtrans %}</small>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="blockquote blockquote-1">
+            <p style="font-size: 1.4rem">{% trans %}testimonials_patricia_vieira{% endtrans %}</p>
+            <footer class="blockquote-footer">
+              <div class="media align-items-center">
+                <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/testimonials2019/Testemunho_2/Menu4All.png') }}" alt="Patricia Vieira">
+                <div class="media-body ml-2">
+                  <span class="d-block mb-0 text-black">Adriano Costa e Filipe Caetano | Menu 4All | Instituto Politécnico da Guarda</span>
+                  <small class="yellow-text">{% trans %}testimonial_second_title{% endtrans %}</small>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="blockquote blockquote-1">
+            <p style="font-size: 1.4rem">{% trans %}testimonials_luis_santos{% endtrans %}</p>
+            <footer class="blockquote-footer">
+              <div class="media align-items-center">
+                <img class="avatar user-rounded" src="{{ asset('bundles/app/assets/images/testimonials2019/Testemunho_3/Fernando Brito.png') }}" alt="Luis Santos">
+                <div class="media-body ml-2">
+                  <span class="d-block mb-0 text-black">Fernando Brito | Escolas do Turismo de Portugal</span>
+                  <small class="yellow-text">{% trans %}testimonial_third_title{% endtrans %}</small>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+
         </div>
       </div>
-    </section>
-    <!-- / testimonial -->
+    </div>
+  </div>
+</section>

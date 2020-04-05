@@ -1,3 +1,7 @@
+.yellow-text {
+    color: #d6ac00;
+}
+
 .navbar-brand {
     height: auto;
 }
@@ -70,11 +74,29 @@ span.btn-new-yellow {
     transition: all .3s;
 }
 
+h1.title {
+    position: relative;
+}
 
+h1.title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #f5ca00;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+}
 
+h1.title span {
+    color: #f5ca00;
+}
 
-
-
+.blockquote::before {
+    color: rgba(245, 202, 0, 0.10);
+}
 
 
 @media (min-width: 1199.99px) {
