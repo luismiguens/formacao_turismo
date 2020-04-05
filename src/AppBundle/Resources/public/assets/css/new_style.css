@@ -193,6 +193,65 @@ p.title {
     background-color: #f5f5f5;
 }
 
+.regulation-content {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.regulation-content .regulation-text h4,
+.regulation-content .regulation-text h4 a {
+    font-size: 1.5rem;
+}
+
+.regulation-content .regulation-text h4 a {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.regulation-content a {
+    color: #f5ca00;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.regulation-content a:hover {
+    color: #b48a00;
+}
+
+.regulation-content a span {
+    text-decoration: underline;
+}
+
+.schedule-circle-container {
+    position: relative;
+    text-align: center;
+}
+
+.schedule-circle-container .schedule-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 5px solid #fff;
+    background-color: #f5ca00;
+}
+
+.schedule-circle-container .schedule-circle:after {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    margin-top: 8px;
+    position: absolute;
+    background-color: #f5ca00;
+}
+
+.schedule-hours-container h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 @media (min-width: 1199.99px) {
 
     header[class*="-light"] .navbar-logo-dark {
@@ -220,8 +279,6 @@ p.title {
     }
 
 }
-
-
 
 @media (max-width: 1199.98px) {
 

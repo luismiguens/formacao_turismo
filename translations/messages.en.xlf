@@ -713,6 +713,52 @@ data, among others considered relevant.)</target>
       <target>Send</target>
     </trans-unit>
 
+    <trans-unit id="regulation_title" resname="regulation_title">
+      <source>regulation_title</source>
+      <target>Regulation</target>
+    </trans-unit>
+
+
+    <trans-unit id="date1" resname="date1">
+      <source>date1</source>
+      <target>15th of April</target>
+    </trans-unit>
+
+    <trans-unit id="date2" resname="date2">
+      <source>date2</source>
+      <target>30th of June</target>
+    </trans-unit>
+
+    <trans-unit id="date3" resname="date3">
+      <source>date3</source>
+      <target>16th of July</target>
+    </trans-unit>
+
+    <trans-unit id="date4" resname="date4">
+      <source>date4</source>
+      <target>September</target>
+    </trans-unit>
+
+    <trans-unit id="date1desc" resname="date1desc">
+      <source>date1desc</source>
+      <target>Opening of Applications</target>
+    </trans-unit>
+
+    <trans-unit id="date2desc" resname="date2desc">
+      <source>date2desc</source>
+      <target>Closing of Applications</target>
+    </trans-unit>
+
+    <trans-unit id="date3desc" resname="date3desc">
+      <source>date3desc</source>
+      <target>Announcement of finalists</target>
+    </trans-unit>
+
+    <trans-unit id="date4desc" resname="date4desc">
+      <source>date4desc</source>
+      <target>Official Delivery of Hospitality Education Awards 2020 (date and location to be announced)</target>
+    </trans-unit>
+
     </body>
   </file>
 </xliff>
