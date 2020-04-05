@@ -726,7 +726,6 @@
           <target>Regulamento</target>
         </trans-unit>
 
-
         <trans-unit id="date1" resname="date1">
           <source>date1</source>
           <target>15 de Abril</target>
@@ -765,6 +764,26 @@
         <trans-unit id="date4desc" resname="date4desc">
           <source>date4desc</source>
           <target>Entrega Oficial dos Hospitality Education Awards 2020 (data e local a divulgar)</target>
+        </trans-unit>
+
+        <trans-unit id="downloadFase1" resname="downloadFase1">
+          <source>downloadFase1</source>
+          <target>Faça o</target>
+        </trans-unit>
+
+        <trans-unit id="downloadFase2" resname="downloadFase2">
+          <source>downloadFase2</source>
+          <target>do regulamento</target>
+        </trans-unit>
+
+        <trans-unit id="downloadDesc" resname="downloadDesc">
+          <source>downloadDesc</source>
+          <target>Todas as candidaturas submetidas devem cumprir o regulamento apresentado.</target>
+        </trans-unit>
+
+        <trans-unit id="btnRegulation" resname="btnRegulation">
+          <source>btnRegulation</source>
+          <target>Consultar online</target>
         </trans-unit>
 
     </body>

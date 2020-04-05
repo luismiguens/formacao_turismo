@@ -759,6 +759,26 @@ data, among others considered relevant.)</target>
       <target>Official Delivery of Hospitality Education Awards 2020 (date and location to be announced)</target>
     </trans-unit>
 
+    <trans-unit id="downloadFase1" resname="downloadFase1">
+      <source>downloadFase1</source>
+      <target> </target>
+    </trans-unit>
+
+    <trans-unit id="downloadFase2" resname="downloadFase2">
+      <source>downloadFase2</source>
+      <target>the regulation</target>
+    </trans-unit>
+
+    <trans-unit id="downloadDesc" resname="downloadDesc">
+      <source>downloadDesc</source>
+      <target>All submitted applications must comply with the presented regulation.</target>
+    </trans-unit>
+
+    <trans-unit id="btnRegulation" resname="btnRegulation">
+      <source>btnRegulation</source>
+      <target>Consult online</target>
+    </trans-unit>
+
     </body>
   </file>
 </xliff>
