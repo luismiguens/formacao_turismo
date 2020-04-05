@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target><![CDATA[<b>Hospitality Education Awards</b> - os prémios que valorizam o talento na Educação e Formação em Turismo em Portugal. Contribuem para a dignificação das profissões no setor e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.]]></target>
+        <target>Contribuem para a dignificação das profissões no setor e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
       </trans-unit>
       <trans-unit id="Xk1mZur" resname="schedule_Project">
         <source>schedule_Project</source>
@@ -639,6 +639,21 @@
     <trans-unit id="input_six_teacher_cv" resname="input_six_teacher_cv">
       <source>input_six_teacher_cv</source>
       <target>Submissão do CURRICULUM VITAE do docente em avaliação</target>
+    </trans-unit>
+
+    <trans-unit id="applications" resname="applications">
+      <source>applications</source>
+      <target>Candidaturas: 15 de Abril, 2020 – 30 de Junho, 2020</target>
+    </trans-unit>
+
+    <trans-unit id="header_apply" resname="header_apply">
+      <source>header_apply</source>
+      <target>Candidate-se</target>
+    </trans-unit>
+
+    <trans-unit id="see_categories" resname="see_categories">
+      <source>see_categories</source>
+      <target>Ver categorias</target>
     </trans-unit>
 
     </body>

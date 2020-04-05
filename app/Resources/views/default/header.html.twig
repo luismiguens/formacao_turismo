@@ -1,23 +1,21 @@
-{# empty Twig template #}
-<!-- header -->
-<header class="header-sticky header-light bg-white">
+<header class="header-sticky header-light">
+
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
+
             <a class="navbar-brand" href="{{ path('homepage') }}">
-                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.png') }}" alt="Logo">
-                <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/logo-dark.png') }}" alt="Logo">
-
-{#                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/hea-branco.svg') }}" alt="Logo">
-                <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/hea-preto.svg') }}" alt="Logo">#}
-
-
+                <img class="navbar-logo navbar-logo-light" src="{{ asset('bundles/app/assets/images/demo/logo/logo-light.svg') }}" alt="Logo">
+                <img class="navbar-logo navbar-logo-dark" src="{{ asset('bundles/app/assets/images/demo/logo/logo-dark.svg') }}" alt="Logo">
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="burger"><span></span></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center mr-auto">
+
+                <ul class="navbar-nav align-items-center mx-auto">
                     
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('homepage') }}#categories" role="button" >
@@ -31,57 +29,20 @@
                         </a>
                     </li>
                     
-                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('homepage') }}#schedule" role="button">
                             {% trans %}header_Schedule{% endtrans %}
                         </a>
                     </li>
 
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('homepage') }}#testimonials" role="button">
-                            {% trans %}header_Testimonials{% endtrans %}
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('homepage') }}#gallery" role="button">
-                            {% trans %}header_Gallery{% endtrans %}
+                        <a class="nav-link yellow-text" href="{{ path('fos_user_security_login') }}" role="button">
+                            {% trans %}header_apply{% endtrans %}
                         </a>
                     </li>
 
-                    
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('homepage') }}#blog" role="button">
-                            {% trans %}header_Blog{% endtrans %}
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('homepage') }}#contact" role="button">
-                            {% trans %}header_Contact{% endtrans %}
-                        </a>
-                    </li>
                 </ul>
 
-
-                         <ul class="navbar-nav align-items-center mr-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{ app.request.locale|upper }}
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ path('homepage', {'_locale':'pt' }) }}">PT</a>
-                                <a class="dropdown-item" href="{{ path('homepage', {'_locale':'en' }) }}">EN</a>
-                                
-                            </div>
-                        </li>
-                    </ul>
-                             &nbsp;&nbsp;&nbsp;  
-                        
                 {% if app.user %}
                     {#user is logged in#}
                     <ul class="navbar-nav align-items-center mr-0">
@@ -120,17 +81,30 @@
                     {#user is not logged in#}
                     <ul class="navbar-nav align-items-center mr-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{ path('fos_user_registration_register') }}">{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}</a>
+                            <a class="nav-link py-0 border-right text-bolder" href="{{ path('fos_user_registration_register') }}">{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown ml-0">
                             <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}</a>
                         </li>
                     </ul>
                 {% endif %}
 
+                <ul class="navbar-nav align-items-center mr-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ app.request.locale|upper }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ path('homepage', {'_locale':'pt' }) }}">PT</a>
+                            <a class="dropdown-item" href="{{ path('homepage', {'_locale':'en' }) }}">EN</a>
+                        </div>
+                    </li>
+                </ul>
 
             </div>
+
         </nav>
+
     </div>
+
 </header>
-<!-- header -->

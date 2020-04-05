@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target><![CDATA[<b>Hospitality Education Awards</b> - the awards that value the talent in Education and Training in Tourism in Portugal. They contribute to the dignification of the professions in the tourism sector and stimulate the improvement of the formative quality, responding to the needs of national companies.]]></target>
+        <target>They contribute to the dignification of the professions in the tourism sector and stimulate the improvement of the formative quality, responding to the needs of national companies.</target>
       </trans-unit>
       <trans-unit id="Xk1mZur" resname="schedule_Project">
         <source>schedule_Project</source>
@@ -631,7 +631,22 @@ data, among others considered relevant.)</target>
         <source>input_six_teacher_cv</source>
         <target>Submission of the CURRICULUM VITAE of the teacher</target>
       </trans-unit>
-      
+
+    <trans-unit id="applications" resname="applications">
+      <source>applications</source>
+      <target>Applications: 15th of April, 2020 – 30th of June, 2020</target>
+    </trans-unit>
+
+    <trans-unit id="header_apply" resname="header_apply">
+      <source>header_apply</source>
+      <target>Apply now</target>
+    </trans-unit>
+
+    <trans-unit id="see_categories" resname="see_categories">
+      <source>see_categories</source>
+      <target>See categories</target>
+    </trans-unit>
+
     </body>
   </file>
 </xliff>

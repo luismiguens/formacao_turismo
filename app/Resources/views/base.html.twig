@@ -8,6 +8,7 @@
 
             <link rel="stylesheet" href="{{ asset('bundles/app/assets/css/vendor.css') }}" />
             <link rel="stylesheet" href="{{ asset('bundles/app/assets/css/style.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/app/assets/css/new_style.css') }}" />
 
             <style>
                 html {
@@ -17,18 +18,12 @@
                 .form-group label{
                     color: black;
                 }
-
-
-
-
             </style>
 
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('bundles/app/assets/images/favicon3.png') }}" />
         <link rel="icon" type="image/x-icon" href="{{ asset('bundles/app/assets/images/favicon2.png') }}" />
-
-
 
 <!-- Facebook Pixel Code -->
 <script>
@@ -50,11 +45,8 @@ src="https://www.facebook.com/tr?id=624599574674412&ev=PageView
 </noscript>
 <!-- End Facebook Pixel Code -->
 
-
 </head>
 <body>
-
-
 
     {% block body %}
 
@@ -63,12 +55,6 @@ src="https://www.facebook.com/tr?id=624599574674412&ev=PageView
     {% block javascripts %}
         <script src="{{ asset('bundles/app/assets/js/vendor.js') }}"></script>
         <script src="{{ asset('bundles/app/assets/js/app.js') }}"></script>
-
-
-
-
-
-
     {% endblock %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -82,9 +68,6 @@ src="https://www.facebook.com/tr?id=624599574674412&ev=PageView
 
             gtag('config', 'UA-139906534-1');
     </script>
-
-
-
 
 </body>
 </html>
