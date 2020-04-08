@@ -2,8 +2,9 @@
 
 {% block body %}
 
-    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
-
+    <div id="candidaturas-header">
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    </div>
 
 
     <!-- tables -->
@@ -55,7 +56,7 @@
                                             {% for candidatura in candidaturas %}
                                                 {% set categorias_com_candidatura = categorias_com_candidatura|merge([candidatura.categoria.id]) %}
                                                 <tr>
-                                                    <th scope="row">{{ candidatura.categoria }}</th>
+                                                    <th scope="row">{{ candidatura.categoria | striptags }}</th>
                                                     <td>{{ candidatura.promotorNome }}</td>
                                                     <td>{{ candidatura.promotorProjecto }}</td>
                                                     <td>
@@ -92,9 +93,9 @@
                                                 <tr>
                                                     
                                                     {% if app.request.locale == 'pt' %}
-                                                        <td width="25%" scope="row">{{ categoria.tituloPt }}</td>
+                                                        <td width="25%" scope="row">{{ categoria.tituloPt | striptags  }}</td>
                                                         {% else %}
-                                                        <td width="25%" scope="row">{{ categoria.tituloEn }}</td>
+                                                        <td width="25%" scope="row">{{ categoria.tituloEn | striptags }}</td>
                                                         {% endif %}
 
                                                     {% if app.request.locale == 'pt' %}

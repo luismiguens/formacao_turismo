@@ -2,7 +2,9 @@
 
 {% block body %}
 
-    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    <div id="candidaturas-header">
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    </div>
 
     <!-- tables -->
     <section id="default" class="component">
@@ -48,7 +50,7 @@
                                                 {% set candidaturas_votadas = candidaturas_votadas|merge([votacao.candidatura.id]) %}
                                                 <tr>
                                                     {#<td>{{ votacao.id }}</td>#}
-                                                    <td>{{ votacao.candidatura.categoria }}</td>
+                                                    <td>{{ votacao.candidatura.categoria | striptags }}</td>
                                                     <td>{{ votacao.candidatura.promotorNome }}</td>
                                                     <td><a href="{{ path('admin_votacao_edit', { 'id': votacao.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                                 </tr>
@@ -78,7 +80,7 @@
                                                 {% if candidatura.id not in candidaturas_votadas %}
                                                     <tr>
                                                         {#<td>{{ candidatura.id }}</td>#}
-                                                        <td>{{ candidatura.categoria }}</td>
+                                                        <td>{{ candidatura.categoria | striptags }}</td>
                                                         <td>{{ candidatura.promotorNome }}</td>
                                                         <td><a href="{{ path('admin_votacao_new', { 'candidatura': candidatura.id }) }}">{% trans %}botao_criar{% endtrans %}</a></td>
                                                     </tr>

@@ -2,7 +2,9 @@
 
 {% block body %}
 
-    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    <div id="candidaturas-header">
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    </div>
 
     <!-- form controls -->
     <section id="default" class="component">
@@ -33,9 +35,9 @@
                             <div class="col-md-12">
 
                                 {% if app.request.locale == 'pt' %}
-                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloPt }}</p>
+                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloPt | striptags }}</p>
                                 {% else %}
-                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloEn }}</p>
+                                    <h5>{% trans %}votacao_form_categoria{% endtrans %}</h5> <p>{{ votacao.candidatura.categoria.tituloEn | striptags }}</p>
                                 {% endif %}
 
                                 <h5>{% trans %}votacao_form_nome_promotor{% endtrans %}</h5> <p>{{ votacao.candidatura.promotorNome }}</p>

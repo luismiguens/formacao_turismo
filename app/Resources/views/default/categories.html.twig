@@ -1,102 +1,43 @@
-
-
-<!-- presentation -->
 <section id="categories" class="bg-light">
+
     <div class="container">
 
+        <h1 class="title text-center text-uppercase mb-5">{% trans %}categoriesTitle{% endtrans %} <span>Hea</span></h1>
+
+        <div class="row">
+
         {% for categoria in categorias %}
-            {% if loop.index is divisible by(2) %}
 
-               <div class="row align-items-center justify-content-center presentation-container">
-                    <div class="col-md-6 col-lg-5 pr-md-7 text-center text-md-right">
-                        {#<span class="eyebrow text-primary mb-1">Special for you</span>#}
-                        {% if app.request.locale == 'pt' %}
-                            <h3 class="h2">{{ categoria.tituloPt }}</h3>
-                        {% else %}
-                            <h3 class="h2">{{ categoria.tituloEn }}</h3>
-                        {% endif %}
-                        {% if app.request.locale == 'pt' %}
-                            <p>{{ categoria.descricaoPt| raw }}</p>
-                        {% else %}
-                            <p>{{ categoria.descricaoEn| raw }}</p>
-                        {% endif %}
+                <div class="col-12 col-lg-4 mb-4 text-center">
 
-                          {#
-                          
-                          COMENTADO PORQUE NÃO ESTÁ DENTRO DO TEMPO DE CANDIDATURA
-                          {% if categoria.isSemCandidatura == 0 %}
-                        <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
-                            {% trans %}categories_Watch Now{% endtrans %}
-                        </a>
-                        {% endif %}#}
+                    <div class="img-container d-flex align-items-end justify-content-center">
+                        <img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="categorieImage">
                     </div>
-                    <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
-                        <div class="presentation-circle with-delay">
-                            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
-                        </div>
-                    </div>
-                </div>
 
-            {% else %} 
-
-                <div class="row align-items-center justify-content-center presentation-container">
-                    <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
-                        <div class="presentation-circle">
-                            <figure style="background-image: url('{{ vich_uploader_asset(categoria, 'imagemFile') }}')"></figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 pl-md-7 text-center text-md-left">
-                        <!--<span class="eyebrow text-primary mb-1">Special for you</span>-->
-                        {#<h3 class="h2">Amazing Teachers</h3>#}
-
+                    <div class="text-container">
                         {% if app.request.locale == 'pt' %}
-                            <h3 class="h2">{{ categoria.tituloPt }}</h3>
+                            <h3 class="h2">{{ categoria.tituloPt | raw }}</h3>
                         {% else %}
-                            <h3 class="h2">{{ categoria.tituloEn }}</h3>
+                            <h3 class="h2">{{ categoria.tituloEn | raw }}</h3>
                         {% endif %}
 
-                        {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus.</p>#}
-
                         {% if app.request.locale == 'pt' %}
-                            <p>{{ categoria.descricaoPt| raw }}</p>
+                            <p class="mb-2">{{ categoria.descricaoPt | slice(0, 120) }} ...</p>
                         {% else %}
-                            <p>{{ categoria.descricaoEn| raw }}</p>
+                            <p class="mb-2">{{ categoria.descricaoEn | slice(0, 120) }}</p>
                         {% endif %}
 
-                        
-                        {#
-                        <a href="{{ path('admin_candidatura_nomeadas') }}" class="btn btn-primary">
-                            {% trans %}candidaturas_ver_nomeados{% endtrans %}
-                        </a>#}
-                        
-                        
-                        
-                        
-                        
-                        
                         {% if categoria.isSemCandidatura == 0 %}
-                        <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="btn btn-primary">
-                            {% trans %}categories_Watch Now{% endtrans %}
-                        </a>
+                            <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="categories-button text-uppercase">> <span>{% trans %}categories_Watch Now{% endtrans %}</span> <</a>
                         {% endif %}
-                        
                     </div>
+
                 </div>
-
-
-            {% endif%} 
-
-
-
-
 
         {% endfor %}
 
-
-
-
-
+        </div>
 
     </div>
+
 </section>
-<!-- / presentation -->

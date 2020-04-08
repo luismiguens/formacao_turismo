@@ -18,8 +18,14 @@
 
 
 
-<div class="viewport">
-    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.png') }})"></div>
+<div class="viewport cover">
+
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ asset('bundles/app/assets/video/videohea.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="cover-overlay"></div>
+
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 col-lg-5">
@@ -27,7 +33,7 @@
 
                     <div class="accordion open" data-accordion>
                         <div class="accordion-control" data-control>
-                            <h5>Authenticate</h5>
+                            <h5>{% if app.request.locale == 'pt' %}Entrar{% else %}Authenticate{% endif %}</h5>
                         </div>
                         <div class="accordion-content" data-content>
                             <div class="accordion-content-wrapper">

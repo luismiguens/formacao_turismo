@@ -2,7 +2,9 @@
 
 {% block body %}
 
-    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    <div id="candidaturas-header">
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    </div>
 
 
 
@@ -47,9 +49,9 @@
                                         {% for categoria in categorias %}
                                             <tr>
                                                 {#<th scope="row">{{ categoria.id }}</th>#}
-                                                <td scope="row">{{ categoria.tituloPt }}</td>
+                                                <td scope="row">{{ categoria.tituloPt | striptags }}</td>
                                                 <td>{{ categoria.descricaoPt |raw }}</td>
-                                                <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt }}" /></td>
+                                                <td><img src="{{ vich_uploader_asset(categoria, 'imagemFile') }}" alt="{{ categoria.tituloPt | striptags }}" /></td>
                                                 <td><a href="{{ path('admin_categoria_edit', { 'id': categoria.id }) }}">{% trans %}botao_editar{% endtrans %}</a></td>
                                             </tr>
                                         {% endfor %}

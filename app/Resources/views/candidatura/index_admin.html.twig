@@ -2,8 +2,10 @@
 
 {% block body %}
 
-    {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
 
+    <div id="candidaturas-header">
+        {% include 'default/header.html.twig'   with {'selected_menu': 'homepage'} %}
+    </div>
 
 
     <!-- tables -->
@@ -56,7 +58,7 @@
                                                
                                                 <tr>
                                                     {#<th scope="row">{{ candidatura.id}}</th>#}
-                                                    <th scope="row">{{ candidatura.categoria }}</th>
+                                                    <th scope="row">{{ candidatura.categoria | striptags }}</th>
                                                     <td>{{ candidatura.promotorNome }}</td>
                                                     <td>{{ candidatura.promotorProjecto }}</td>
                                                     <td>

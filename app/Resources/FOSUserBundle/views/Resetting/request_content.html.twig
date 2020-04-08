@@ -19,8 +19,14 @@
 
 
 
-<div class="viewport">
-    <div class="image image-overlay" style="background-image:url({{ asset('bundles/app/assets/images/demo/image-2.jpg') }})"></div>
+<div class="viewport cover">
+
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ asset('bundles/app/assets/video/videohea.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="cover-overlay"></div>
+
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 col-lg-5">

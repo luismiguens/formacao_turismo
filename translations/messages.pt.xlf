@@ -786,6 +786,11 @@
           <target>Consultar online</target>
         </trans-unit>
 
+        <trans-unit id="categoriesTitle" resname="categoriesTitle">
+          <source>categoriesTitle</source>
+          <target>Categorias</target>
+        </trans-unit>
+
     </body>
   </file>
 </xliff>

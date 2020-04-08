@@ -1,49 +1,39 @@
-<section id="cover" class="p-0">
-  <div class="swiper-container" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(250px);">
+<section id="cover">
 
-    <div class="swiper-wrapper">
-      <div class="swiper-slide vh-100">
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ asset('bundles/app/assets/video/videohea.mp4') }}" type="video/mp4">
+    </video>
 
-        <div class="image image-overlay image-zoom"
-             style="
-                     background-image: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url({{ asset('bundles/app/assets/images/gallery2019/15.jpg') }});
-                     background-image: -moz-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url({{ asset('bundles/app/assets/images/gallery2019/15.jpg') }});
-                     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url({{ asset('bundles/app/assets/images/gallery2019/15.jpg') }});
-                     ">
-        </div>
+    <div class="cover-overlay"></div>
 
-        <div class="caption text-uppercase">
-          <div class="container">
-            <div class="row justify-content-between vh-100">
-              <div class="col-lg-8 align-self-center text-shadow" data-swiper-parallax="-100%">
+    <div class="text-container-container d-flex align-items-center">
+        <div class="container pl-0 text-content d-flex align-items-center">
+            <div class="col-lg-8 align-self-center text-shadow text-uppercase text-center text-md-left">
 
                 <h1 class="mb-1 text-white">{% trans %}Os prémios da formação turística em Portugal{% endtrans %}</h1>
 
                 <h2>{% trans %}applications{% endtrans %}</h2>
 
-                <div class="separator my-2"></div>
+                <div class="separator d-block d-md-none mx-auto my-2"></div>
+
+                <div class="separator d-none d-md-block my-2"></div>
 
                 <p class="d-none d-md-block">{% trans %}text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{% endtrans %}</p>
 
-                <a href="{{ path('fos_user_security_login') }}" class="btn-arrows-white">> <span class="btn-new-yellow">{% trans %}see_categories{% endtrans %}</span> <</a>
+                <a href="{{ path('homepage') }}#categories" class="btn-arrows-white">> <span class="btn-new-yellow">{% trans %}see_categories{% endtrans %}</span> <</a>
 
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="swiper-footer text-white">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center">
-              <div class="mouse"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
-  </div>
+    <div class="swiper-footer text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
