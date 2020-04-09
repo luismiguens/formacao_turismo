@@ -50,7 +50,7 @@
                 .navbar-light .navbar-nav .nav-link {
                     color: #fff;
                     font-size: 1rem;
-                    font-weight: 500;
+                    font-weight: 600;
                 }
 
                 .navbar-light .navbar-nav .nav-link:hover {
@@ -68,6 +68,29 @@
 
                 .navbar-light .navbar-nav .show > .nav-link {
                     color: #fff;
+                }
+
+                @font-face {
+                    font-family: AvenirNext;
+                    font-weight: 400;
+                    src: url({{ asset('bundles/app/assets/fonts/AvenirNext/AvenirNextLTPro-Regular.otf') }});
+                }
+
+                @font-face {
+                    font-family: AvenirNext;
+                    font-weight: bold;
+                    src: url({{ asset('bundles/app/assets/fonts/AvenirNext/AvenirNextLTPro-Bold.otf') }});
+                }
+
+                @font-face {
+                    font-family: AvenirNext;
+                    font-weight: 600;
+                    src: url({{ asset('bundles/app/assets/fonts/AvenirNext/AvenirNextLTPro-Demi.otf') }});
+                }
+
+
+                * {
+                    font-family: AvenirNext, sans-serif !important;
                 }
 
                 @media (min-width: 1199.99px) {

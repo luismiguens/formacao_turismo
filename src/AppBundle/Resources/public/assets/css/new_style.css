@@ -20,7 +20,7 @@
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -34,6 +34,10 @@
 
 .header-light[class*="-not-top"][class*="-pinned"] .navbar-nav .nav-item .nav-link.yellow-text {
     color: #f5ca00;
+}
+
+.header-light[class*="-not-top"][class*="-pinned"] .navbar-nav .nav-item .nav-link {
+    color: #000;
 }
 
 #cover {
@@ -306,7 +310,7 @@ p.title {
 }
 
 #categories .text-container h3 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
 
 #categories .text-container h3 strong {
@@ -357,6 +361,7 @@ p.title {
     color: #f5ca00;
 }
 
+
 @media (min-width: 1199.99px) {
 
     header[class*="-light"] .navbar-logo-dark {
@@ -386,6 +391,7 @@ p.title {
 }
 
 @media (max-width: 1199.98px) {
+
 
     .headroom--top .navbar-logo-light {
         display: none !important;
