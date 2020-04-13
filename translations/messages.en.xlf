@@ -176,7 +176,7 @@
       
       <trans-unit id="84TQvGT" resname="header_Schedule">
         <source>header_Schedule</source>
-        <target>Agenda</target>
+        <target>Schedule</target>
       </trans-unit>
       <trans-unit id="imBhMrj" resname="header_Gallery">
         <source>header_Gallery</source>
