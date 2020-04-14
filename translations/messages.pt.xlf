@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="yVZAwth" resname="text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
         <source>text_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</source>
-        <target>Contribuem para a dignificação das profissões no setor e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
+        <target>Os prémios contribuem para a dignificação das profissões no setor e estimulam a melhoria da qualidade formativa, dando resposta às necessidades das empresas nacionais.</target>
       </trans-unit>
       <trans-unit id="Xk1mZur" resname="schedule_Project">
         <source>schedule_Project</source>
@@ -738,7 +738,7 @@
 
         <trans-unit id="date3" resname="date3">
           <source>date3</source>
-          <target>16 de Junho</target>
+          <target>16 de Julho</target>
         </trans-unit>
 
         <trans-unit id="date4" resname="date4">

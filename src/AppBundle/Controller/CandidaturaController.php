@@ -117,7 +117,11 @@ class CandidaturaController extends Controller {
                     'notice', 'Candidatura criada com sucesso!'
             );
 
+            $subject = "";
+
             if ($request->getLocale() == 'pt') {
+
+                $subject = "A sua candidatura foi submetida com sucesso!";
 
                 $body = "<p>Olá " . $candidatura->getPromotorNome() . "! Recebemos a sua candidatura com sucesso. Obrigado por nos ajudar a valorizar o seu trabalho.</p>
              <p>Entretanto, caso queira atualizar a sua candidatura, pode fazê-lo até à data de encerramento das candidaturas, no dia 30 de Junho.</p>
@@ -127,6 +131,8 @@ class CandidaturaController extends Controller {
 
             } else {
 
+                $subject = "Your application has been successfully submitted!";
+
                 $body = "<p>Hello " . $candidatura->getPromotorNome() . "! We have successfully received your application. Thank you for helping us value your work.</p>
              <p>However, if you want to update your application, you can do so until the closing date of applications, on 30th of June.</p>
              <p>After that date, we will assess whether your application meets all the requirements of the regulation and, if it is necessary to make any correction, we will notify you and you will have 48 hours to proceed with your correction after giving notification.</p>
@@ -135,11 +141,11 @@ class CandidaturaController extends Controller {
 
             }
 
-            $message = (new \Swift_Message('Hea.pt - Candidatura numero ' . $candidatura->getId() . ' criada com sucesso! '))
+            $message = (new \Swift_Message($subject))
                     ->setFrom('hea.no.reply@gmail.com', "Hea.pt")
                     //->setTo('luis.t.miguens@gmail.com')
                     ->setTo($candidatura->getPromotorEmail())
-                    ->setBcc(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org', 'vcunha@forumturismo21.org'])
+                    ->setBcc(['csilva@forumturismo21.org', 'vcunha@forumturismo21.org'])
                     ->setBody($body)
                     ->setContentType("text/html");
 
@@ -172,8 +178,8 @@ class CandidaturaController extends Controller {
     
     
     
-     public function editAction(Request $request, Candidatura $candidatura) {
-    return $this->redirectToRoute('admin_candidatura_index');
+    public function editOldAction(Request $request, Candidatura $candidatura) {
+        return $this->redirectToRoute('admin_candidatura_index');
     }
     
     
@@ -181,7 +187,7 @@ class CandidaturaController extends Controller {
      * Displays a form to edit an existing candidatura entity.
      *
      */
-    public function editRealAction(Request $request, Candidatura $candidatura) {
+    public function editAction(Request $request, Candidatura $candidatura) {
 
        
         $criterios = $candidatura->getCategoria()->getCriterios();

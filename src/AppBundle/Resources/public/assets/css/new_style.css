@@ -2,14 +2,19 @@
     color: #d6ac00;
 }
 
+.tab-content textarea {
+    min-height: 250px;
+    max-height: 600px;
+}
+
 .navbar-brand {
     height: auto;
 }
 
 .navbar-brand .navbar-logo {
-    width: 160px;
-    max-width: 160px;
-    min-width: 160px;
+    width: 130px;
+    max-width: 130px;
+    min-width: 130px;
     max-height: none;
 }
 
@@ -108,6 +113,7 @@ span.btn-new-yellow {
 
 h1.title {
     position: relative;
+    font-weight: 600;
 }
 
 h1.title:after {
@@ -166,6 +172,10 @@ p.title {
 
 .footer-contacts-container .footer-socials li {
     display: inline-block;
+}
+
+.footer-copyright-text {
+    font-size: .8rem;
 }
 
 #blog a.yellow-text {
@@ -237,17 +247,16 @@ p.title {
 }
 
 .regulation-content {
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
 }
 
 .regulation-content img {
-    width: 100px;
+    width: 80px;
 }
 
 .regulation-content .regulation-text h4,
 .regulation-content .regulation-text h4 a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .regulation-content .regulation-text h4 a {
@@ -257,7 +266,7 @@ p.title {
 
 .regulation-content a {
     color: #f5ca00;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: all 0.3s;
 }
 
@@ -269,6 +278,9 @@ p.title {
     text-decoration: underline;
 }
 
+.schedule-hours-container {
+    margin-top: 7rem;
+}
 .schedule-circle-container {
     position: relative;
     text-align: center;
@@ -295,8 +307,12 @@ p.title {
 }
 
 .schedule-hours-container h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.juris-title {
+    margin-top: 7rem;
 }
 
 #categories .img-container {

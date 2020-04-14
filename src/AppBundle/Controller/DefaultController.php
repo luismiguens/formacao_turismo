@@ -104,7 +104,7 @@ class DefaultController extends Controller {
         
         $message = (new \Swift_Message('Novo contacto em Hea.pt'))
                 ->setFrom('hea.no.reply@gmail.com', "Hea.pt")
-                ->setTo(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org', 'amarto@forumturismo21.org']) //TESTING
+                ->setTo(['csilva@forumturismo21.org', 'amarto@forumturismo21.org', 'cbenedi@forumturismo21.org']) //TESTING
                 //->setCc(['luis.t.miguens@gmail.com', 'csilva@forumturismo21.org', 'vcunha@forumturismo21.org'])
                 ->setBody('Foi efetuado um novo contacto no site Hea.pt com os seguintes dados:' . '<br><br>'
                         . 'Nome: ' . '' . $contact->getName() . '<br>'
