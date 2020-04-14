@@ -30,7 +30,7 @@ email:
 #        _locale:  en|pt
 
 homepage:
-    path:      /{_locale}/
+    path:      /{_locale}
     defaults:  { _controller: AppBundle:Default:index, _locale: pt }
     requirements:
         _locale:  en|pt
