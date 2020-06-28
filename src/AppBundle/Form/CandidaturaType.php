@@ -29,7 +29,7 @@ class CandidaturaType extends AbstractType {
                     'label' => 'candidatura_form_documentoFile',
                     'translation_domain' => 'messages',
                     'constraints' => new \Symfony\Component\Validator\Constraints\File(array(
-                        'maxSize' => '10M',
+                        'maxSize' => '50M',
 //                        'mimeTypes' => ["application/pdf", "application/x-pdf"],
 //                        'mimeTypesMessage' => "Please upload a valid PDF",
 //                        'maxSizeMessage' => "Upload not more than 100000000M size files"
