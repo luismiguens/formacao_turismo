@@ -124,9 +124,9 @@ class CandidaturaController extends Controller {
                 $subject = "A sua candidatura foi submetida com sucesso!";
 
                 $body = "<p>Olá " . $candidatura->getPromotorNome() . "! Recebemos a sua candidatura com sucesso. Obrigado por nos ajudar a valorizar o seu trabalho.</p>
-             <p>Entretanto, caso queira atualizar a sua candidatura, pode fazê-lo até à data de encerramento das candidaturas, no dia 30 de Junho.</p>
-             <p>Depois dessa data, iremos avaliar se a sua candidatura cumpre todos os requisitos do regulamento e, caso seja necessário fazer alguma correção, iremos notificá-lo/a e terá 48h para proceder à sua correção após notificação dada.</p>
-             <p>A partir do dia 16 de Julho iremos anunciar todos os finalistas dos Hospitality Education Awards 2020.</p>
+             <p>Entretanto, caso queira atualizar a sua candidatura, pode fazê-lo até à data de encerramento das candidaturas, no dia 24 de Julho.</p>
+             <p>Entretanto, iremos avaliar se a sua candidatura cumpre todos os requisitos do regulamento e, caso seja necessário fazer alguma correção, iremos notificá-lo/a e terá até ao dia 31 de julho para proceder à sua correção após notificação dada.</p>
+             <p>A partir do dia 20 de Setembro iremos anunciar todos os finalistas dos Hospitality Education Awards 2020.</p>
              <p>Fique atento e boa sorte!</p>";
 
             } else {
@@ -134,9 +134,9 @@ class CandidaturaController extends Controller {
                 $subject = "Your application has been successfully submitted!";
 
                 $body = "<p>Hello " . $candidatura->getPromotorNome() . "! We have successfully received your application. Thank you for helping us value your work.</p>
-             <p>However, if you want to update your application, you can do so until the closing date of applications, on 30th of June.</p>
+             <p>However, if you want to update your application, you can do so until the closing date of applications, on 24th of July.</p>
              <p>After that date, we will assess whether your application meets all the requirements of the regulation and, if it is necessary to make any correction, we will notify you and you will have 48 hours to proceed with your correction after giving notification.</p>
-             <p>From the 16th of July we will announce all the finalists of the Hospitality Education Awards 2020. </p>
+             <p>From the 20th of September we will announce all the finalists of the Hospitality Education Awards 2020. </p>
              <p>Stay tuned and good luck!</p>";
 
             }
