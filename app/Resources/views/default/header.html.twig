@@ -35,11 +35,11 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link yellow-text" href="{{ path('fos_user_security_login') }}" role="button">
-                            {% trans %}header_apply{% endtrans %}
-                        </a>
-                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link yellow-text" href="{{ path('fos_user_security_login') }}" role="button">#}
+{#                            {% trans %}header_apply{% endtrans %}#}
+{#                        </a>#}
+{#                    </li>#}
 
                 </ul>
 
@@ -80,9 +80,9 @@
                 {% else %}
                     {#user is not logged in#}
                     <ul class="navbar-nav align-items-center mr-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link py-0 border-right text-bolder" href="{{ path('fos_user_registration_register') }}">{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}</a>
-                        </li>
+{#                        <li class="nav-item dropdown">#}
+{#                            <a class="nav-link py-0 border-right text-bolder" href="{{ path('fos_user_registration_register') }}">{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}</a>#}
+{#                        </li>#}
                         <li class="nav-item dropdown ml-0">
                             <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}</a>
                         </li>
