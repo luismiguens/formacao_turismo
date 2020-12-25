@@ -104,7 +104,10 @@
         <target>See nominees</target>
       </trans-unit>
       
-      
+      <trans-unit id="vencedores" resname="vencedores">
+        <source>vencedores</source>
+        <target>see winners</target>
+      </trans-unit>
       
       
       <trans-unit id="Js5J8na" resname="blog_From the">
