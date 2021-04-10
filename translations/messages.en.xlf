@@ -312,15 +312,15 @@
       </trans-unit>
       <trans-unit id="qBicEjg" resname="imprensa_title_01">
         <source>imprensa_title_01</source>
-        <target>The winners of the 2nd edition of the Hospitality Education Awards are already known</target>
+        <target>KNOW WHO ARE THE WINNERS OF HOSPITALITY EDUCATION AWARDS</target>
       </trans-unit>
       <trans-unit id="scv2DnY" resname="imprensa_title_02">
         <source>imprensa_title_02</source>
-        <target>The winners of the Hospitality Education Awards revealed</target>
+        <target>THE FINALISTS OF THE HOSPITALITY EDUCATION AWARDS 2020 ARE ALREADY KNOWN</target>
       </trans-unit>
       <trans-unit id="y054m.l" resname="imprensa_title_03">
         <source>imprensa_title_03</source>
-        <target>The 2nd edition of the Hospitality Education Awards award project Menu 4 All</target>
+        <target>Hospitality Education Awards award ceremony already has a date</target>
       </trans-unit>
       <trans-unit id="EufviVk" resname="imprensa_publicado_01">
         <source>imprensa_publicado_01</source>
@@ -628,7 +628,7 @@ data, among others considered relevant.)</target>
 
     <trans-unit id="applications" resname="applications">
       <source>applications</source>
-      <target>Applications: CLOSED JULY 24, 2020</target>
+      <target>Applications: OPENING APRIL 22, 2021</target>
     </trans-unit>
 
     <trans-unit id="header_apply" resname="header_apply">
@@ -724,7 +724,7 @@ data, among others considered relevant.)</target>
 
     <trans-unit id="date1" resname="date1">
       <source>date1</source>
-      <target>15th of April</target>
+      <target>22th of April</target>
     </trans-unit>
 
     <trans-unit id="date2" resname="date2">
@@ -734,7 +734,7 @@ data, among others considered relevant.)</target>
 
     <trans-unit id="date3" resname="date3">
       <source>date3</source>
-      <target>16th of July</target>
+      <target>September 1st to 10th</target>
     </trans-unit>
 
     <trans-unit id="date4" resname="date4">
@@ -759,7 +759,7 @@ data, among others considered relevant.)</target>
 
     <trans-unit id="date4desc" resname="date4desc">
       <source>date4desc</source>
-      <target>Official Delivery of Hospitality Education Awards 2020 (date and location to be announced)</target>
+      <target>Official Delivery of Hospitality Education Awards 2021 (date and location to be announced)</target>
     </trans-unit>
 
     <trans-unit id="downloadFase1" resname="downloadFase1">
@@ -785,6 +785,11 @@ data, among others considered relevant.)</target>
     <trans-unit id="categoriesTitle" resname="categoriesTitle">
       <source>categoriesTitle</source>
       <target>Categories</target>
+    </trans-unit>
+
+    <trans-unit id="newbanner_desc" resname="newbanner_desc">
+      <source>newbanner_desc</source>
+      <target><![CDATA[WATCH THE 2020 AWARD CEREMONY <a href="https://www.youtube.com/watch?v=JKX1zI0JBjI&t=724s">Here</a>]]></target>
     </trans-unit>
 
     </body>

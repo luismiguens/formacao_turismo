@@ -377,6 +377,20 @@ p.title {
     color: #f5ca00;
 }
 
+.newbanner {
+    background-color: #D3AC09;
+}
+
+.newbanner a,
+.newbanner a:hover {
+    color: #000 !important;
+    text-decoration: underline;
+    transition: all .25s ease;
+}
+
+.newbanner a:hover {
+    opacity: .6;
+}
 
 @media (min-width: 1199.99px) {
 

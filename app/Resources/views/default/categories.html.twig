@@ -27,14 +27,14 @@
                             <p class="mb-2">{{ categoria.descricaoEn | slice(0, 120) }}</p>
                         {% endif %}
 
-                        {% if categoria.isSemCandidatura == 0 %}
-{#                            <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="categories-button text-uppercase">> <span>{% trans %}categories_Watch Now{% endtrans %}</span> <</a>#}
-                        {% endif %}
+{#                        {% if categoria.isSemCandidatura == 0 %}
+                            <a href="{{ path('admin_candidatura_new', { 'categoria': categoria.id } ) }}" class="categories-button text-uppercase">> <span>{% trans %}categories_Watch Now{% endtrans %}</span> <</a>
+                        {% endif %}#}
 
-                        <a href="{{ path('admin_candidatura_nomeadas') }}" class="categories-button text-uppercase">
-{#                            <span>{% trans %}candidaturas_ver_nomeados{% endtrans %}</span>#}
+{#                        <a href="{{ path('admin_candidatura_nomeadas') }}" class="categories-button text-uppercase">
+                            <span>{% trans %}candidaturas_ver_nomeados{% endtrans %}</span>
                             <span>{% trans %}vencedores{% endtrans %}</span>
-                        </a>
+                        </a>#}
                     </div>
 
                 </div>
